@@ -1,0 +1,43 @@
+﻿@page "/profile"
+@rendermode InteractiveServer
+
+@using ClassLibrary.Data
+
+@inject NavigationManager Navigation
+
+@inject DataBase DataBase
+@inject CurrentSession CurrentSession
+@inject Saver Saver
+
+<h1 style="text-align:center; gap:10px">Profile</h1>
+<div class="Profile" style="display:flex; flex-direction:column; gap:10px; width:100%; align-items: center">
+    <div class="row w-100" style="max-width:700px">
+        <label class="col-2">Name</label>
+        <input class="col-7" @bind="_name" />
+    </div>
+    <div class="row w-100" style="max-width:700px">
+        <label class="col-2">Email</label>
+        <input class="col-7" @bind="_email" />
+    </div>
+</div>
+
+@code {
+    string _name;
+    string _email;
+    string _password;
+    string _photo;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (CurrentSession.GetUser() != null)
+        {
+            _name = CurrentSession.GetUser().GetName();
+            _email = CurrentSession.GetUser().GetEmail();
+        }
+        // else
+        // {
+        //     await Task.Delay(500);
+        //     if (CurrentSession.GetUser() is null) Navigation.NavigateTo("/login");
+        // }
+    }
+}

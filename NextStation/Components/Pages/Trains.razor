@@ -1,0 +1,22 @@
+﻿@page "/trains"
+@rendermode InteractiveServer
+
+@using ClassLibrary.Data
+@using ClassLibrary.Trains
+
+@inject NavigationManager Navigation
+
+@inject DataBase DataBase
+@inject CurrentSession CurrentSession
+@inject Saver Saver
+
+<div>
+	@foreach (Train train in Saver.ReturnFilteredTrains())
+	{
+		<label style="display:block">@train.GetTrainCode()</label>
+	}
+</div>
+
+@code {
+	
+}

@@ -1,0 +1,75 @@
+﻿@page "/login"
+@rendermode InteractiveServer
+
+@using ClassLibrary
+@using ClassLibrary.Data
+@using ClassLibrary.Users
+
+@inject NavigationManager Navigation
+@inject DataBase DataBase
+@inject CurrentSession CurrentSession
+
+<style>
+	body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	}
+
+	.login {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 60vh;
+	gap: 10px;
+	}
+
+	.register_and_recovery {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	}
+</style>
+
+<div class="login">
+	<label>Email</label>
+	<input type="email" @bind="_email" />
+
+	<label>Password</label>
+	<input type="password" @bind="_password" />
+
+	<label style="color:crimson">@_errorMessage</label>
+
+	<button @onclick="TryLogIn">Log in</button>
+
+	<div class="register_and_recovery" style="">
+		<a href="/error404">Forgot your password?</a>
+
+		<label>or</label>
+		<a href="/register">Create a new account</a>
+	</div>
+</div>
+
+@code {
+	string _email = "";
+	string _password = "";
+	string _errorMessage = "";
+
+	public void TryLogIn()
+	{
+		User? _user = CurrentSession.Login(DataBase.GetUsers(), _email, _password);
+		if (_user is not null)
+		{
+			CurrentSession.SetUser(_user);
+			Navigation.NavigateTo("/");
+		}
+		else
+		{
+			_errorMessage = "Incorrect username or password";
+		}
+	}
+}

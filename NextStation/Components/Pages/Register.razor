@@ -1,0 +1,88 @@
+﻿@page "/register"
+@rendermode InteractiveServer
+
+@using ClassLibrary.Data
+
+@inject NavigationManager Navigation
+@inject DataBase DataBase
+@inject CurrentSession CurrentSession
+
+<style>
+	body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	}
+
+	.register {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 70vh;
+	gap: 10px;
+	}
+
+	.register_and_recovery {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	}
+</style>
+
+<div class="register">
+	<label>@DataBase.GetUsers().Count</label>
+
+	<label>Name</label>
+	<input @bind="_name" />
+
+	<label>Email</label>
+	<input type="email" @bind="_email" />
+
+	<label>Password</label>
+	<input type="Enter the password" @bind="_password" />
+
+	<label>Repeat the password</label>
+	<input type="password" @bind="_repeatedPassword" />
+
+	<label style="color:crimson">@_errorMessage</label>
+
+	<div class="register_and_recovery">
+		<button @onclick="TryRegister">Register</button>
+		<label>or</label>
+		<a href="/login">Log in</a>
+	</div>
+
+</div>
+
+@code {
+	string message = "";
+	string _name = "";
+	string _email = "";
+	string _password = "";
+	string _repeatedPassword = "";
+	string _errorMessage = "";
+
+	public void TryRegister()
+	{
+		try
+		{
+			if (Equals(_password, _repeatedPassword))
+			{
+				DataBase.AddPassenger(_name, _email, _password);
+				Navigation.NavigateTo("/login");
+			}
+			else
+			{
+				throw new RegisterError(RegisterErrorReason.PasswordsDontMatch, "The passwords do not match");
+			}
+		}
+		catch (Exception e)
+		{
+			_errorMessage = e.Message;
+		}
+	}
+}
