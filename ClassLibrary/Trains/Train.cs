@@ -35,6 +35,8 @@ namespace ClassLibrary.Trains
         public int GetId() { return id; }
         public string GetTrainCode() { return trainCode; }
 
+        public void ChangeTrainCode(string trainCode) { this.trainCode = trainCode; } 
+
         public StationName GetLocation() { return location; }
 
         public void UpdateLocation(StationName location) { this.location = location; }
@@ -47,7 +49,15 @@ namespace ClassLibrary.Trains
 
         public void RemoveRouteStopById(int id)
         {
-
+            RouteStop? routeStop = route.FirstOrDefault(r => r.GetId() == id, null);
+            if (routeStop is not null && this.route.Contains(routeStop))
+            {
+                this.route.Remove(routeStop);
+            }
+            else
+            {
+                throw new TrainManagementError(TrainManagementErrorReason.RouteStopDoesNotExists, "The route stop does not present in the train's route");
+            }
         }
         public List<RouteStop> GetAllRouteStop() { return route; }
     }

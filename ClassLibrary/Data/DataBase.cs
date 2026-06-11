@@ -26,11 +26,7 @@ namespace ClassLibrary.Data
 
         public void AddPassengerTrain(string trainCode, StationName location, List<Option> options) 
         {
-            PassengerTrain train = new PassengerTrain(trainCode, location);
-            foreach (Option option in options)
-            {
-                train.AddOption(option);
-            }
+            PassengerTrain train = new PassengerTrain(trainCode, location, options);
             trains.Add(train);
             SaveData();
         }

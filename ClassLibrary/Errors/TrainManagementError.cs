@@ -2,6 +2,10 @@
 {
     TrainDoesNotExists,
     CarDoesNotExists,
+    RouteStopDoesNotExists,
+    CapacityLessOrEqualZero,
+    CarIsAlreadyConnected,
+    CarDoesNotConnected
 }
 
 public class TrainManagementError : Exception
