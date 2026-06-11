@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Text.Json;
 using System;
 using System.IO;
+using System.Text.RegularExpressions;
+using System.Xml.Linq;
 
 namespace ClassLibrary.Data
 {
@@ -32,21 +34,106 @@ namespace ClassLibrary.Data
             trains.Add(train);
             SaveData();
         }
-        //skip
 
+        public void AddFreightTrain(string trainCode, StationName location, int capacity)
+        {
+            FreightTrain train = new FreightTrain(trainCode, location, capacity);
+            trains.Add(train);
+            SaveData();
+        }
+
+        public void RemoveTrain(Train train)
+        {
+            if (this.trains.Contains(train))
+            {
+                this.trains.Remove(train);
+            }
+            else
+            {
+                throw new TrainManagementError(TrainManagementErrorReason.TrainDoesNotExists, "The train does not present in the DataBase");
+            }
+        }
+
+        public void AddCar(int seatsNumber, CarClass carClass)
+        {
+            Car car = new Car(seatsNumber, carClass);
+            this.cars.Add(car);
+        }
+
+        public void RemoveCarById(int id)
+        {
+            Car? car = this.cars.FirstOrDefault(c => c.GetId() == id, null);
+            if (car is null)
+            {
+                this.cars.Remove(car);
+            }
+            else
+            {
+                throw new TrainManagementError(TrainManagementErrorReason.CarDoesNotExists, "The car does not present in the DataBase");
+            }
+        }
         public void AddPassenger(string name, string email, string password, string photo="")
         {
-            if (!Equals(users.FirstOrDefault(u => u.GetEmail() == email, null), null)) throw new RegisterError(RegisterErrorReason.EmailAlreadyRegistered, "The email is alredy registered. Try to login");
+            if (!(users.FirstOrDefault(u => u.GetEmail() == email, null) is null)) throw new RegisterError(RegisterErrorReason.EmailAlreadyRegistered, "The email is alredy registered. Try to login");
             User user = new Passenger(name, email, password, photo);
-            if (!Equals(user, null))
+            if (!(user is null))
             {
                 users.Add(user);
                 SaveData();
             }
         }
 
-        public List<User> GetUsers() { return users; } //!!! add to the class diagram
-        
+        public void AddStaff(Role role, string name, string email, string password, string photo = "")//change order
+        {
+            if (!(users.FirstOrDefault(u => u.GetEmail() == email, null) is null)) throw new RegisterError(RegisterErrorReason.EmailAlreadyRegistered, "The email is alredy registered. Try to login");
+            User user = new Staff(name, email, password, photo, role);
+            if (!(user is null))
+            {
+                users.Add(user);
+                SaveData();
+            }
+        }
+
+        public void RemoveUser(User user)
+        {
+            if (this.users.Contains(user))
+            {
+                this.users.Remove(user);
+            }
+            else
+            {
+                throw new UserManagementError(UserManagementErrorReason.UserDoesNotExists, "The user does not present in the DataBase");
+            }
+        }
+
+        public List<User> UserSearch(int? id = null, string? name = null, string? email = null)
+        {
+            List<User> users = this.users.Where(u => u.GetName() == name && u.GetEmail() == email).ToList();
+            if (id != null)
+            {
+                users = users.Where(u => u.GetId() == id).ToList();
+            }
+            return users;
+        }
+
+        public Station? StationSearch(StationName station) //change
+        {
+            return this.stations.FirstOrDefault(s => (s.GetName() == station), null);
+        }
+
+        public List<Car> CarSearch(int? id = null, CarClass? carClass = null) //change a bit names
+        {
+            List<Car> cars = new();
+            if (id != null)
+            {
+                cars = cars.Where(c => c.GetId() == id).ToList();
+            }
+            if (carClass != null)
+            {
+                cars = cars.Where(c => c.GetClass() == carClass).ToList();
+            }
+            return cars;
+        }
         public List<Train> TrainSeacrh(string? trainCode, StationName? departureStation, StationName? arrivalStation, DateTime? departureDate, DateTime? arrivalDate, RouteType? routeType, List<Option>? options)
         {
             return trains
@@ -94,12 +181,10 @@ namespace ClassLibrary.Data
 
         public DataBase(string users_path, string cars_path, string trains_path, string stations_path)//Add
         {
-            //string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-
-            this.users_path = users_path;//Path.Combine(baseDirectory, users_path); 
-            this.cars_path = cars_path;// Path.Combine(baseDirectory, cars_path);
-            this.trains_path = trains_path;//Path.Combine(baseDirectory, trains_path);
-            this.stations_path = stations_path;// Path.Combine(baseDirectory, stations_path);
+            this.users_path = users_path;
+            this.cars_path = cars_path;
+            this.trains_path = trains_path;
+            this.stations_path = stations_path;
 
             try
             {

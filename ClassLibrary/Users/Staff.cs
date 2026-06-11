@@ -11,6 +11,6 @@ namespace ClassLibrary.Users
     public class Staff : User
     {
         [JsonConstructor]
-        public Staff(string name, string email, string password, string photo) : base(name, email, password, photo) { }
+        public Staff(string name, string email, string password, string photo, Role role) : base(name, email, password, photo) { }
     }
 }

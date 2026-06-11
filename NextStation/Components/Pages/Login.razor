@@ -61,7 +61,7 @@
 
 	public void TryLogIn()
 	{
-		User? _user = CurrentSession.Login(DataBase.GetUsers(), _email, _password);
+		User? _user = CurrentSession.Login(DataBase.UserSearch(), _email, _password);
 		if (_user is not null)
 		{
 			CurrentSession.SetUser(_user);

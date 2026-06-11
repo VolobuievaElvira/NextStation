@@ -21,6 +21,6 @@ namespace ClassLibrary.Trains
         public Passenger? GetPassenger() { return passenger; }
         public Seat GetSeat() { return seat; }
 
-        public bool IsAvaible() { return Equals(passenger, null); }
+        public bool IsAvaible() { return passenger is null; }
     }
 }

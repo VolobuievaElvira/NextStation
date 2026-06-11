@@ -11,7 +11,7 @@ namespace ClassLibrary.Trains
     public class FreightTrain : Train
     {
         [JsonConstructor] 
-        public FreightTrain(string trainCode, StationName location) : base(trainCode, location) { }
-        
-    }
+        public FreightTrain(string trainCode, StationName location, int capacity) : base(trainCode, location) { }
+
+    }        
 }
