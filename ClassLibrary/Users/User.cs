@@ -54,9 +54,9 @@ namespace ClassLibrary.Users
         public string GetEmail() { return email; }
         public string GetPassword() { return password; }
         public string GetPhoto() { return photo; }
-        public void ChangeName(string name) { }
-        public void ChangeEmail(string email) { }
-        public void ChangePassword(string password) { }
-        public void ChangePhoto(string photo) { }
+        public void ChangeName(string name) { this.name = name; }
+        public void ChangeEmail(string email) { this.email = email; }
+        public void ChangePassword(string password) { this.Password = password; }
+        public void ChangePhoto(string photo) { this.photo = photo; }
     }
 }
