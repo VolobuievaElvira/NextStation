@@ -21,7 +21,9 @@ namespace ClassLibrary.Trains
         public Car(int seatsNumber, CarClass carClass) //change name
         {
             id = ++counter;
-            this.seats = Enumerable.Repeat(new Seat(), seatsNumber).ToList();
+            this.seats = Enumerable.Range(1, seatsNumber)
+                       .Select(x => new Seat(x, this))
+                       .ToList();
             this.carClass = carClass;
         }
         public int GetId() { return this.id; }

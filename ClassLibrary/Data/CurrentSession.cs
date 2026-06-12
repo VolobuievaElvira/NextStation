@@ -29,15 +29,15 @@ namespace ClassLibrary.Data
 
         public User? LoginWithGoogle(List<User> users, string googleProviderId)
         {
-            return null;//pass
+            throw new Exception("Login with Google");
         }
 
         public void RetrievePassword(List<User> users, string email)
         {
-            //pass
+            throw new Exception("Retrieve Password");
         }
 
-        public void SetUser(User user)
+        public void SetUser(User user) // Add
         {
             this.user = user;
         }
