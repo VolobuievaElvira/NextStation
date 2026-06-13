@@ -20,7 +20,7 @@ namespace ClassLibrary.Users
 
         public void BookTicket()
         {
-            //pass?
+            throw new Exception("Book a ticket");
         }
 
         [JsonConstructor] 

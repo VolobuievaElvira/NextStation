@@ -18,6 +18,8 @@ namespace ClassLibrary.Trains
         [JsonInclude] private PassengerTrain? train;
         [JsonInclude] private List<Seat> seats = new();
         [JsonInclude] private CarClass carClass; //change name
+
+        [JsonConstructor]
         public Car(int seatsNumber, CarClass carClass) //change name
         {
             id = ++counter;

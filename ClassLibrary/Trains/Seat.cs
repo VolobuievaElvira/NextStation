@@ -18,6 +18,7 @@ namespace ClassLibrary
         [JsonInclude] private Car car;
         [JsonInclude] private Ticket ticket;
 
+        [JsonConstructor]
         public Seat(int number, Car car)
         {
             this.id = ++counter;
