@@ -9,37 +9,37 @@ namespace ClassLibrary.Data
 {
     public class CurrentSession
     {
-        private Guid id;
-        private User? user;
+        private static Guid id;
+        private static User? user;
 
         public CurrentSession()
         {
             id = new Guid();
         }
 
-        public string GetId() { return id.ToString(); }
-        public User? GetUser() { return user; }
+        public static string GetId() { return id.ToString(); }
+        public static User? GetUser() { return user; }
 
-        public void Logout() { user = null; }
+        public static void Logout() { user = null; }
 
-        public User? Login(List<User> users, string email, string password) 
+        public static User? Login(List<User> users, string email, string password) 
         {
             return users.FirstOrDefault(u => u.GetEmail() == email && u.GetPassword() == password, null);
         }
 
-        public User? LoginWithGoogle(List<User> users, string googleProviderId)
+        public static User? LoginWithGoogle(List<User> users, string googleProviderId)
         {
             throw new Exception("Login with Google");
         }
 
-        public void RetrievePassword(List<User> users, string email)
+        public static void RetrievePassword(List<User> users, string email)
         {
             throw new Exception("Retrieve Password");
         }
 
-        public void SetUser(User user) // Add
+        public static void SetUser(User _user) // Add
         {
-            this.user = user;
+            user = _user;
         }
     }
 }

@@ -1,0 +1,158 @@
+﻿@page "/trainmanagement"
+@rendermode InteractiveServer
+
+@using ClassLibrary.Data
+
+@inject NavigationManager Navigation
+
+@inject DataBase DataBase
+@inject CurrentSession CurrentSession
+@inject Saver Saver
+
+
+<PageTitle>TrainManagement</PageTitle>
+
+<div style="display:flex; flex-direction:column; gap:10px; width:100%; align-items: center">
+
+    <div class="row w-100" style="max-width:700px">
+		<label class="col-12" style="text-align:center"><b>Train Type</b></label>
+		<label class="col-3">
+            <input type="radio" name="TrainType" checked="@(_trainType == TrainType.Passenger)" @onchange='() => _trainType = TrainType.Passenger' />
+            Passenger 
+        </label> 
+        <label class="col-3">
+            <input type="radio" name="TrainType" checked="@(_trainType == TrainType.Freight)" @onchange='() => _trainType = TrainType.Freight' />
+            Freight 
+        </label> 
+    </div> 
+
+    <div class="row w-100" style="max-width:700px"> 
+        <label class="col-5">Train Code</label> 
+        <input class="col-7" @bind="_trainCode" /> 
+    </div> 
+    <div class="row w-100" style="max-width:700px"> 
+        <label class="col-5">Location</label> 
+        <select class="col-7" @bind="_location"> 
+            @foreach (var stationName in Enum.GetValues(typeof(StationName))) 
+            { 
+                <option value="@stationName"> 
+                    @stationName.ToString() 
+                </option> 
+            } 
+        </select> 
+    </div> 
+
+    @if(_trainType == TrainType.Passenger)
+    {
+        <div class="row w-100" style="max-width:700px">
+			<label class="col-12" style="text-align:center"><b>Options</b></label>
+
+			@foreach (Option option in Enum.GetValues(typeof(Option))) 
+            { 
+                <div class="row w-100" style="max-width:700px"> 
+                    <input type="checkbox" class="col-1" value="@option" checked="@_options.Contains(option)" @onchange="(e) => ChangeOption(option, e.Value)" />
+                    <label class="col-6">@SplitPascalCase(@option.ToString())</label> 
+                </div> 
+            } 
+        </div>
+    }
+    else
+    {
+        <div class="row w-100" style="max-width:700px">
+            <label class="col-5">Train Capacity</label>
+            <input class="col-7" @bind="_capacity" />
+        </div>
+    }
+
+    <label style="color:crimson" class="col-9">@_errorMessage</label>
+
+    <div class="row w-100" style="max-width:700px">
+        <button type="button" @onclick="Add" class="col-12">Add</button>
+    </div>
+</div>
+
+@code {
+    string? _trainCode = ""; 
+    StationName? _location = null; 
+    TrainType _trainType = TrainType.Passenger;
+    string _capacity = "";
+    List<Option> _options = new();
+
+    string _errorMessage = "";
+
+    enum TrainType 
+    {
+        Passenger,
+        Freight
+    };
+
+    private void Add()
+    {
+        _errorMessage = "";
+        try
+        {
+            if (_location == StationName.SelectStation)
+            {
+                throw new TrainManagementError(TrainManagementErrorReason.StationNotSelected, "The location is not selected");
+            }
+            if (_trainType == TrainType.Freight)
+            {
+                if (float.TryParse(_capacity, out float result)){
+                    if(result <= 0)
+                    {
+                        throw new TrainManagementError(TrainManagementErrorReason.CapacityLessOrEqualZero, "The capacity must be greater than zero");
+                    }
+                    else
+                    {
+                        DataBase.AddFreightTrain(_trainCode, _location.Value, result);
+                    }
+                }
+                else
+                {
+                    throw new TrainManagementError(TrainManagementErrorReason.InvalidCapacity, "The capacity must be a number");
+                }
+            }
+            else
+            {
+                DataBase.AddPassengerTrain(_trainCode, _location.Value, _options);
+            }
+
+            Navigation.NavigateTo("/trainsearch");
+        }
+        catch(Exception ex)
+        {
+            _errorMessage = ex.Message;
+        }
+    }
+
+    private void ChangeOption(Option option, object isChecked)
+    {
+        if ((bool)isChecked)
+        {
+            if (!_options.Contains(option))
+            {
+                _options.Add(option);
+            }
+        }
+        else
+        {
+            if (_options.Contains(option))
+            {
+                _options.Remove(option);
+            }
+        }
+    }
+
+    private string SplitPascalCase(string word)
+    {
+        string text = "";
+
+        foreach (char c in word)
+        {
+            if (char.ToUpper(c) == c && text.Length != 0) text += " ";
+            text += c;
+        }
+
+        return text;
+    } 
+}

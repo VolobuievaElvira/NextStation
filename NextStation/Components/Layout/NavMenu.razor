@@ -1,4 +1,8 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿@using ClassLibrary.Data
+@using ClassLibrary.Users
+@inject CurrentSession CurrentSession
+
+<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">NextStation</a>
     </div>
@@ -16,27 +20,61 @@
 
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="trainsearch">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Train Search
+                <i class="bi bi-search fs-4 me-2.5"
+                aria-hidden="true"
+                style="margin-top: -3px; display: inline-block; height: 24px; line-height: 24px;"></i>
+                <span>Train Search</span>
             </NavLink>
         </div>
+
+
+        @if (CurrentSession.GetUser() is Staff staff && staff.GetRole() == Role.NetworkManager)
+        {
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="trainmanagement">
+                    <i class="bi bi-train-lightrail-front fs-4 me-2.5"
+                       aria-hidden="true"
+                       style="margin-top: -3px; display: inline-block; height: 24px; line-height: 24px;"></i>
+                    <span>Train Management</span>
+                </NavLink>
+            </div>
+        }
 
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="profile">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Profile
+                <i class="bi bi-person-fill fs-4 me-2.5"
+                aria-hidden="true"
+                style="margin-top: -3px; display: inline-block; height: 24px; line-height: 24px;"></i>
+                <span>Profile</span>
             </NavLink>
         </div>
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
+        
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
-            </NavLink>
-        </div>
+        @* <div class="nav-item px-3"> *@
+        @*     <NavLink class="nav-link" href="counter"> *@
+        @*         <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter *@
+        @*     </NavLink> *@
+        @* </div> *@
+
+        @* <div class="nav-item px-3"> *@
+        @*     <NavLink class="nav-link" href="weather"> *@
+        @*         <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather *@
+        @*     </NavLink> *@
+        @* </div> *@
     </nav>
 </div>
 
+@code {
+    public static NavMenu? Instance { get; private set; }
+
+    protected override void OnInitialized()
+    {
+        Instance = this;
+    }
+
+    public static void Refresh()
+    {
+        Instance?.InvokeAsync(() => Instance.StateHasChanged());
+    }
+}

@@ -31,7 +31,7 @@ namespace ClassLibrary.Data
             SaveData();
         }
 
-        public void AddFreightTrain(string trainCode, StationName location, int capacity)
+        public void AddFreightTrain(string trainCode, StationName location, float capacity)
         {
             FreightTrain train = new FreightTrain(trainCode, location, capacity);
             trains.Add(train);
@@ -104,11 +104,21 @@ namespace ClassLibrary.Data
 
         public List<User> UserSearch(int? id = null, string? name = null, string? email = null)
         {
-            List<User> users = this.users.Where(u => u.GetName() == name && u.GetEmail() == email).ToList();
+            List<User> users = this.users;
+
             if (id != null)
             {
                 users = users.Where(u => u.GetId() == id).ToList();
             }
+            if (email != null)
+            {
+                users = users.Where(u => u.GetEmail() == email).ToList();
+            }
+            if (name != null)
+            {
+                users = users.Where(u => u.GetName() == name).ToList();
+            }         
+           
             return users;
         }
 
@@ -132,8 +142,9 @@ namespace ClassLibrary.Data
         }
         public List<Train> TrainSeacrh(string? trainCode, StationName? departureStation, StationName? arrivalStation, DateTime? departureDate, DateTime? arrivalDate, RouteType? routeType, List<Option>? options)
         {
-            return trains
-                .Where
+            List<Train> trains = this.trains;
+
+            trains = trains.Where
                 (
                     t =>
                         (
@@ -173,6 +184,17 @@ namespace ClassLibrary.Data
                         )
 
                 ).ToList();
+
+            if(options.Count > 0)
+            {
+                trains = trains.Where
+                    (
+                        t => t is PassengerTrain passengerTrain
+                        &&
+                        options.All(op => passengerTrain.GetAllOptions().Contains(op))
+                    ).ToList();
+            }
+            return trains;
         }
 
         public DataBase(string users_path, string cars_path, string trains_path, string stations_path)//Add

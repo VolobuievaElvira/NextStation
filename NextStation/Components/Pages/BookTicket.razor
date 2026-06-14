@@ -1,9 +1,8 @@
-﻿@page "/trains"
+﻿@page "/bookticket"
 @rendermode InteractiveServer
 
 @using ClassLibrary.Data
 @using ClassLibrary.Trains
-@using ClassLibrary.Users
 
 @inject NavigationManager Navigation
 
@@ -46,7 +45,7 @@
 						else
 						{
 							<td>
-								@* Capacity = @(((FreightTrain)(train)).GetCapacity()) *@
+								Capacity = @(((FreightTrain)(train)).GetCapacity())
 							</td>
 						}
 
@@ -66,19 +65,7 @@
 @code {
 	private void OpenTrain(Train train)
 	{
-		List<Train> trains = new();
-		trains.Add(train);
 
-		Saver.SaveFilteredTrains(trains);
-
-		if (CurrentSession.GetUser() is Staff staff && staff.GetRole() == Role.NetworkManager)
-		{
-			Navigation.NavigateTo("/modifytrain");
-		}
-		else
-		{
-			Navigation.NavigateTo("/bookticket");
-		}
 	}
 
 	private string OptionSwitch(Option option)

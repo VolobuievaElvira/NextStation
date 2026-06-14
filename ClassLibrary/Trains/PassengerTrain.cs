@@ -19,7 +19,8 @@ namespace ClassLibrary.Trains
 
         [JsonConstructor] 
         public PassengerTrain(string trainCode, StationName location, List<Option> options) : base(trainCode, location) 
-        { 
+        {
+            options.Sort();
             foreach (Option option in options)
             {
                 AddOption(option);
@@ -55,7 +56,7 @@ namespace ClassLibrary.Trains
         }
         public void RemoveOption(Option option)
         {
-            if (options.Contains(option)) options.Remove(option);
+            if (this.options.Contains(option)) this.options.Remove(option);
         }
         public void ChangeDescription(string description) { this.description = description; }
         public string GetDescription() { return this.description; }

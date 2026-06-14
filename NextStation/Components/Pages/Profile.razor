@@ -1,7 +1,8 @@
 ﻿@page "/profile"
-@rendermode InteractiveServer
+@rendermode @(new InteractiveServerRenderMode(prerender: false))
 
 @using ClassLibrary.Data
+@using ClassLibrary.Users
 
 @inject NavigationManager Navigation
 
@@ -10,34 +11,126 @@
 @inject Saver Saver
 
 <h1 style="text-align:center; gap:10px">Profile</h1>
-<div class="Profile" style="display:flex; flex-direction:column; gap:10px; width:100%; align-items: center">
-    <div class="row w-100" style="max-width:700px">
-        <label class="col-2">Name</label>
-        <input class="col-7" @bind="_name" />
+
+@if (_isLoading)
+{
+    <div class="Profile" style="display:flex; flex-direction:column; gap:10px; width:100%; align-items: center">
+        <div class="row w-100" style="max-width:700px">
+            <label>Loading...</label>
+        </div>
     </div>
-    <div class="row w-100" style="max-width:700px">
-        <label class="col-2">Email</label>
-        <input class="col-7" @bind="_email" />
+}
+else
+{
+    <div class="Profile" style="display:flex; flex-direction:column; gap:10px; width:100%; align-items: center">
+        <div class="row w-100 justify-content-between" style="max-width:700px">
+            <label class="col-1">Name</label>
+            <input class="col-7" @bind="_name" />
+            <button class="col-3" @onclick="SaveName">Save Changes</button>
+        </div>
+        <div class="row w-100 justify-content-between" style="max-width:700px">
+            <label class="col-1">Email</label>
+            <input class="col-7" @bind="_email" />
+            <button class="col-3" @onclick="SaveEmail">Save Changes</button>
+        </div>
+
+        <div style="gap:30px"></div>
+
+        <div class="row w-100 justify-content-between" style="max-width:700px">
+            <label style="text-align:center"><b>Change Password</b></label>
+
+            <label class="col-4">Password</label>
+            <input type="Enter the password" @bind="_password" class="col-8" />
+
+            <label class="col-4">Repeat the password</label>
+            <input type="password" @bind="_repeatedPassword" class="col-8" />
+
+            <label style="color:crimson" class="col-9">@_errorMessage</label>
+
+            <div style="gap:30px"></div>
+
+            <button class="col-12" @onclick="SavePassword">Save Changes</button>
+        </div>
+
+        <div style="gap:30px"></div>
+
+        <div class="row w-100 justify-content-between" style="max-width:700px">
+            <button class="col-12" @onclick="LogOut">Log Out</button>
+        </div>
     </div>
-</div>
+}
 
 @code {
     string _name;
     string _email;
-    string _password;
+    string _password = "", _repeatedPassword = "";
     string _photo;
+
+    string _errorMessage = "";
+
+    User? _user = null;
+    bool _isLoading = true;
+
+    public void SaveName()
+    {
+        _user.ChangeName(_name);
+        DataBase.SaveData();
+    }
+
+    public void SaveEmail()
+    {
+        _user.ChangeEmail(_email);
+        DataBase.SaveData();
+    }
+
+    public void SavePassword()
+    {
+        try
+        {
+            if (_password == _repeatedPassword)
+            {
+                _user.ChangePassword(_password);
+                DataBase.SaveData();
+            }
+            else
+            {
+                throw new RegisterError(RegisterErrorReason.PasswordsDontMatch, "The passwords do not match");
+            }
+        }
+        catch (Exception e)
+        {
+            _errorMessage = e.Message;
+        }
+    }
+
+    public void LogOut()
+    {
+        CurrentSession.Logout();
+        _user = null;
+        Navigation.NavigateTo("/login");
+    }
 
     protected override async Task OnInitializedAsync()
     {
-        if (CurrentSession.GetUser() != null)
+        _isLoading = true;
+
+        try
         {
-            _name = CurrentSession.GetUser().GetName();
-            _email = CurrentSession.GetUser().GetEmail();
+            _user = await Task.Run(() => CurrentSession.GetUser());
         }
-        // else
-        // {
-        //     await Task.Delay(500);
-        //     if (CurrentSession.GetUser() is null) Navigation.NavigateTo("/login");
-        // }
+        finally
+        {
+            _isLoading = false;
+        }
+       
+        if (_user != null)
+        {
+            _name = _user.GetName();
+            _email = _user.GetEmail();
+        }
+        else
+        {
+            Navigation.NavigateTo("/login");
+        }
     }
 }

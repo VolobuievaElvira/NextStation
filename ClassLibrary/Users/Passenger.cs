@@ -18,9 +18,10 @@ namespace ClassLibrary.Users
             return tickets;
         }
 
-        public void BookTicket()
+        public void BookTicket(Ticket ticket)
         {
-            throw new Exception("Book a ticket");
+            ticket.SetPassenger(this);
+            this.tickets.Add(ticket);
         }
 
         [JsonConstructor] 

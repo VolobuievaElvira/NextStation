@@ -20,6 +20,8 @@ namespace ClassLibrary.Users
         {
             this.role = role;
         }
+
+        public Role GetRole() { return this.role; } //Add!!
         public void PromoteToTrainOperator() { this.role = Role.TrainOperator; }
         public void PromoteToConductor() { this.role = Role.Conductor; }
         public void PromoteToNetworkManager() { this.role = Role.NetworkManager; }

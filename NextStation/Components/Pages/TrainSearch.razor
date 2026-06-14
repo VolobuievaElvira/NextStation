@@ -12,12 +12,6 @@
 
 <PageTitle>TrainSearch</PageTitle>
 
-<h1>Hello, @if(CurrentSession.GetUser() != null) @CurrentSession.GetUser().GetName()!</h1>
-
-
-Welcome to your new app.
-<a href="/register">To Register</a>
-
 <div class="TrainSearchField" style="display:flex; flex-direction:column; gap:10px; width:100%; align-items: center">
     <div class="row w-100" style="max-width:700px">
         <label class="col-5">Train Code</label>
@@ -101,10 +95,6 @@ Welcome to your new app.
 
     private void Search()
     {
-        // DataBase.AddPassengerTrain("tre1brenner", StationName.Brenner, _options);
-        // DataBase.AddPassengerTrain("tre1bolzano", StationName.Bolzano, _options);
-        //DataBase.TrainSeacrh("tre1brenner", null, null, null, null, null, null).First().AddRouteStop(new DateTime(2026, 05, 31, 15, 30, 00), new DateTime(2026, 05, 31, 15, 45, 00), null, 2);
-
         if (_trainCode == "") _trainCode = null;
 
         if (_departureStation == StationName.SelectStation) _departureStation = null;

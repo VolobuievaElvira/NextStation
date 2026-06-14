@@ -4,7 +4,18 @@ namespace NextStation
 {
     public class Saver
     {
-        List<Train> filteredTrains = new();
+        private List<Train> filteredTrains = new();
+        private Train? train = null;
+
+        public void SaveTrain(Train train)
+        {
+            this.train = train;
+        }
+        public Train ReturnTrain()
+        {
+            return this.train;
+        }
+
 
         public void SaveFilteredTrains(List<Train> filteredTrains)
         {

@@ -1,0 +1,198 @@
+﻿@page "/modifytrain"
+@rendermode InteractiveServer
+
+@using ClassLibrary.Data
+@using ClassLibrary.Trains
+
+@inject NavigationManager Navigation
+
+@inject DataBase DataBase
+@inject CurrentSession CurrentSession
+@inject Saver Saver
+
+<div>
+	<div class="row w-100" style="display:flex; flex-direction:column; gap:10px; width:100%; align-items: center">
+		<table class="table table-striped table-bordered table-hover">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Type</th>
+					<th>Train Code</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (Train train in Saver.ReturnFilteredTrains())
+				{
+
+					@if (_firstOpen)
+					{
+						_train = train;
+						_trainCode = _train.GetTrainCode();
+					}
+
+					<tr>
+						<td>@_train.GetId()</td>
+						<td>@(SplitPascalCase(_train.GetType().Name))</td>
+						<td>
+							<input class="col-7" @bind="_trainCode" />
+						</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+
+		@if (_train is PassengerTrain passengerTrain)
+		{
+			<div class="row w-100" style="display:flex; flex-direction:column; gap:10px; width:100%; align-items: center">
+				<label><b>Options</b></label>
+			</div>
+
+			@if (_firstOpen)
+			{
+				@foreach (Option option in passengerTrain.GetAllOptions())
+				{
+					_options.Add(option);
+				}
+				_firstOpen = false;
+			}
+			@foreach (Option option in Enum.GetValues(typeof(Option)))
+			{
+				<div class="row w-100" style="max-width:700px">
+					<input type="checkbox" class="col-1" value="@option" checked="@_options.Contains(option)" @onchange="(e) => ChangeOption(option, e.Value)" />
+					<label class="col-6">@SplitPascalCase(@option.ToString())</label>
+				</div>
+			}
+		}
+		else if (_train is FreightTrain freightTrain)
+		{
+			@if (_firstOpen)
+			{
+				_capacity = freightTrain.GetCapacity().ToString();
+				_firstOpen = false;
+			}
+			<div class="row w-100" style="max-width:700px">
+				<label class="col-5">Train Capacity</label>
+				<input class="col-7" @bind="_capacity" />
+			</div>
+		}
+
+		<label style="color:crimson" class="col-9">@_errorMessage</label>
+
+		<div class="row w-100" style="max-width:700px">
+			<button type="button" @onclick="Save" class="col-12">Save Changes</button>
+		</div>
+	</div>
+</div>
+
+@code {
+	Train _train;
+	List<Option> _options = new();
+	string _capacity = "";
+	string _trainCode = "";
+	bool _firstOpen = true;
+
+	string _errorMessage = "";
+
+	protected override void OnInitialized()
+	{
+		_firstOpen = true;
+	}
+
+	private void Save()
+	{
+		try
+		{
+			if (_train is PassengerTrain passengerTrain)
+			{
+
+				List<Option> optionsToRemove = passengerTrain.GetAllOptions().ToList();
+
+				foreach (Option option in optionsToRemove)
+				{
+					passengerTrain.RemoveOption(option);
+				}
+
+				_options.Sort();
+
+				foreach (Option option in _options)
+				{
+					passengerTrain.AddOption(option);
+				}
+
+				_options.Clear();
+			}
+			else if (_train is FreightTrain freightTrain)
+			{
+				if (float.TryParse(_capacity, out float result))
+				{
+					if (result <= 0)
+					{
+						throw new TrainManagementError(TrainManagementErrorReason.CapacityLessOrEqualZero, "The capacity must be greater than zero");
+					}
+					else
+					{
+						freightTrain.ChangeCapacity(result);
+					}
+				}
+				else
+				{
+					throw new TrainManagementError(TrainManagementErrorReason.InvalidCapacity, "The capacity must be a number");
+				}
+			}
+
+			_train.ChangeTrainCode(_trainCode);
+
+			DataBase.SaveData();
+			Navigation.NavigateTo("/trainsearch");
+		}
+		catch (Exception ex)
+		{
+			_errorMessage = ex.Message;
+		}
+	}
+
+	private string OptionSwitch(Option option)
+	{
+		switch (option)
+		{
+			case Option.PetTransport:
+				return "bi bi-leaf";
+			case Option.RestaurantCar:
+				return "bi bi-cup-hot";
+			case Option.BicycleTransport:
+				return "bi bi-bicycle";	
+		}
+		return "";
+	}
+
+	private void ChangeOption(Option option, object isChecked)
+	{
+		if ((bool)isChecked)
+		{
+			if (!_options.Contains(option))
+			{
+				_options.Add(option);
+			}
+		}
+		else
+		{
+			if (_options.Contains(option))
+			{
+				_options.Remove(option);
+			}
+		}
+	}
+
+	private string SplitPascalCase(string word)
+	{
+		string text = "";
+
+		foreach (char c in word)
+		{
+			if (char.ToUpper(c) == c && text.Length != 0) text += " ";
+			text += c;
+		}
+
+		return text;
+	}
+}

@@ -26,6 +26,8 @@ namespace ClassLibrary.Trains
         }
         public int GetId() { return id; }
         public Passenger? GetPassenger() { return passenger; }
+
+        public void SetPassenger(Passenger passenger) { this.passenger = passenger; } //Add!!!
         public Seat GetSeat() { return seat; }
         public bool IsAvaible() { return passenger is null; }
     }

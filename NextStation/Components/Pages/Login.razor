@@ -1,6 +1,8 @@
 ﻿@page "/login"
 @rendermode InteractiveServer
 
+@using NextStation.Components.Layout
+
 @using ClassLibrary
 @using ClassLibrary.Data
 @using ClassLibrary.Users
@@ -8,6 +10,7 @@
 @inject NavigationManager Navigation
 @inject DataBase DataBase
 @inject CurrentSession CurrentSession
+
 
 <style>
 	body {
@@ -65,6 +68,7 @@
 		if (_user is not null)
 		{
 			CurrentSession.SetUser(_user);
+			NavMenu.Refresh();
 			Navigation.NavigateTo("/");
 		}
 		else

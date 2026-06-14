@@ -97,9 +97,24 @@
     .nav-scrollable {
         /* Never collapse the sidebar for wide screens */
         display: block;
-
         /* Allow sidebar to scroll for tall menus */
         height: calc(100vh - 3.5rem);
         overflow-y: auto;
+
+
+        background-image: linear-gradient( 
+            180deg, 
+            #04163c 0%,
+            #00275b 10%,
+            #073e9c 30%,
+            #0f6dde 50%,
+            #04b4de 70%,
+            #b3e4fa 100%
+           
+        ) !important;
+/*         #3CB8FC 40%, 
+            #0094ff 60%, 
+            #3CB8FC 80%, 
+            #FFFD55 100%*/
     }
 }

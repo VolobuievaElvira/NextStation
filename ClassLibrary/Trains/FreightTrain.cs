@@ -14,7 +14,7 @@ namespace ClassLibrary.Trains
         [JsonInclude] private float capacity;
 
         [JsonConstructor] 
-        public FreightTrain(string trainCode, StationName location, int capacity) : base(trainCode, location) 
+        public FreightTrain(string trainCode, StationName location, float capacity) : base(trainCode, location) 
         {
             if (capacity > 0)
             {

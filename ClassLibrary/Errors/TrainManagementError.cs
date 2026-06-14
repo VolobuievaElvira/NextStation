@@ -2,6 +2,8 @@
 {
     TrainDoesNotExists,
     CarDoesNotExists,
+    InvalidCapacity,
+    StationNotSelected,
     RouteStopDoesNotExists,
     CapacityLessOrEqualZero,
     CarIsAlreadyConnected,

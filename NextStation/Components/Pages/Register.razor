@@ -69,7 +69,7 @@
 	{
 		try
 		{
-			if (Equals(_password, _repeatedPassword))
+			if (_password == _repeatedPassword)
 			{
 				DataBase.AddPassenger(_name, _email, _password);
 				Navigation.NavigateTo("/login");
