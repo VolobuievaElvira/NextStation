@@ -20,8 +20,15 @@ namespace ClassLibrary.Users
 
         public void BookTicket(Ticket ticket)
         {
-            ticket.SetPassenger(this);
-            this.tickets.Add(ticket);
+            if (ticket.IsAvaible())
+            {
+                ticket.SetPassenger(this);
+                this.tickets.Add(ticket);
+            }
+            else
+            {
+                throw new BookingError(BookingErrorReason.TicketIsAlreadyBooked, "The ticket is already booked");
+            }
         }
 
         [JsonConstructor] 

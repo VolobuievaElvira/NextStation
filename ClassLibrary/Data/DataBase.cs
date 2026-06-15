@@ -50,8 +50,6 @@ namespace ClassLibrary.Data
         ** @param trainCode The train's code
         ** @param location The train's location
         ** @param options The train's options
-        **
-        ** @return nothing
         */
         public void AddPassengerTrain(string trainCode, StationName location, List<Option> options) 
         {
@@ -66,8 +64,6 @@ namespace ClassLibrary.Data
         ** @param trainCode The train's code
         ** @param location The train's location
         ** @param capacity The train's capacity
-        **
-        ** @return nothing
         */
 
         public void AddFreightTrain(string trainCode, StationName location, float capacity)
@@ -81,8 +77,6 @@ namespace ClassLibrary.Data
         ** @brief Romove the train from the database
         **
         ** @param train The train that needs to be removed
-        **
-        ** @return nothing
         */
         public void RemoveTrain(Train train)
         {
@@ -101,8 +95,6 @@ namespace ClassLibrary.Data
         **
         ** @param seatsNumber The number of seats
         ** @param carClass The car's class
-        **
-        ** @return nothing
         */
         public void AddCar(int seatsNumber, CarClass carClass)
         {
@@ -114,8 +106,6 @@ namespace ClassLibrary.Data
         ** @brief Removes the car by its ID from the database
         **
         ** @param id The car's ID that needs to be removed
-        **
-        ** @return nothing
         */
         public void RemoveCarById(int id)
         {
@@ -137,8 +127,6 @@ namespace ClassLibrary.Data
         ** @param email The passenger's email
         ** @param password The passenger's password
         ** @param photo The passenger's photo
-        **
-        ** @return nothing
         */
         public void AddPassenger(string name, string email, string password, string photo="")
         {
@@ -159,8 +147,6 @@ namespace ClassLibrary.Data
         ** @param email The staff's email
         ** @param password The staff's password
         ** @param photo The staff's photo
-        **
-        ** @return nothing
         */
         public void AddStaff(Role role, string name, string email, string password, string photo = "")
         {
@@ -177,8 +163,6 @@ namespace ClassLibrary.Data
         ** @brief Removes the user from the database
         **
         ** @param user The user that needs to be removed
-        **
-        ** @return nothing
         */
         public void RemoveUser(User user)
         {
@@ -243,7 +227,7 @@ namespace ClassLibrary.Data
         */
         public List<Car> CarSearch(int? id = null, CarClass? carClass = null)
         {
-            List<Car> cars = new();
+            List<Car> cars = this.cars;
             if (id != null)
             {
                 cars = cars.Where(c => c.GetId() == id).ToList();
@@ -332,7 +316,6 @@ namespace ClassLibrary.Data
         ** @param cars_path Path to the cars JSON database files
         ** @param trains_path Path to the trains JSON database files
         ** @param stations_path Path to the stations JSON database files
-        **
         */
         public DataBase(string users_path, string cars_path, string trains_path, string stations_path)
         {
@@ -372,8 +355,6 @@ namespace ClassLibrary.Data
 
         /**
         ** @brief Saves users, cars, trains, and stations to the JSON databases
-        **
-        ** @return nothing
         */
         public void SaveData()
         {
