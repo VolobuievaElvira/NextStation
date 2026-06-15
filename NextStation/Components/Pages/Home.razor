@@ -103,7 +103,7 @@ Welcome to your new app.
     {
         // DataBase.AddPassengerTrain("tre1brenner", StationName.Brenner, _options);
         // DataBase.AddPassengerTrain("tre1bolzano", StationName.Bolzano, _options);
-        //DataBase.TrainSeacrh("tre1brenner", null, null, null, null, null, null).First().AddRouteStop(new DateTime(2026, 05, 31, 15, 30, 00), new DateTime(2026, 05, 31, 15, 45, 00), null, 2);
+        //DataBase.TrainSearch("tre1brenner", null, null, null, null, null, null).First().AddRouteStop(new DateTime(2026, 05, 31, 15, 30, 00), new DateTime(2026, 05, 31, 15, 45, 00), null, 2);
 
         if (_trainCode == "") _trainCode = null;
 
@@ -111,20 +111,20 @@ Welcome to your new app.
         if (_arrivalStation == StationName.SelectStation) _arrivalStation = null;
 
 
-        Saver.SaveFilteredTrains(DataBase.TrainSeacrh(_trainCode, _departureStation, _arrivalStation, _departureDate, _arrivalDate, _routeType, _options));
+        Saver.SaveFilteredTrains(DataBase.TrainSearch(_trainCode, _departureStation, _arrivalStation, _departureDate, _arrivalDate, _routeType, _options));
         Navigation.NavigateTo("/trains");
     }
 
-    private void ChangeOption(Option option, object isChecked)
+    private void ChangeOption(Option option, object? isChecked)
     {
-        if ((bool)isChecked)
+        if (isChecked is bool checkedValue && checkedValue)
         {
             if (!_options.Contains(option))
             {
                 _options.Add(option);
             }
         }
-        else
+        else if (isChecked is bool && !(bool)isChecked)
         {
             if (_options.Contains(option))
             {

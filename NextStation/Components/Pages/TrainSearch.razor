@@ -53,7 +53,7 @@
         @foreach (Option option in Enum.GetValues(typeof(Option)))
         {
             <div class="row w-100" style="max-width:700px">
-                <input type="checkbox" class="col-1" value="@option" checked="@_options.Contains(option)" @onchange="(e) => ChangeOption(option, e.Value)" />
+                <input type="checkbox" class="col-1" value="@option" checked="@_options.Contains(option)" @onchange="(ChangeEventArgs e) => ChangeOption(option, e)" />
                 <label class="col-6">@SplitPascalCase(@option.ToString())</label>
             </div>
         }
@@ -101,7 +101,7 @@
         if (_arrivalStation == StationName.SelectStation) _arrivalStation = null;
 
 
-        Saver.SaveFilteredTrains(DataBase.TrainSeacrh(_trainCode, _departureStation, _arrivalStation, _departureDate, _arrivalDate, _routeType, _options));
+        Saver.SaveFilteredTrains(DataBase.TrainSearch(_trainCode, _departureStation, _arrivalStation, _departureDate, _arrivalDate, _routeType, _options));
         Navigation.NavigateTo("/trains");
     }
 

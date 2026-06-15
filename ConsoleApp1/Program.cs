@@ -19,7 +19,7 @@ namespace ConsoleApp1
 
             dataBase.SaveData();
             //Console.WriteLine(dataBase.trains.Count.ToString());
-            //Console.WriteLine(dataBase.TrainSeacrh(null, null, null, null, null, null, null).Count.ToString());
+            //Console.WriteLine(dataBase.TrainSearch(null, null, null, null, null, null, null).Count.ToString());
         }
     }
 }
