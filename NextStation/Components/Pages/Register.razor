@@ -42,10 +42,10 @@
 	<input type="email" @bind="_email" />
 
 	<label>Password</label>
-	<input type="Enter the password" @bind="_password" />
-
+	<input type="@(passwordShown ? "text" : "password")" @bind="_password" />
+	<button type="button" @onclick="() => passwordShown = !passwordShown">@(passwordShown ? "Hide" : "Show")</button>
 	<label>Repeat the password</label>
-	<input type="password" @bind="_repeatedPassword" />
+	<input type="@(passwordShown ? "text" : "password")" @bind="_repeatedPassword" />
 
 	<label style="color:crimson">@_errorMessage</label>
 
@@ -64,6 +64,7 @@
 	string _password = "";
 	string _repeatedPassword = "";
 	string _errorMessage = "";
+	bool passwordShown = false;
 
 	public void TryRegister()
 	{
