@@ -15,21 +15,60 @@ using System.Xml.Linq;
 
 namespace ClassLibrary.Data
 {
+    /**
+    ** @brief Manages the program's database, stores and loads users, cars, trains, and stations to/from JSON database
+    */
     public class DataBase
     {
+        /// <summary>Users present in the database</summary>
         List<User> users = new List<User>();
+
+        /// <summary>Cars present in the database</summary>
         List<Car> cars = new List<Car>();
+
+        /// <summary>Trains present in the database</summary>
         List<Train> trains = new List<Train>();
+
+        /// <summary>Stations present in the database</summary>
         List<Station> stations = new List<Station>();
 
-        private string users_path, cars_path, trains_path, stations_path;//Add
+        /// <summary>Path to the users JSON database files</summary>
+        private string users_path;
 
+        /// <summary>Path to the cars JSON database files</summary>
+        private string cars_path;
+
+        /// <summary>Path to the trains JSON database files</summary>
+        private string trains_path;
+
+        /// <summary>Path to the stations JSON database files</summary>
+        private string stations_path;
+
+        /**
+        ** @brief Creates a new PassengerTrain object and stores it in the database
+        **
+        ** @param trainCode The train's code
+        ** @param location The train's location
+        ** @param options The train's options
+        **
+        ** @return nothing
+        */
         public void AddPassengerTrain(string trainCode, StationName location, List<Option> options) 
         {
             PassengerTrain train = new PassengerTrain(trainCode, location, options);
             trains.Add(train);
             SaveData();
         }
+
+        /**
+        ** @brief Creates a new FreightTrain object and stores it in the database
+        **
+        ** @param trainCode The train's code
+        ** @param location The train's location
+        ** @param capacity The train's capacity
+        **
+        ** @return nothing
+        */
 
         public void AddFreightTrain(string trainCode, StationName location, float capacity)
         {
@@ -38,6 +77,13 @@ namespace ClassLibrary.Data
             SaveData();
         }
 
+        /**
+        ** @brief Romove the train from the database
+        **
+        ** @param train The train that needs to be removed
+        **
+        ** @return nothing
+        */
         public void RemoveTrain(Train train)
         {
             if (this.trains.Contains(train))
@@ -50,12 +96,27 @@ namespace ClassLibrary.Data
             }
         }
 
+        /**
+        ** @brief Creates a new Car object and stores it in the database
+        **
+        ** @param seatsNumber The number of seats
+        ** @param carClass The car's class
+        **
+        ** @return nothing
+        */
         public void AddCar(int seatsNumber, CarClass carClass)
         {
             Car car = new Car(seatsNumber, carClass);
             this.cars.Add(car);
         }
 
+        /**
+        ** @brief Removes the car by its ID from the database
+        **
+        ** @param id The car's ID that needs to be removed
+        **
+        ** @return nothing
+        */
         public void RemoveCarById(int id)
         {
             Car? car = this.cars.FirstOrDefault(c => c.GetId() == id, null);
@@ -68,6 +129,17 @@ namespace ClassLibrary.Data
                 throw new TrainManagementError(TrainManagementErrorReason.CarDoesNotExists, "The car does not present in the DataBase");
             }
         }
+
+        /**
+        ** @brief Creates a new Passenger object and stores it in the database
+        **
+        ** @param name The passenger's name
+        ** @param email The passenger's email
+        ** @param password The passenger's password
+        ** @param photo The passenger's photo
+        **
+        ** @return nothing
+        */
         public void AddPassenger(string name, string email, string password, string photo="")
         {
             if (!(users.FirstOrDefault(u => u.GetEmail() == email, null) is null)) throw new RegisterError(RegisterErrorReason.EmailAlreadyRegistered, "The email is alredy registered. Try to login");
@@ -79,7 +151,18 @@ namespace ClassLibrary.Data
             }
         }
 
-        public void AddStaff(Role role, string name, string email, string password, string photo = "")//change order
+        /**
+        ** @brief Creates a new Staff object and stores it in the database
+        **
+        ** @param role The staff's role
+        ** @param name The staff's name
+        ** @param email The staff's email
+        ** @param password The staff's password
+        ** @param photo The staff's photo
+        **
+        ** @return nothing
+        */
+        public void AddStaff(Role role, string name, string email, string password, string photo = "")
         {
             if (!(users.FirstOrDefault(u => u.GetEmail() == email, null) is null)) throw new RegisterError(RegisterErrorReason.EmailAlreadyRegistered, "The email is alredy registered. Try to login");
             User user = new Staff(name, email, password, photo, role);
@@ -90,6 +173,13 @@ namespace ClassLibrary.Data
             }
         }
 
+        /**
+        ** @brief Removes the user from the database
+        **
+        ** @param user The user that needs to be removed
+        **
+        ** @return nothing
+        */
         public void RemoveUser(User user)
         {
             if (this.users.Contains(user))
@@ -102,6 +192,15 @@ namespace ClassLibrary.Data
             }
         }
 
+        /**
+        ** @brief Search for specific users in the database
+        **
+        ** @param id The user's ID
+        ** @param name The user's name
+        ** @param email The user's email
+        **
+        ** @return A list of users whose data matches the search parameters
+        */
         public List<User> UserSearch(int? id = null, string? name = null, string? email = null)
         {
             List<User> users = this.users;
@@ -122,12 +221,27 @@ namespace ClassLibrary.Data
             return users;
         }
 
-        public Station? StationSearch(StationName station) //change
+        /**
+        ** @brief Search for specific station in the database
+        **
+        ** @param station The station's name
+        **
+        ** @return A station whose name matches the search parameter
+        */
+        public Station? StationSearch(StationName station)
         {
             return this.stations.FirstOrDefault(s => (s.GetName() == station), null);
         }
 
-        public List<Car> CarSearch(int? id = null, CarClass? carClass = null) //change a bit names
+        /**
+        ** @brief Search for specific cars in the database
+        **
+        ** @param id The car's ID
+        ** @param carClass The car's class
+        **
+        ** @return A list of cars whose data matches the search parameters
+        */
+        public List<Car> CarSearch(int? id = null, CarClass? carClass = null)
         {
             List<Car> cars = new();
             if (id != null)
@@ -140,6 +254,20 @@ namespace ClassLibrary.Data
             }
             return cars;
         }
+
+        /**
+        ** @brief Search for specific trains in the database
+        **
+        ** @param trainCode The train's code
+        ** @param departureStation The train's departure station
+        ** @param arrivalStation The train's arrival station
+        ** @param departureDate The train's departure date
+        ** @param arrivalDate The train's arrival date
+        ** @param routeType The train's route type
+        ** @param options The train's options
+        **
+        ** @return A list of trains whose data matches the search parameters
+        */
         public List<Train> TrainSeacrh(string? trainCode, StationName? departureStation, StationName? arrivalStation, DateTime? departureDate, DateTime? arrivalDate, RouteType? routeType, List<Option>? options)
         {
             List<Train> trains = this.trains;
@@ -197,7 +325,16 @@ namespace ClassLibrary.Data
             return trains;
         }
 
-        public DataBase(string users_path, string cars_path, string trains_path, string stations_path)//Add
+        /**
+        ** @brief Initialize a new instance of the DataBase class. Stores paths to the JSON database files
+        **
+        ** @param users_path Path to the users JSON database files
+        ** @param cars_path Path to the cars JSON database files
+        ** @param trains_path Path to the trains JSON database files
+        ** @param stations_path Path to the stations JSON database files
+        **
+        */
+        public DataBase(string users_path, string cars_path, string trains_path, string stations_path)
         {
             this.users_path = users_path;
             this.cars_path = cars_path;
@@ -233,7 +370,12 @@ namespace ClassLibrary.Data
             }
         }
 
-        public void SaveData()//Add
+        /**
+        ** @brief Saves users, cars, trains, and stations to the JSON databases
+        **
+        ** @return nothing
+        */
+        public void SaveData()
         {
             string json_users = JsonSerializer.Serialize(this.users);
             File.WriteAllText(users_path, json_users);
