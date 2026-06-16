@@ -19,6 +19,15 @@ namespace ClassLibrary
         [JsonInclude] private Ticket ticket;
 
         [JsonConstructor]
+        public Seat(int id, int number, int carId, Ticket ticket)
+        {
+            this.id = id;
+            this.number = number;
+            this.carId = carId;
+            this.ticket = ticket;
+
+            counter = int.Max(counter, id);
+        }
         public Seat(int number, Car car)
         {
             this.id = ++counter;

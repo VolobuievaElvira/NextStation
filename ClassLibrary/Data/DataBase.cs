@@ -83,6 +83,7 @@ namespace ClassLibrary.Data
             if (this.trains.Contains(train))
             {
                 this.trains.Remove(train);
+                SaveData();
             }
             else
             {
@@ -100,6 +101,7 @@ namespace ClassLibrary.Data
         {
             Car car = new Car(seatsNumber, carClass);
             this.cars.Add(car);
+            SaveData();
         }
 
         /**
@@ -113,6 +115,7 @@ namespace ClassLibrary.Data
             if (car is null)
             {
                 this.cars.Remove(car);
+                SaveData();
             }
             else
             {
@@ -169,6 +172,7 @@ namespace ClassLibrary.Data
             if (this.users.Contains(user))
             {
                 this.users.Remove(user);
+                SaveData();
             }
             else
             {
@@ -252,7 +256,7 @@ namespace ClassLibrary.Data
         **
         ** @return A list of trains whose data matches the search parameters
         */
-        public List<Train> TrainSeacrh(string? trainCode, StationName? departureStation, StationName? arrivalStation, DateTime? departureDate, DateTime? arrivalDate, RouteType? routeType, List<Option>? options)
+        public List<Train> TrainSeacrh(string? trainCode = null, StationName? departureStation = null, StationName? arrivalStation = null, DateTime? departureDate = null, DateTime? arrivalDate = null, RouteType? routeType = null, List<Option>? options = null)
         {
             List<Train> trains = this.trains;
 
@@ -297,7 +301,7 @@ namespace ClassLibrary.Data
 
                 ).ToList();
 
-            if(options.Count > 0)
+            if(options is not null && options.Count > 0)
             {
                 trains = trains.Where
                     (
