@@ -1,0 +1,233 @@
+\doxysection{Class\+Library.\+Trains.\+Car Class Reference}
+\hypertarget{class_class_library_1_1_trains_1_1_car}{}\label{class_class_library_1_1_trains_1_1_car}\index{ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}}
+
+
+Stores information about a carriage, including its ID, class, and associated train.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car_a4d8d05487cb4e8a1decfa621088083dd}{Car}} (int id, \doxymbox{\hyperlink{_car_class_8cs_af751547bb2797cc7f438640ad5d78ff9}{Car\+Class}} car\+Class, int? train\+Id, List$<$ \doxymbox{\hyperlink{class_class_library_1_1_seat}{Seat}} $>$ seats)
+\begin{DoxyCompactList}\small\item\em Initialize a new instance of the \doxylink{class_class_library_1_1_trains_1_1_car}{Car} class. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car_accf2476a47b80d8c4484d33d6249eaf8}{Car}} (int seats\+Number, \doxymbox{\hyperlink{_car_class_8cs_af751547bb2797cc7f438640ad5d78ff9}{Car\+Class}} car\+Class)
+\begin{DoxyCompactList}\small\item\em Initialize a new instance of the \doxylink{class_class_library_1_1_trains_1_1_car}{Car} class. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car_a1db79896a82ed5c9ed45c1f0a20cb8aa}{Get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Returns the carriage\textquotesingle{}s ID. \end{DoxyCompactList}\item 
+int? \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car_a878335bfc1f76cfef14e6714ed19167d}{Get\+Train\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Returns the id of the train the carriage is associated with. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car_ab5afa8227162fb0ddd4744be4b45f070}{Is\+Connected}} ()
+\begin{DoxyCompactList}\small\item\em Returns whether the carriage is associated with a train. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car_ac53aed4b9a92656563ab7ac47fb0638b}{Set\+Train}} (\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_passenger_train}{Passenger\+Train}}? train)
+\begin{DoxyCompactList}\small\item\em Sets the train associated with the carriage. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_seat}{Seat}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car_ab94a5bb68fd0c9b2d0399c8e629b4326}{Get\+All\+Seats}} ()
+\begin{DoxyCompactList}\small\item\em Gets all the seats in the carriage. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_car_class_8cs_af751547bb2797cc7f438640ad5d78ff9}{Car\+Class}} \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car_a1a72325e7820df133a28ad8383cabb15}{Get\+Class}} ()
+\begin{DoxyCompactList}\small\item\em Gets the class of the carriage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car_a71af8fb7b5000636e765c8ec840dc128}{id}}
+\begin{DoxyCompactList}\small\item\em The id of the \doxylink{class_class_library_1_1_trains_1_1_car}{Car}. \end{DoxyCompactList}\item 
+int? \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car_ab29ba34c7b6bd50d99975d7285b95b68}{train\+Id}}
+\begin{DoxyCompactList}\small\item\em The id of the train the Carriage is associated with. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_seat}{Seat}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car_a8bdf9bd88ee2ea9252a475c0e6d8c643}{seats}} = new()
+\begin{DoxyCompactList}\small\item\em The seats in the Carriage. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_car_class_8cs_af751547bb2797cc7f438640ad5d78ff9}{Car\+Class}} \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car_a3a9d993094a1765bb4f886dcb855b776}{car\+Class}}
+\begin{DoxyCompactList}\small\item\em The class of the Carriage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car_a910361a519332cc2f82da5fcb44154f7}{counter}} = 0
+\begin{DoxyCompactList}\small\item\em The id of the last \doxylink{class_class_library_1_1_trains_1_1_car}{Car} in the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores information about a carriage, including its ID, class, and associated train. 
+
+\label{class_class_library_1_1_trains_1_1_car_doc-constructors}
+\Hypertarget{class_class_library_1_1_trains_1_1_car_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_class_library_1_1_trains_1_1_car_a4d8d05487cb4e8a1decfa621088083dd}\index{ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}!Car@{Car}}
+\index{Car@{Car}!ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}}
+\doxysubsubsection{\texorpdfstring{Car()}{Car()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_car_a4d8d05487cb4e8a1decfa621088083dd} 
+Class\+Library.\+Trains.\+Car.\+Car (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{\doxymbox{\hyperlink{_car_class_8cs_af751547bb2797cc7f438640ad5d78ff9}{Car\+Class}}}]{car\+Class}{, }\item[{int?}]{train\+Id}{, }\item[{List$<$ \doxymbox{\hyperlink{class_class_library_1_1_seat}{Seat}} $>$}]{seats}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialize a new instance of the \doxylink{class_class_library_1_1_trains_1_1_car}{Car} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id of the carriage \\
+\hline
+{\em car\+Class} & The class of the carriage \\
+\hline
+{\em train\+Id} & The id of the train the carriage is associated with \\
+\hline
+{\em seats} & The seats in the carriage \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_trains_1_1_car_accf2476a47b80d8c4484d33d6249eaf8}\index{ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}!Car@{Car}}
+\index{Car@{Car}!ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}}
+\doxysubsubsection{\texorpdfstring{Car()}{Car()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_car_accf2476a47b80d8c4484d33d6249eaf8} 
+Class\+Library.\+Trains.\+Car.\+Car (\begin{DoxyParamCaption}\item[{int}]{seats\+Number}{, }\item[{\doxymbox{\hyperlink{_car_class_8cs_af751547bb2797cc7f438640ad5d78ff9}{Car\+Class}}}]{car\+Class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialize a new instance of the \doxylink{class_class_library_1_1_trains_1_1_car}{Car} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seats\+Number} & The number of seats in the carriage \\
+\hline
+{\em car\+Class} & The class of the carriages \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_class_library_1_1_trains_1_1_car_doc-func-members}
+\Hypertarget{class_class_library_1_1_trains_1_1_car_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_class_library_1_1_trains_1_1_car_ab94a5bb68fd0c9b2d0399c8e629b4326}\index{ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}!GetAllSeats@{GetAllSeats}}
+\index{GetAllSeats@{GetAllSeats}!ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}}
+\doxysubsubsection{\texorpdfstring{GetAllSeats()}{GetAllSeats()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_car_ab94a5bb68fd0c9b2d0399c8e629b4326} 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_seat}{Seat}} $>$ Class\+Library.\+Trains.\+Car.\+Get\+All\+Seats (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets all the seats in the carriage. 
+
+\begin{DoxyReturn}{Returns}
+A list of all the seats in the carriage 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_trains_1_1_car_a1a72325e7820df133a28ad8383cabb15}\index{ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}!GetClass@{GetClass}}
+\index{GetClass@{GetClass}!ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}}
+\doxysubsubsection{\texorpdfstring{GetClass()}{GetClass()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_car_a1a72325e7820df133a28ad8383cabb15} 
+\doxymbox{\hyperlink{_car_class_8cs_af751547bb2797cc7f438640ad5d78ff9}{Car\+Class}} Class\+Library.\+Trains.\+Car.\+Get\+Class (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the class of the carriage. 
+
+\begin{DoxyReturn}{Returns}
+The class of the carriage 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_trains_1_1_car_a1db79896a82ed5c9ed45c1f0a20cb8aa}\index{ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}!GetId@{GetId}}
+\index{GetId@{GetId}!ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}}
+\doxysubsubsection{\texorpdfstring{GetId()}{GetId()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_car_a1db79896a82ed5c9ed45c1f0a20cb8aa} 
+int Class\+Library.\+Trains.\+Car.\+Get\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the carriage\textquotesingle{}s ID. 
+
+\begin{DoxyReturn}{Returns}
+The carriage\textquotesingle{}s ID 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_trains_1_1_car_a878335bfc1f76cfef14e6714ed19167d}\index{ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}!GetTrainId@{GetTrainId}}
+\index{GetTrainId@{GetTrainId}!ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}}
+\doxysubsubsection{\texorpdfstring{GetTrainId()}{GetTrainId()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_car_a878335bfc1f76cfef14e6714ed19167d} 
+int? Class\+Library.\+Trains.\+Car.\+Get\+Train\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the id of the train the carriage is associated with. 
+
+\begin{DoxyReturn}{Returns}
+The id of the train the carriage is associated with 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_trains_1_1_car_ab5afa8227162fb0ddd4744be4b45f070}\index{ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}!IsConnected@{IsConnected}}
+\index{IsConnected@{IsConnected}!ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}}
+\doxysubsubsection{\texorpdfstring{IsConnected()}{IsConnected()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_car_ab5afa8227162fb0ddd4744be4b45f070} 
+bool Class\+Library.\+Trains.\+Car.\+Is\+Connected (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns whether the carriage is associated with a train. 
+
+\begin{DoxyReturn}{Returns}
+True if the carriage is associated with a train, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_trains_1_1_car_ac53aed4b9a92656563ab7ac47fb0638b}\index{ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}!SetTrain@{SetTrain}}
+\index{SetTrain@{SetTrain}!ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}}
+\doxysubsubsection{\texorpdfstring{SetTrain()}{SetTrain()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_car_ac53aed4b9a92656563ab7ac47fb0638b} 
+void Class\+Library.\+Trains.\+Car.\+Set\+Train (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_passenger_train}{Passenger\+Train}}?}]{train}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the train associated with the carriage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em train} & The train to associate with the carriage \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_class_library_1_1_trains_1_1_car_doc-variable-members}
+\Hypertarget{class_class_library_1_1_trains_1_1_car_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_class_library_1_1_trains_1_1_car_a3a9d993094a1765bb4f886dcb855b776}\index{ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}!carClass@{carClass}}
+\index{carClass@{carClass}!ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}}
+\doxysubsubsection{\texorpdfstring{carClass}{carClass}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_car_a3a9d993094a1765bb4f886dcb855b776} 
+\doxymbox{\hyperlink{_car_class_8cs_af751547bb2797cc7f438640ad5d78ff9}{Car\+Class}} Class\+Library.\+Trains.\+Car.\+car\+Class\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The class of the Carriage. 
+
+\Hypertarget{class_class_library_1_1_trains_1_1_car_a910361a519332cc2f82da5fcb44154f7}\index{ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}!counter@{counter}}
+\index{counter@{counter}!ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_car_a910361a519332cc2f82da5fcb44154f7} 
+int Class\+Library.\+Trains.\+Car.\+counter = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The id of the last \doxylink{class_class_library_1_1_trains_1_1_car}{Car} in the database. 
+
+\Hypertarget{class_class_library_1_1_trains_1_1_car_a71af8fb7b5000636e765c8ec840dc128}\index{ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}!id@{id}}
+\index{id@{id}!ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_car_a71af8fb7b5000636e765c8ec840dc128} 
+int Class\+Library.\+Trains.\+Car.\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The id of the \doxylink{class_class_library_1_1_trains_1_1_car}{Car}. 
+
+\Hypertarget{class_class_library_1_1_trains_1_1_car_a8bdf9bd88ee2ea9252a475c0e6d8c643}\index{ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}!seats@{seats}}
+\index{seats@{seats}!ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}}
+\doxysubsubsection{\texorpdfstring{seats}{seats}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_car_a8bdf9bd88ee2ea9252a475c0e6d8c643} 
+List$<$\doxymbox{\hyperlink{class_class_library_1_1_seat}{Seat}}$>$ Class\+Library.\+Trains.\+Car.\+seats = new()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The seats in the Carriage. 
+
+\Hypertarget{class_class_library_1_1_trains_1_1_car_ab29ba34c7b6bd50d99975d7285b95b68}\index{ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}!trainId@{trainId}}
+\index{trainId@{trainId}!ClassLibrary.Trains.Car@{ClassLibrary.Trains.Car}}
+\doxysubsubsection{\texorpdfstring{trainId}{trainId}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_car_ab29ba34c7b6bd50d99975d7285b95b68} 
+int? Class\+Library.\+Trains.\+Car.\+train\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The id of the train the Carriage is associated with. 
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Class\+Library/\+\+Trains/\+\doxymbox{\hyperlink{_car_8cs}{Car.\+cs}}\end{DoxyCompactItemize}

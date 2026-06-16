@@ -1,0 +1,194 @@
+\doxysection{Class\+Library.\+Stations.\+Platform Class Reference}
+\hypertarget{class_class_library_1_1_stations_1_1_platform}{}\label{class_class_library_1_1_stations_1_1_platform}\index{ClassLibrary.Stations.Platform@{ClassLibrary.Stations.Platform}}
+
+
+Stores information about a platform at a station, including its number and occupied time intervals.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_platform_ac1d7d5ffcd02b00f5482fa32fd7beed8}{Platform}} (int number)
+\begin{DoxyCompactList}\small\item\em Initialize a new instance of the \doxylink{class_class_library_1_1_stations_1_1_platform}{Platform} class. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_platform_a6b46eba93bfff751db35af37ff62da62}{Get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Gets the id of the platform. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_platform_a4904b9135789f5bf0dbd3269bbd94509}{Get\+Number}} ()
+\begin{DoxyCompactList}\small\item\em Gets the number of the platform. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_platform_a0a41c8ed69f37e488d32348212f7bbc3}{Are\+Overlaps}} (Date\+Time arrival\+Time, Date\+Time departure\+Time)
+\begin{DoxyCompactList}\small\item\em Checks if the given time interval overlaps with any existing intervals. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_platform_a6e56a18eb13f3da331480e0621775949}{Add\+Occupied\+Interval}} (Date\+Time arrival\+Time, Date\+Time departure\+Time)
+\begin{DoxyCompactList}\small\item\em Adds a new occupied time interval for the platform. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_platform_aed044b183e3f2462406b0283243e4be3}{Remove\+Occupied\+Interval}} (Date\+Time arrival\+Time, Date\+Time departure\+Time)
+\begin{DoxyCompactList}\small\item\em Removes an occupied time interval for the platform. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_platform_aa7787694c747130d9224c062a868b9dd}{id}}
+\begin{DoxyCompactList}\small\item\em The id of the platform. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_platform_ad64a144b6fc5a22bdeeb315e9d80c262}{number}}
+\begin{DoxyCompactList}\small\item\em The number of the platform. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_time_interval}{Time\+Interval}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_platform_ae1acefc701db12d0a72ddb22da8d6446}{occupied\+Intervals}} = new()
+\begin{DoxyCompactList}\small\item\em The list of occupied time intervals for the platform. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_platform_a5ea964d0a85874e74b7b4dff4c3c584e}{counter}} = 0
+\begin{DoxyCompactList}\small\item\em The id of the last platform in the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores information about a platform at a station, including its number and occupied time intervals. 
+
+\label{class_class_library_1_1_stations_1_1_platform_doc-constructors}
+\Hypertarget{class_class_library_1_1_stations_1_1_platform_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_class_library_1_1_stations_1_1_platform_ac1d7d5ffcd02b00f5482fa32fd7beed8}\index{ClassLibrary.Stations.Platform@{ClassLibrary.Stations.Platform}!Platform@{Platform}}
+\index{Platform@{Platform}!ClassLibrary.Stations.Platform@{ClassLibrary.Stations.Platform}}
+\doxysubsubsection{\texorpdfstring{Platform()}{Platform()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_platform_ac1d7d5ffcd02b00f5482fa32fd7beed8} 
+Class\+Library.\+Stations.\+Platform.\+Platform (\begin{DoxyParamCaption}\item[{int}]{number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialize a new instance of the \doxylink{class_class_library_1_1_stations_1_1_platform}{Platform} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & The number of the platform \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_class_library_1_1_stations_1_1_platform_doc-func-members}
+\Hypertarget{class_class_library_1_1_stations_1_1_platform_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_class_library_1_1_stations_1_1_platform_a6e56a18eb13f3da331480e0621775949}\index{ClassLibrary.Stations.Platform@{ClassLibrary.Stations.Platform}!AddOccupiedInterval@{AddOccupiedInterval}}
+\index{AddOccupiedInterval@{AddOccupiedInterval}!ClassLibrary.Stations.Platform@{ClassLibrary.Stations.Platform}}
+\doxysubsubsection{\texorpdfstring{AddOccupiedInterval()}{AddOccupiedInterval()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_platform_a6e56a18eb13f3da331480e0621775949} 
+void Class\+Library.\+Stations.\+Platform.\+Add\+Occupied\+Interval (\begin{DoxyParamCaption}\item[{Date\+Time}]{arrival\+Time}{, }\item[{Date\+Time}]{departure\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a new occupied time interval for the platform. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arrival\+Time} & The arrival time \\
+\hline
+{\em departure\+Time} & The departure time \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_stations_1_1_platform_a0a41c8ed69f37e488d32348212f7bbc3}\index{ClassLibrary.Stations.Platform@{ClassLibrary.Stations.Platform}!AreOverlaps@{AreOverlaps}}
+\index{AreOverlaps@{AreOverlaps}!ClassLibrary.Stations.Platform@{ClassLibrary.Stations.Platform}}
+\doxysubsubsection{\texorpdfstring{AreOverlaps()}{AreOverlaps()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_platform_a0a41c8ed69f37e488d32348212f7bbc3} 
+bool Class\+Library.\+Stations.\+Platform.\+Are\+Overlaps (\begin{DoxyParamCaption}\item[{Date\+Time}]{arrival\+Time}{, }\item[{Date\+Time}]{departure\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if the given time interval overlaps with any existing intervals. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arrival\+Time} & The arrival time \\
+\hline
+{\em departure\+Time} & The departure time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it overlaps an existing interval, otherwise false 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_stations_1_1_platform_a6b46eba93bfff751db35af37ff62da62}\index{ClassLibrary.Stations.Platform@{ClassLibrary.Stations.Platform}!GetId@{GetId}}
+\index{GetId@{GetId}!ClassLibrary.Stations.Platform@{ClassLibrary.Stations.Platform}}
+\doxysubsubsection{\texorpdfstring{GetId()}{GetId()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_platform_a6b46eba93bfff751db35af37ff62da62} 
+int Class\+Library.\+Stations.\+Platform.\+Get\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the id of the platform. 
+
+\begin{DoxyReturn}{Returns}
+The id of the platform 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_stations_1_1_platform_a4904b9135789f5bf0dbd3269bbd94509}\index{ClassLibrary.Stations.Platform@{ClassLibrary.Stations.Platform}!GetNumber@{GetNumber}}
+\index{GetNumber@{GetNumber}!ClassLibrary.Stations.Platform@{ClassLibrary.Stations.Platform}}
+\doxysubsubsection{\texorpdfstring{GetNumber()}{GetNumber()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_platform_a4904b9135789f5bf0dbd3269bbd94509} 
+int Class\+Library.\+Stations.\+Platform.\+Get\+Number (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the number of the platform. 
+
+\begin{DoxyReturn}{Returns}
+The number of the platform 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_stations_1_1_platform_aed044b183e3f2462406b0283243e4be3}\index{ClassLibrary.Stations.Platform@{ClassLibrary.Stations.Platform}!RemoveOccupiedInterval@{RemoveOccupiedInterval}}
+\index{RemoveOccupiedInterval@{RemoveOccupiedInterval}!ClassLibrary.Stations.Platform@{ClassLibrary.Stations.Platform}}
+\doxysubsubsection{\texorpdfstring{RemoveOccupiedInterval()}{RemoveOccupiedInterval()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_platform_aed044b183e3f2462406b0283243e4be3} 
+void Class\+Library.\+Stations.\+Platform.\+Remove\+Occupied\+Interval (\begin{DoxyParamCaption}\item[{Date\+Time}]{arrival\+Time}{, }\item[{Date\+Time}]{departure\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes an occupied time interval for the platform. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arrival\+Time} & The arrival time \\
+\hline
+{\em departure\+Time} & The departure time \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_class_library_1_1_stations_1_1_platform_doc-variable-members}
+\Hypertarget{class_class_library_1_1_stations_1_1_platform_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_class_library_1_1_stations_1_1_platform_a5ea964d0a85874e74b7b4dff4c3c584e}\index{ClassLibrary.Stations.Platform@{ClassLibrary.Stations.Platform}!counter@{counter}}
+\index{counter@{counter}!ClassLibrary.Stations.Platform@{ClassLibrary.Stations.Platform}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_platform_a5ea964d0a85874e74b7b4dff4c3c584e} 
+int Class\+Library.\+Stations.\+Platform.\+counter = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The id of the last platform in the database. 
+
+\Hypertarget{class_class_library_1_1_stations_1_1_platform_aa7787694c747130d9224c062a868b9dd}\index{ClassLibrary.Stations.Platform@{ClassLibrary.Stations.Platform}!id@{id}}
+\index{id@{id}!ClassLibrary.Stations.Platform@{ClassLibrary.Stations.Platform}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_platform_aa7787694c747130d9224c062a868b9dd} 
+int Class\+Library.\+Stations.\+Platform.\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The id of the platform. 
+
+\Hypertarget{class_class_library_1_1_stations_1_1_platform_ad64a144b6fc5a22bdeeb315e9d80c262}\index{ClassLibrary.Stations.Platform@{ClassLibrary.Stations.Platform}!number@{number}}
+\index{number@{number}!ClassLibrary.Stations.Platform@{ClassLibrary.Stations.Platform}}
+\doxysubsubsection{\texorpdfstring{number}{number}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_platform_ad64a144b6fc5a22bdeeb315e9d80c262} 
+int Class\+Library.\+Stations.\+Platform.\+number\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The number of the platform. 
+
+\Hypertarget{class_class_library_1_1_stations_1_1_platform_ae1acefc701db12d0a72ddb22da8d6446}\index{ClassLibrary.Stations.Platform@{ClassLibrary.Stations.Platform}!occupiedIntervals@{occupiedIntervals}}
+\index{occupiedIntervals@{occupiedIntervals}!ClassLibrary.Stations.Platform@{ClassLibrary.Stations.Platform}}
+\doxysubsubsection{\texorpdfstring{occupiedIntervals}{occupiedIntervals}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_platform_ae1acefc701db12d0a72ddb22da8d6446} 
+List$<$\doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_time_interval}{Time\+Interval}}$>$ Class\+Library.\+Stations.\+Platform.\+occupied\+Intervals = new()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The list of occupied time intervals for the platform. 
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Class\+Library/\+\+Stations/\+\doxymbox{\hyperlink{_platform_8cs}{Platform.\+cs}}\end{DoxyCompactItemize}

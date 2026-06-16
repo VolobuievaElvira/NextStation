@@ -1,0 +1,25 @@
+var class_class_library_1_1_data_1_1_data_base =
+[
+    [ "DataBase", "class_class_library_1_1_data_1_1_data_base.html#a3f48a2e2763ddfc24ab60c981e5228d9", null ],
+    [ "AddCar", "class_class_library_1_1_data_1_1_data_base.html#a270c30a8f96642c7986b348ab5d344bc", null ],
+    [ "AddFreightTrain", "class_class_library_1_1_data_1_1_data_base.html#a0ac716ac0d2f3073805f9b900aa84557", null ],
+    [ "AddPassenger", "class_class_library_1_1_data_1_1_data_base.html#a879c913086e560bcb9808dcc84888379", null ],
+    [ "AddPassengerTrain", "class_class_library_1_1_data_1_1_data_base.html#a681d9cf801287d163aca5bb559f2774b", null ],
+    [ "AddStaff", "class_class_library_1_1_data_1_1_data_base.html#a9604226684dac71795155ad668b760e8", null ],
+    [ "CarSearch", "class_class_library_1_1_data_1_1_data_base.html#a9fcc470fa5b04e09eb323a9c48a94790", null ],
+    [ "RemoveCarById", "class_class_library_1_1_data_1_1_data_base.html#a4c01ef9de193e337e81fea489dedf029", null ],
+    [ "RemoveTrain", "class_class_library_1_1_data_1_1_data_base.html#aca5fe7995a18a8ceacd00bad55cd3a00", null ],
+    [ "RemoveUser", "class_class_library_1_1_data_1_1_data_base.html#a18a7a20a42a351b40b0c5fb92eccb4a6", null ],
+    [ "SaveData", "class_class_library_1_1_data_1_1_data_base.html#a757fe76b62275a03a5b875aa1d5c5c93", null ],
+    [ "StationSearch", "class_class_library_1_1_data_1_1_data_base.html#a3918aff399ea016ae223efe77b51a0e6", null ],
+    [ "TrainSeacrh", "class_class_library_1_1_data_1_1_data_base.html#a26c8be143f88f4dceb8d7bd39f04f653", null ],
+    [ "UserSearch", "class_class_library_1_1_data_1_1_data_base.html#a23d254a1c1e77f7ce15cec625919a377", null ],
+    [ "cars", "class_class_library_1_1_data_1_1_data_base.html#a127f859f85d17624e2970f0800b5e2b5", null ],
+    [ "cars_path", "class_class_library_1_1_data_1_1_data_base.html#aeb8302d8eb6321867fcd7f7f6f9b822b", null ],
+    [ "stations", "class_class_library_1_1_data_1_1_data_base.html#abaa9b1c245c279c54e51a2bef722e5e9", null ],
+    [ "stations_path", "class_class_library_1_1_data_1_1_data_base.html#a83d3479a8bfc57aeddb47a8ff8751239", null ],
+    [ "trains", "class_class_library_1_1_data_1_1_data_base.html#a58cdd0b94748b3236b6d1f1a1ede43ab", null ],
+    [ "trains_path", "class_class_library_1_1_data_1_1_data_base.html#acffd8a49852b1f0d69eb6bb3365177fb", null ],
+    [ "users", "class_class_library_1_1_data_1_1_data_base.html#a6a85a5d22b15b193d39f60c46c9605f8", null ],
+    [ "users_path", "class_class_library_1_1_data_1_1_data_base.html#aa77656ced4dae38fa18b8f4bd157ccc5", null ]
+];

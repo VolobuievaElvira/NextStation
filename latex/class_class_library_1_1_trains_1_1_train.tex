@@ -1,0 +1,258 @@
+\doxysection{Class\+Library.\+Trains.\+Train Class Reference}
+\hypertarget{class_class_library_1_1_trains_1_1_train}{}\label{class_class_library_1_1_trains_1_1_train}\index{ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}}
+
+
+An abstract class that represents a train, including its train code, location, and route stops.  
+
+
+Inheritance diagram for Class\+Library.\+Trains.\+Train:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_class_library_1_1_trains_1_1_train}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_a42a30868c4b9457d574c3362b9ea6973}{Train}} (string name, \doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}} location)
+\begin{DoxyCompactList}\small\item\em Initialize a new instance of the \doxylink{class_class_library_1_1_trains_1_1_train}{Train} class. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_a1ac9d075c16c7f3b83cd6cb753936a9c}{Get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Gets the id of the train. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_a90c7055ed1544881aec999a92fb3992c}{Get\+Train\+Code}} ()
+\begin{DoxyCompactList}\small\item\em Gets the train code of the train. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_a58a80fd4f86efe7a66d531dc65220bd2}{Change\+Train\+Code}} (string train\+Code)
+\begin{DoxyCompactList}\small\item\em changes the train code of the train \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}} \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_a514efb37c5bdd8be04d199881d51da4f}{Get\+Location}} ()
+\begin{DoxyCompactList}\small\item\em Gets the location of the train. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_a3375ab17a3b59429c4b74fd437a7618e}{Update\+Location}} (\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}} location)
+\begin{DoxyCompactList}\small\item\em Updates the location of the train. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_af00518c6df7bfcaa2368e2857e96d1b1}{Add\+Route\+Stop}} (Date\+Time arrival\+Time, Date\+Time departure\+Time, \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station}{Station}} station, int platform)
+\begin{DoxyCompactList}\small\item\em Adds a new route stop to the train\textquotesingle{}s route. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_a3aeeb6921b90f4a950c39f6c82893cd1}{Remove\+Route\+Stop\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Removes a route stop from the train\textquotesingle{}s route by its id. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_route_stop}{Route\+Stop}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_aa7cfde84b128eaab08c9efd6ea65b4e6}{Get\+All\+Route\+Stop}} ()
+\begin{DoxyCompactList}\small\item\em Gets all the route stops of the train. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_aeb14add34ad39f1aa17ce81f9280cd34}{id}}
+\begin{DoxyCompactList}\small\item\em The id of the train. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_aca0fed13a732caffefbf0f165431457f}{train\+Code}}
+\begin{DoxyCompactList}\small\item\em The code of the train. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}} \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_ab2c13c86eb65b80fd95627a0889ed282}{location}}
+\begin{DoxyCompactList}\small\item\em The location of the train. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_route_stop}{Route\+Stop}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_a9230d730cc645229d91061380d6d361e}{route}} = new()
+\begin{DoxyCompactList}\small\item\em The route stops of the train. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_adefad6aee539a56109e5f80ee1680323}{counter}}
+\begin{DoxyCompactList}\small\item\em The id of the last train in the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An abstract class that represents a train, including its train code, location, and route stops. 
+
+\label{class_class_library_1_1_trains_1_1_train_doc-constructors}
+\Hypertarget{class_class_library_1_1_trains_1_1_train_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_class_library_1_1_trains_1_1_train_a42a30868c4b9457d574c3362b9ea6973}\index{ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}!Train@{Train}}
+\index{Train@{Train}!ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}}
+\doxysubsubsection{\texorpdfstring{Train()}{Train()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_train_a42a30868c4b9457d574c3362b9ea6973} 
+Class\+Library.\+Trains.\+Train.\+Train (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}}}]{location}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialize a new instance of the \doxylink{class_class_library_1_1_trains_1_1_train}{Train} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the traain \\
+\hline
+{\em location} & The location of the train \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_class_library_1_1_trains_1_1_train_doc-func-members}
+\Hypertarget{class_class_library_1_1_trains_1_1_train_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_class_library_1_1_trains_1_1_train_af00518c6df7bfcaa2368e2857e96d1b1}\index{ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}!AddRouteStop@{AddRouteStop}}
+\index{AddRouteStop@{AddRouteStop}!ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}}
+\doxysubsubsection{\texorpdfstring{AddRouteStop()}{AddRouteStop()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_train_af00518c6df7bfcaa2368e2857e96d1b1} 
+void Class\+Library.\+Trains.\+Train.\+Add\+Route\+Stop (\begin{DoxyParamCaption}\item[{Date\+Time}]{arrival\+Time}{, }\item[{Date\+Time}]{departure\+Time}{, }\item[{\doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station}{Station}}}]{station}{, }\item[{int}]{platform}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a new route stop to the train\textquotesingle{}s route. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arrival\+Time} & The arrival time of the route stop \\
+\hline
+{\em departure\+Time} & The departure time of the route stop \\
+\hline
+{\em station} & The station of the route stop \\
+\hline
+{\em platform} & The platform of the route stop \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_trains_1_1_train_a58a80fd4f86efe7a66d531dc65220bd2}\index{ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}!ChangeTrainCode@{ChangeTrainCode}}
+\index{ChangeTrainCode@{ChangeTrainCode}!ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}}
+\doxysubsubsection{\texorpdfstring{ChangeTrainCode()}{ChangeTrainCode()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_train_a58a80fd4f86efe7a66d531dc65220bd2} 
+void Class\+Library.\+Trains.\+Train.\+Change\+Train\+Code (\begin{DoxyParamCaption}\item[{string}]{train\+Code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+changes the train code of the train 
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Code} & The new train code of the train \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_trains_1_1_train_aa7cfde84b128eaab08c9efd6ea65b4e6}\index{ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}!GetAllRouteStop@{GetAllRouteStop}}
+\index{GetAllRouteStop@{GetAllRouteStop}!ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}}
+\doxysubsubsection{\texorpdfstring{GetAllRouteStop()}{GetAllRouteStop()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_train_aa7cfde84b128eaab08c9efd6ea65b4e6} 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_route_stop}{Route\+Stop}} $>$ Class\+Library.\+Trains.\+Train.\+Get\+All\+Route\+Stop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets all the route stops of the train. 
+
+\begin{DoxyReturn}{Returns}
+A list of all the route stops of the train 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_trains_1_1_train_a1ac9d075c16c7f3b83cd6cb753936a9c}\index{ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}!GetId@{GetId}}
+\index{GetId@{GetId}!ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}}
+\doxysubsubsection{\texorpdfstring{GetId()}{GetId()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_train_a1ac9d075c16c7f3b83cd6cb753936a9c} 
+int Class\+Library.\+Trains.\+Train.\+Get\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the id of the train. 
+
+\begin{DoxyReturn}{Returns}
+The id of the train 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_trains_1_1_train_a514efb37c5bdd8be04d199881d51da4f}\index{ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}!GetLocation@{GetLocation}}
+\index{GetLocation@{GetLocation}!ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}}
+\doxysubsubsection{\texorpdfstring{GetLocation()}{GetLocation()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_train_a514efb37c5bdd8be04d199881d51da4f} 
+\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}} Class\+Library.\+Trains.\+Train.\+Get\+Location (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the location of the train. 
+
+\begin{DoxyReturn}{Returns}
+The location of the train 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_trains_1_1_train_a90c7055ed1544881aec999a92fb3992c}\index{ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}!GetTrainCode@{GetTrainCode}}
+\index{GetTrainCode@{GetTrainCode}!ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}}
+\doxysubsubsection{\texorpdfstring{GetTrainCode()}{GetTrainCode()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_train_a90c7055ed1544881aec999a92fb3992c} 
+string Class\+Library.\+Trains.\+Train.\+Get\+Train\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the train code of the train. 
+
+\begin{DoxyReturn}{Returns}
+The train code of the train 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_trains_1_1_train_a3aeeb6921b90f4a950c39f6c82893cd1}\index{ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}!RemoveRouteStopById@{RemoveRouteStopById}}
+\index{RemoveRouteStopById@{RemoveRouteStopById}!ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}}
+\doxysubsubsection{\texorpdfstring{RemoveRouteStopById()}{RemoveRouteStopById()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_train_a3aeeb6921b90f4a950c39f6c82893cd1} 
+void Class\+Library.\+Trains.\+Train.\+Remove\+Route\+Stop\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes a route stop from the train\textquotesingle{}s route by its id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id of the route stop to be removed \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_trains_1_1_train_a3375ab17a3b59429c4b74fd437a7618e}\index{ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}!UpdateLocation@{UpdateLocation}}
+\index{UpdateLocation@{UpdateLocation}!ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}}
+\doxysubsubsection{\texorpdfstring{UpdateLocation()}{UpdateLocation()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_train_a3375ab17a3b59429c4b74fd437a7618e} 
+void Class\+Library.\+Trains.\+Train.\+Update\+Location (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}}}]{location}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Updates the location of the train. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & The new location of the train \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_class_library_1_1_trains_1_1_train_doc-variable-members}
+\Hypertarget{class_class_library_1_1_trains_1_1_train_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_class_library_1_1_trains_1_1_train_adefad6aee539a56109e5f80ee1680323}\index{ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}!counter@{counter}}
+\index{counter@{counter}!ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_train_adefad6aee539a56109e5f80ee1680323} 
+int Class\+Library.\+Trains.\+Train.\+counter\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The id of the last train in the database. 
+
+\Hypertarget{class_class_library_1_1_trains_1_1_train_aeb14add34ad39f1aa17ce81f9280cd34}\index{ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}!id@{id}}
+\index{id@{id}!ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_train_aeb14add34ad39f1aa17ce81f9280cd34} 
+int Class\+Library.\+Trains.\+Train.\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The id of the train. 
+
+\Hypertarget{class_class_library_1_1_trains_1_1_train_ab2c13c86eb65b80fd95627a0889ed282}\index{ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}!location@{location}}
+\index{location@{location}!ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}}
+\doxysubsubsection{\texorpdfstring{location}{location}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_train_ab2c13c86eb65b80fd95627a0889ed282} 
+\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}} Class\+Library.\+Trains.\+Train.\+location\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The location of the train. 
+
+\Hypertarget{class_class_library_1_1_trains_1_1_train_a9230d730cc645229d91061380d6d361e}\index{ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}!route@{route}}
+\index{route@{route}!ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}}
+\doxysubsubsection{\texorpdfstring{route}{route}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_train_a9230d730cc645229d91061380d6d361e} 
+List$<$\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_route_stop}{Route\+Stop}}$>$ Class\+Library.\+Trains.\+Train.\+route = new()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The route stops of the train. 
+
+\Hypertarget{class_class_library_1_1_trains_1_1_train_aca0fed13a732caffefbf0f165431457f}\index{ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}!trainCode@{trainCode}}
+\index{trainCode@{trainCode}!ClassLibrary.Trains.Train@{ClassLibrary.Trains.Train}}
+\doxysubsubsection{\texorpdfstring{trainCode}{trainCode}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_train_aca0fed13a732caffefbf0f165431457f} 
+string Class\+Library.\+Trains.\+Train.\+train\+Code\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The code of the train. 
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Class\+Library/\+\+Trains/\+\doxymbox{\hyperlink{_train_8cs}{Train.\+cs}}\end{DoxyCompactItemize}

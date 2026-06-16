@@ -1,0 +1,425 @@
+\doxysection{Class\+Library.\+Data.\+Data\+Base Class Reference}
+\hypertarget{class_class_library_1_1_data_1_1_data_base}{}\label{class_class_library_1_1_data_1_1_data_base}\index{ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
+
+
+Manages the program\textquotesingle{}s database, stores and loads users, cars, trains, and stations to/\+from JSON database.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a681d9cf801287d163aca5bb559f2774b}{Add\+Passenger\+Train}} (string train\+Code, \doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}} location, List$<$ \doxymbox{\hyperlink{_option_8cs_a0e65ad13124ea2cb5e255b640464e35f}{Option}} $>$ options)
+\begin{DoxyCompactList}\small\item\em Creates a new \doxylink{class_class_library_1_1_trains_1_1_passenger_train}{Passenger\+Train} object and stores it in the database. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a0ac716ac0d2f3073805f9b900aa84557}{Add\+Freight\+Train}} (string train\+Code, \doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}} location, float capacity)
+\begin{DoxyCompactList}\small\item\em Creates a new \doxylink{class_class_library_1_1_trains_1_1_freight_train}{Freight\+Train} object and stores it in the database. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_aca5fe7995a18a8ceacd00bad55cd3a00}{Remove\+Train}} (\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train}{Train}} train)
+\begin{DoxyCompactList}\small\item\em Romove the train from the database. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a270c30a8f96642c7986b348ab5d344bc}{Add\+Car}} (int seats\+Number, \doxymbox{\hyperlink{_car_class_8cs_af751547bb2797cc7f438640ad5d78ff9}{Car\+Class}} car\+Class)
+\begin{DoxyCompactList}\small\item\em Creates a new \doxylink{class_class_library_1_1_trains_1_1_car}{Car} object and stores it in the database. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a4c01ef9de193e337e81fea489dedf029}{Remove\+Car\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Removes the car by its ID from the database. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a879c913086e560bcb9808dcc84888379}{Add\+Passenger}} (string name, string email, string password, string photo="{}"{})
+\begin{DoxyCompactList}\small\item\em Creates a new \doxylink{class_class_library_1_1_users_1_1_passenger}{Passenger} object and stores it in the database. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a9604226684dac71795155ad668b760e8}{Add\+Staff}} (\doxymbox{\hyperlink{_role_8cs_acdd79a1a4f81dd6ee5cddcb21149b951}{Role}} role, string name, string email, string password, string photo="{}"{})
+\begin{DoxyCompactList}\small\item\em Creates a new \doxylink{class_class_library_1_1_users_1_1_staff}{Staff} object and stores it in the database. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a18a7a20a42a351b40b0c5fb92eccb4a6}{Remove\+User}} (\doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}} user)
+\begin{DoxyCompactList}\small\item\em Removes the user from the database. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a23d254a1c1e77f7ce15cec625919a377}{User\+Search}} (int? id=null, string? name=null, string? email=null)
+\begin{DoxyCompactList}\small\item\em Search for specific users in the database. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station}{Station}}? \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a3918aff399ea016ae223efe77b51a0e6}{Station\+Search}} (\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}} station)
+\begin{DoxyCompactList}\small\item\em Search for specific station in the database. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car}{Car}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a9fcc470fa5b04e09eb323a9c48a94790}{Car\+Search}} (int? id=null, \doxymbox{\hyperlink{_car_class_8cs_af751547bb2797cc7f438640ad5d78ff9}{Car\+Class}}? car\+Class=null)
+\begin{DoxyCompactList}\small\item\em Search for specific cars in the database. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train}{Train}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a26c8be143f88f4dceb8d7bd39f04f653}{Train\+Seacrh}} (string? train\+Code=null, \doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}}? departure\+Station=null, \doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}}? arrival\+Station=null, Date\+Time? departure\+Date=null, Date\+Time? arrival\+Date=null, \doxymbox{\hyperlink{_route_type_8cs_a0a33da2d057b227d889862be3b106273}{Route\+Type}}? route\+Type=null, List$<$ \doxymbox{\hyperlink{_option_8cs_a0e65ad13124ea2cb5e255b640464e35f}{Option}} $>$? options=null)
+\begin{DoxyCompactList}\small\item\em Search for specific trains in the database. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a3f48a2e2763ddfc24ab60c981e5228d9}{Data\+Base}} (string users\+\_\+path, string cars\+\_\+path, string trains\+\_\+path, string stations\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Initialize a new instance of the \doxylink{class_class_library_1_1_data_1_1_data_base}{Data\+Base} class. Stores paths to the JSON database files. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a757fe76b62275a03a5b875aa1d5c5c93}{Save\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Saves users, cars, trains, and stations to the JSON databases. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a6a85a5d22b15b193d39f60c46c9605f8}{users}} = new List$<$\doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}}$>$()
+\begin{DoxyCompactList}\small\item\em \doxylink{namespace_class_library_1_1_users}{Users} present in the database. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car}{Car}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a127f859f85d17624e2970f0800b5e2b5}{cars}} = new List$<$\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car}{Car}}$>$()
+\begin{DoxyCompactList}\small\item\em Cars present in the database. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train}{Train}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a58cdd0b94748b3236b6d1f1a1ede43ab}{trains}} = new List$<$\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train}{Train}}$>$()
+\begin{DoxyCompactList}\small\item\em \doxylink{namespace_class_library_1_1_trains}{Trains} present in the database. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station}{Station}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_abaa9b1c245c279c54e51a2bef722e5e9}{stations}} = new List$<$\doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station}{Station}}$>$()
+\begin{DoxyCompactList}\small\item\em \doxylink{namespace_class_library_1_1_stations}{Stations} present in the database. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_aa77656ced4dae38fa18b8f4bd157ccc5}{users\+\_\+path}}
+\begin{DoxyCompactList}\small\item\em Path to the users JSON database files. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_aeb8302d8eb6321867fcd7f7f6f9b822b}{cars\+\_\+path}}
+\begin{DoxyCompactList}\small\item\em Path to the cars JSON database files. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_acffd8a49852b1f0d69eb6bb3365177fb}{trains\+\_\+path}}
+\begin{DoxyCompactList}\small\item\em Path to the trains JSON database files. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a83d3479a8bfc57aeddb47a8ff8751239}{stations\+\_\+path}}
+\begin{DoxyCompactList}\small\item\em Path to the stations JSON database files. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the program\textquotesingle{}s database, stores and loads users, cars, trains, and stations to/\+from JSON database. 
+
+\label{class_class_library_1_1_data_1_1_data_base_doc-constructors}
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_a3f48a2e2763ddfc24ab60c981e5228d9}\index{ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}!DataBase@{DataBase}}
+\index{DataBase@{DataBase}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
+\doxysubsubsection{\texorpdfstring{DataBase()}{DataBase()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_a3f48a2e2763ddfc24ab60c981e5228d9} 
+Class\+Library.\+Data.\+Data\+Base.\+Data\+Base (\begin{DoxyParamCaption}\item[{string}]{users\+\_\+path}{, }\item[{string}]{cars\+\_\+path}{, }\item[{string}]{trains\+\_\+path}{, }\item[{string}]{stations\+\_\+path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialize a new instance of the \doxylink{class_class_library_1_1_data_1_1_data_base}{Data\+Base} class. Stores paths to the JSON database files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em users\+\_\+path} & Path to the users JSON database files \\
+\hline
+{\em cars\+\_\+path} & Path to the cars JSON database files \\
+\hline
+{\em trains\+\_\+path} & Path to the trains JSON database files \\
+\hline
+{\em stations\+\_\+path} & Path to the stations JSON database files \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_class_library_1_1_data_1_1_data_base_doc-func-members}
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_a270c30a8f96642c7986b348ab5d344bc}\index{ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}!AddCar@{AddCar}}
+\index{AddCar@{AddCar}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
+\doxysubsubsection{\texorpdfstring{AddCar()}{AddCar()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_a270c30a8f96642c7986b348ab5d344bc} 
+void Class\+Library.\+Data.\+Data\+Base.\+Add\+Car (\begin{DoxyParamCaption}\item[{int}]{seats\+Number}{, }\item[{\doxymbox{\hyperlink{_car_class_8cs_af751547bb2797cc7f438640ad5d78ff9}{Car\+Class}}}]{car\+Class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a new \doxylink{class_class_library_1_1_trains_1_1_car}{Car} object and stores it in the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seats\+Number} & The number of seats \\
+\hline
+{\em car\+Class} & The car\textquotesingle{}s class \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_a0ac716ac0d2f3073805f9b900aa84557}\index{ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}!AddFreightTrain@{AddFreightTrain}}
+\index{AddFreightTrain@{AddFreightTrain}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
+\doxysubsubsection{\texorpdfstring{AddFreightTrain()}{AddFreightTrain()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_a0ac716ac0d2f3073805f9b900aa84557} 
+void Class\+Library.\+Data.\+Data\+Base.\+Add\+Freight\+Train (\begin{DoxyParamCaption}\item[{string}]{train\+Code}{, }\item[{\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}}}]{location}{, }\item[{float}]{capacity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a new \doxylink{class_class_library_1_1_trains_1_1_freight_train}{Freight\+Train} object and stores it in the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Code} & The train\textquotesingle{}s code \\
+\hline
+{\em location} & The train\textquotesingle{}s location \\
+\hline
+{\em capacity} & The train\textquotesingle{}s capacity \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_a879c913086e560bcb9808dcc84888379}\index{ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}!AddPassenger@{AddPassenger}}
+\index{AddPassenger@{AddPassenger}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
+\doxysubsubsection{\texorpdfstring{AddPassenger()}{AddPassenger()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_a879c913086e560bcb9808dcc84888379} 
+void Class\+Library.\+Data.\+Data\+Base.\+Add\+Passenger (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{string}]{email}{, }\item[{string}]{password}{, }\item[{string}]{photo}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a new \doxylink{class_class_library_1_1_users_1_1_passenger}{Passenger} object and stores it in the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The passenger\textquotesingle{}s name \\
+\hline
+{\em email} & The passenger\textquotesingle{}s email \\
+\hline
+{\em password} & The passenger\textquotesingle{}s password \\
+\hline
+{\em photo} & The passenger\textquotesingle{}s photo \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_a681d9cf801287d163aca5bb559f2774b}\index{ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}!AddPassengerTrain@{AddPassengerTrain}}
+\index{AddPassengerTrain@{AddPassengerTrain}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
+\doxysubsubsection{\texorpdfstring{AddPassengerTrain()}{AddPassengerTrain()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_a681d9cf801287d163aca5bb559f2774b} 
+void Class\+Library.\+Data.\+Data\+Base.\+Add\+Passenger\+Train (\begin{DoxyParamCaption}\item[{string}]{train\+Code}{, }\item[{\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}}}]{location}{, }\item[{List$<$ \doxymbox{\hyperlink{_option_8cs_a0e65ad13124ea2cb5e255b640464e35f}{Option}} $>$}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a new \doxylink{class_class_library_1_1_trains_1_1_passenger_train}{Passenger\+Train} object and stores it in the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Code} & The train\textquotesingle{}s code \\
+\hline
+{\em location} & The train\textquotesingle{}s location \\
+\hline
+{\em options} & The train\textquotesingle{}s options \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_a9604226684dac71795155ad668b760e8}\index{ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}!AddStaff@{AddStaff}}
+\index{AddStaff@{AddStaff}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
+\doxysubsubsection{\texorpdfstring{AddStaff()}{AddStaff()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_a9604226684dac71795155ad668b760e8} 
+void Class\+Library.\+Data.\+Data\+Base.\+Add\+Staff (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{_role_8cs_acdd79a1a4f81dd6ee5cddcb21149b951}{Role}}}]{role}{, }\item[{string}]{name}{, }\item[{string}]{email}{, }\item[{string}]{password}{, }\item[{string}]{photo}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a new \doxylink{class_class_library_1_1_users_1_1_staff}{Staff} object and stores it in the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em role} & The staff\textquotesingle{}s role \\
+\hline
+{\em name} & The staff\textquotesingle{}s name \\
+\hline
+{\em email} & The staff\textquotesingle{}s email \\
+\hline
+{\em password} & The staff\textquotesingle{}s password \\
+\hline
+{\em photo} & The staff\textquotesingle{}s photo \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_a9fcc470fa5b04e09eb323a9c48a94790}\index{ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}!CarSearch@{CarSearch}}
+\index{CarSearch@{CarSearch}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
+\doxysubsubsection{\texorpdfstring{CarSearch()}{CarSearch()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_a9fcc470fa5b04e09eb323a9c48a94790} 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car}{Car}} $>$ Class\+Library.\+Data.\+Data\+Base.\+Car\+Search (\begin{DoxyParamCaption}\item[{int?}]{id}{ = {\ttfamily null}, }\item[{\doxymbox{\hyperlink{_car_class_8cs_af751547bb2797cc7f438640ad5d78ff9}{Car\+Class}}?}]{car\+Class}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Search for specific cars in the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The car\textquotesingle{}s ID \\
+\hline
+{\em car\+Class} & The car\textquotesingle{}s class\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of cars whose data matches the search parameters 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_a4c01ef9de193e337e81fea489dedf029}\index{ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}!RemoveCarById@{RemoveCarById}}
+\index{RemoveCarById@{RemoveCarById}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
+\doxysubsubsection{\texorpdfstring{RemoveCarById()}{RemoveCarById()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_a4c01ef9de193e337e81fea489dedf029} 
+void Class\+Library.\+Data.\+Data\+Base.\+Remove\+Car\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes the car by its ID from the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The car\textquotesingle{}s ID that needs to be removed \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_aca5fe7995a18a8ceacd00bad55cd3a00}\index{ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}!RemoveTrain@{RemoveTrain}}
+\index{RemoveTrain@{RemoveTrain}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
+\doxysubsubsection{\texorpdfstring{RemoveTrain()}{RemoveTrain()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_aca5fe7995a18a8ceacd00bad55cd3a00} 
+void Class\+Library.\+Data.\+Data\+Base.\+Remove\+Train (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train}{Train}}}]{train}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Romove the train from the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em train} & The train that needs to be removed \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_a18a7a20a42a351b40b0c5fb92eccb4a6}\index{ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}!RemoveUser@{RemoveUser}}
+\index{RemoveUser@{RemoveUser}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
+\doxysubsubsection{\texorpdfstring{RemoveUser()}{RemoveUser()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_a18a7a20a42a351b40b0c5fb92eccb4a6} 
+void Class\+Library.\+Data.\+Data\+Base.\+Remove\+User (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}}}]{user}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes the user from the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The user that needs to be removed \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_a757fe76b62275a03a5b875aa1d5c5c93}\index{ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}!SaveData@{SaveData}}
+\index{SaveData@{SaveData}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
+\doxysubsubsection{\texorpdfstring{SaveData()}{SaveData()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_a757fe76b62275a03a5b875aa1d5c5c93} 
+void Class\+Library.\+Data.\+Data\+Base.\+Save\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Saves users, cars, trains, and stations to the JSON databases. 
+
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_a3918aff399ea016ae223efe77b51a0e6}\index{ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}!StationSearch@{StationSearch}}
+\index{StationSearch@{StationSearch}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
+\doxysubsubsection{\texorpdfstring{StationSearch()}{StationSearch()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_a3918aff399ea016ae223efe77b51a0e6} 
+\doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station}{Station}}? Class\+Library.\+Data.\+Data\+Base.\+Station\+Search (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}}}]{station}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Search for specific station in the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em station} & The station\textquotesingle{}s name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A station whose name matches the search parameter 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_a26c8be143f88f4dceb8d7bd39f04f653}\index{ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}!TrainSeacrh@{TrainSeacrh}}
+\index{TrainSeacrh@{TrainSeacrh}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
+\doxysubsubsection{\texorpdfstring{TrainSeacrh()}{TrainSeacrh()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_a26c8be143f88f4dceb8d7bd39f04f653} 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train}{Train}} $>$ Class\+Library.\+Data.\+Data\+Base.\+Train\+Seacrh (\begin{DoxyParamCaption}\item[{string?}]{train\+Code}{ = {\ttfamily null}, }\item[{\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}}?}]{departure\+Station}{ = {\ttfamily null}, }\item[{\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}}?}]{arrival\+Station}{ = {\ttfamily null}, }\item[{Date\+Time?}]{departure\+Date}{ = {\ttfamily null}, }\item[{Date\+Time?}]{arrival\+Date}{ = {\ttfamily null}, }\item[{\doxymbox{\hyperlink{_route_type_8cs_a0a33da2d057b227d889862be3b106273}{Route\+Type}}?}]{route\+Type}{ = {\ttfamily null}, }\item[{List$<$ \doxymbox{\hyperlink{_option_8cs_a0e65ad13124ea2cb5e255b640464e35f}{Option}} $>$?}]{options}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Search for specific trains in the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Code} & The train\textquotesingle{}s code \\
+\hline
+{\em departure\+Station} & The train\textquotesingle{}s departure station \\
+\hline
+{\em arrival\+Station} & The train\textquotesingle{}s arrival station \\
+\hline
+{\em departure\+Date} & The train\textquotesingle{}s departure date \\
+\hline
+{\em arrival\+Date} & The train\textquotesingle{}s arrival date \\
+\hline
+{\em route\+Type} & The train\textquotesingle{}s route type \\
+\hline
+{\em options} & The train\textquotesingle{}s options\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of trains whose data matches the search parameters 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_a23d254a1c1e77f7ce15cec625919a377}\index{ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}!UserSearch@{UserSearch}}
+\index{UserSearch@{UserSearch}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
+\doxysubsubsection{\texorpdfstring{UserSearch()}{UserSearch()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_a23d254a1c1e77f7ce15cec625919a377} 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}} $>$ Class\+Library.\+Data.\+Data\+Base.\+User\+Search (\begin{DoxyParamCaption}\item[{int?}]{id}{ = {\ttfamily null}, }\item[{string?}]{name}{ = {\ttfamily null}, }\item[{string?}]{email}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Search for specific users in the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The user\textquotesingle{}s ID \\
+\hline
+{\em name} & The user\textquotesingle{}s name \\
+\hline
+{\em email} & The user\textquotesingle{}s email\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of users whose data matches the search parameters 
+\end{DoxyReturn}
+
+
+\label{class_class_library_1_1_data_1_1_data_base_doc-variable-members}
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_a127f859f85d17624e2970f0800b5e2b5}\index{ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}!cars@{cars}}
+\index{cars@{cars}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
+\doxysubsubsection{\texorpdfstring{cars}{cars}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_a127f859f85d17624e2970f0800b5e2b5} 
+List$<$\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car}{Car}}$>$ Class\+Library.\+Data.\+Data\+Base.\+cars = new List$<$\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car}{Car}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Cars present in the database. 
+
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_aeb8302d8eb6321867fcd7f7f6f9b822b}\index{ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}!cars\_path@{cars\_path}}
+\index{cars\_path@{cars\_path}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
+\doxysubsubsection{\texorpdfstring{cars\_path}{cars\_path}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_aeb8302d8eb6321867fcd7f7f6f9b822b} 
+string Class\+Library.\+Data.\+Data\+Base.\+cars\+\_\+path\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Path to the cars JSON database files. 
+
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_abaa9b1c245c279c54e51a2bef722e5e9}\index{ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}!stations@{stations}}
+\index{stations@{stations}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
+\doxysubsubsection{\texorpdfstring{stations}{stations}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_abaa9b1c245c279c54e51a2bef722e5e9} 
+List$<$\doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station}{Station}}$>$ Class\+Library.\+Data.\+Data\+Base.\+stations = new List$<$\doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station}{Station}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxylink{namespace_class_library_1_1_stations}{Stations} present in the database. 
+
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_a83d3479a8bfc57aeddb47a8ff8751239}\index{ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}!stations\_path@{stations\_path}}
+\index{stations\_path@{stations\_path}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
+\doxysubsubsection{\texorpdfstring{stations\_path}{stations\_path}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_a83d3479a8bfc57aeddb47a8ff8751239} 
+string Class\+Library.\+Data.\+Data\+Base.\+stations\+\_\+path\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Path to the stations JSON database files. 
+
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_a58cdd0b94748b3236b6d1f1a1ede43ab}\index{ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}!trains@{trains}}
+\index{trains@{trains}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
+\doxysubsubsection{\texorpdfstring{trains}{trains}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_a58cdd0b94748b3236b6d1f1a1ede43ab} 
+List$<$\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train}{Train}}$>$ Class\+Library.\+Data.\+Data\+Base.\+trains = new List$<$\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train}{Train}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxylink{namespace_class_library_1_1_trains}{Trains} present in the database. 
+
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_acffd8a49852b1f0d69eb6bb3365177fb}\index{ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}!trains\_path@{trains\_path}}
+\index{trains\_path@{trains\_path}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
+\doxysubsubsection{\texorpdfstring{trains\_path}{trains\_path}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_acffd8a49852b1f0d69eb6bb3365177fb} 
+string Class\+Library.\+Data.\+Data\+Base.\+trains\+\_\+path\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Path to the trains JSON database files. 
+
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_a6a85a5d22b15b193d39f60c46c9605f8}\index{ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}!users@{users}}
+\index{users@{users}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
+\doxysubsubsection{\texorpdfstring{users}{users}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_a6a85a5d22b15b193d39f60c46c9605f8} 
+List$<$\doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}}$>$ Class\+Library.\+Data.\+Data\+Base.\+users = new List$<$\doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxylink{namespace_class_library_1_1_users}{Users} present in the database. 
+
+\Hypertarget{class_class_library_1_1_data_1_1_data_base_aa77656ced4dae38fa18b8f4bd157ccc5}\index{ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}!users\_path@{users\_path}}
+\index{users\_path@{users\_path}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
+\doxysubsubsection{\texorpdfstring{users\_path}{users\_path}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_aa77656ced4dae38fa18b8f4bd157ccc5} 
+string Class\+Library.\+Data.\+Data\+Base.\+users\+\_\+path\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Path to the users JSON database files. 
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Class\+Library/\+\+Data/\+\doxymbox{\hyperlink{_data_base_8cs}{Data\+Base.\+cs}}\end{DoxyCompactItemize}

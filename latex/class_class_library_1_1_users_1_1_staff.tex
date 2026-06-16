@@ -1,0 +1,186 @@
+\doxysection{Class\+Library.\+Users.\+Staff Class Reference}
+\hypertarget{class_class_library_1_1_users_1_1_staff}{}\label{class_class_library_1_1_users_1_1_staff}\index{ClassLibrary.Users.Staff@{ClassLibrary.Users.Staff}}
+
+
+Stores the staff role, allows changing the user role to change the permission level.  
+
+
+Inheritance diagram for Class\+Library.\+Users.\+Staff:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_class_library_1_1_users_1_1_staff}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_class_library_1_1_users_1_1_staff_a958e2b370c1c20471915571e02e70240}{Staff}} (string name, string email, string password, string photo, \doxymbox{\hyperlink{_role_8cs_acdd79a1a4f81dd6ee5cddcb21149b951}{Role}} role)
+\begin{DoxyCompactList}\small\item\em Initialize a new instance of the \doxylink{class_class_library_1_1_users_1_1_staff}{Staff} class. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_role_8cs_acdd79a1a4f81dd6ee5cddcb21149b951}{Role}} \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_staff_a94422e8ee8be6c50feb240453f00d602}{Get\+Role}} ()
+\begin{DoxyCompactList}\small\item\em Returns the staff\textquotesingle{}s role. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_staff_a8fe7fe9b8eb6c9825ca8189de3acdb23}{Promote\+To\+Train\+Operator}} ()
+\begin{DoxyCompactList}\small\item\em Sets the role to Train\+Operator. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_staff_afedce7da30551e22a15a75a50d4bf8b1}{Promote\+To\+Conductor}} ()
+\begin{DoxyCompactList}\small\item\em Sets the role to Conductor. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_staff_a99b8f04d932ff2765fb2ec7138364218}{Promote\+To\+Network\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Sets the role to Network\+Manager. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_staff_abad72660e1d763b42c4a0c45114555d5}{Promote\+To\+Station\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Sets the role to Station\+Manager. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_staff_aac5a025adac1f35b75112446b071e03e}{Validate\+Ticket}} (\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_ticket}{Ticket}} ticket)
+\begin{DoxyCompactList}\small\item\em Returns if the ticket is valid for a specific trip. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{Class\+Library.\+Users.\+User}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_ab5af76f140c603a4ce65c056bc8d8d2b}{User}} (string name, string email, string password, string photo)
+\begin{DoxyCompactList}\small\item\em Initialize a new instance of the \doxylink{class_class_library_1_1_users_1_1_user}{User} base class. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_a578a612957824131a11364dd5b3a92e1}{Get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Returns the user\textquotesingle{}s ID. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_af48d3c2f6ca10d454ddec412aecd0971}{Get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns the user\textquotesingle{}s name. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_a2a495de438a5cca1a039948afa6dca5c}{Get\+Email}} ()
+\begin{DoxyCompactList}\small\item\em Returns the user\textquotesingle{}s email. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_a0a0609a4957f86bc83e9af09854b3ac1}{Get\+Password}} ()
+\begin{DoxyCompactList}\small\item\em Returns the password\textquotesingle{}s ID. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_abd28fc700cb41f2c1addecdd464475e9}{Get\+Photo}} ()
+\begin{DoxyCompactList}\small\item\em Returns the user\textquotesingle{}s photo. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_a023974d573debd4ef0c54b265932dd17}{Change\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Sets the user\textquotesingle{}s name to the input parameter. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_a75f7f905757095fe1c0ebaeb255a85ac}{Change\+Email}} (string email)
+\begin{DoxyCompactList}\small\item\em Sets the user\textquotesingle{}s email to the input parameter. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_afeaace2bf8ee0d0f683f90796cb385e6}{Change\+Password}} (string password)
+\begin{DoxyCompactList}\small\item\em Sets the user password for the input parameter if it meets the requirements. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_a318b5fd22b926be992fd6075a5c64961}{Change\+Photo}} (string photo)
+\begin{DoxyCompactList}\small\item\em Sets the user\textquotesingle{}s photo to the input parameter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_role_8cs_acdd79a1a4f81dd6ee5cddcb21149b951}{Role}} \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_staff_a81c443a8059f61e850b8c714baf4760c}{role}}
+\begin{DoxyCompactList}\small\item\em The staff\textquotesingle{}s role. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Properties inherited from \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{Class\+Library.\+Users.\+User}}}
+\begin{DoxyCompactItemize}
+\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_a3ddf6ddbee5917aae381b4029aaf6b79}{Password}}\hspace{0.3cm}{\ttfamily  \+[get, private set]\+}
+\begin{DoxyCompactList}\small\item\em Gets and sets the user\textquotesingle{}s password, checks it for compliance with the requirements. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores the staff role, allows changing the user role to change the permission level. 
+
+\label{class_class_library_1_1_users_1_1_staff_doc-constructors}
+\Hypertarget{class_class_library_1_1_users_1_1_staff_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_class_library_1_1_users_1_1_staff_a958e2b370c1c20471915571e02e70240}\index{ClassLibrary.Users.Staff@{ClassLibrary.Users.Staff}!Staff@{Staff}}
+\index{Staff@{Staff}!ClassLibrary.Users.Staff@{ClassLibrary.Users.Staff}}
+\doxysubsubsection{\texorpdfstring{Staff()}{Staff()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_staff_a958e2b370c1c20471915571e02e70240} 
+Class\+Library.\+Users.\+Staff.\+Staff (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{string}]{email}{, }\item[{string}]{password}{, }\item[{string}]{photo}{, }\item[{\doxymbox{\hyperlink{_role_8cs_acdd79a1a4f81dd6ee5cddcb21149b951}{Role}}}]{role}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialize a new instance of the \doxylink{class_class_library_1_1_users_1_1_staff}{Staff} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The staff\textquotesingle{}s name \\
+\hline
+{\em email} & The staff\textquotesingle{}s email \\
+\hline
+{\em password} & The staff\textquotesingle{}s password \\
+\hline
+{\em photo} & The staff\textquotesingle{}s photo \\
+\hline
+{\em role} & The staff\textquotesingle{}s role \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_class_library_1_1_users_1_1_staff_doc-func-members}
+\Hypertarget{class_class_library_1_1_users_1_1_staff_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_class_library_1_1_users_1_1_staff_a94422e8ee8be6c50feb240453f00d602}\index{ClassLibrary.Users.Staff@{ClassLibrary.Users.Staff}!GetRole@{GetRole}}
+\index{GetRole@{GetRole}!ClassLibrary.Users.Staff@{ClassLibrary.Users.Staff}}
+\doxysubsubsection{\texorpdfstring{GetRole()}{GetRole()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_staff_a94422e8ee8be6c50feb240453f00d602} 
+\doxymbox{\hyperlink{_role_8cs_acdd79a1a4f81dd6ee5cddcb21149b951}{Role}} Class\+Library.\+Users.\+Staff.\+Get\+Role (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the staff\textquotesingle{}s role. 
+
+\begin{DoxyReturn}{Returns}
+The staff\textquotesingle{}s role 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_users_1_1_staff_afedce7da30551e22a15a75a50d4bf8b1}\index{ClassLibrary.Users.Staff@{ClassLibrary.Users.Staff}!PromoteToConductor@{PromoteToConductor}}
+\index{PromoteToConductor@{PromoteToConductor}!ClassLibrary.Users.Staff@{ClassLibrary.Users.Staff}}
+\doxysubsubsection{\texorpdfstring{PromoteToConductor()}{PromoteToConductor()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_staff_afedce7da30551e22a15a75a50d4bf8b1} 
+void Class\+Library.\+Users.\+Staff.\+Promote\+To\+Conductor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the role to Conductor. 
+
+\Hypertarget{class_class_library_1_1_users_1_1_staff_a99b8f04d932ff2765fb2ec7138364218}\index{ClassLibrary.Users.Staff@{ClassLibrary.Users.Staff}!PromoteToNetworkManager@{PromoteToNetworkManager}}
+\index{PromoteToNetworkManager@{PromoteToNetworkManager}!ClassLibrary.Users.Staff@{ClassLibrary.Users.Staff}}
+\doxysubsubsection{\texorpdfstring{PromoteToNetworkManager()}{PromoteToNetworkManager()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_staff_a99b8f04d932ff2765fb2ec7138364218} 
+void Class\+Library.\+Users.\+Staff.\+Promote\+To\+Network\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the role to Network\+Manager. 
+
+\Hypertarget{class_class_library_1_1_users_1_1_staff_abad72660e1d763b42c4a0c45114555d5}\index{ClassLibrary.Users.Staff@{ClassLibrary.Users.Staff}!PromoteToStationManager@{PromoteToStationManager}}
+\index{PromoteToStationManager@{PromoteToStationManager}!ClassLibrary.Users.Staff@{ClassLibrary.Users.Staff}}
+\doxysubsubsection{\texorpdfstring{PromoteToStationManager()}{PromoteToStationManager()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_staff_abad72660e1d763b42c4a0c45114555d5} 
+void Class\+Library.\+Users.\+Staff.\+Promote\+To\+Station\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the role to Station\+Manager. 
+
+\Hypertarget{class_class_library_1_1_users_1_1_staff_a8fe7fe9b8eb6c9825ca8189de3acdb23}\index{ClassLibrary.Users.Staff@{ClassLibrary.Users.Staff}!PromoteToTrainOperator@{PromoteToTrainOperator}}
+\index{PromoteToTrainOperator@{PromoteToTrainOperator}!ClassLibrary.Users.Staff@{ClassLibrary.Users.Staff}}
+\doxysubsubsection{\texorpdfstring{PromoteToTrainOperator()}{PromoteToTrainOperator()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_staff_a8fe7fe9b8eb6c9825ca8189de3acdb23} 
+void Class\+Library.\+Users.\+Staff.\+Promote\+To\+Train\+Operator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the role to Train\+Operator. 
+
+\Hypertarget{class_class_library_1_1_users_1_1_staff_aac5a025adac1f35b75112446b071e03e}\index{ClassLibrary.Users.Staff@{ClassLibrary.Users.Staff}!ValidateTicket@{ValidateTicket}}
+\index{ValidateTicket@{ValidateTicket}!ClassLibrary.Users.Staff@{ClassLibrary.Users.Staff}}
+\doxysubsubsection{\texorpdfstring{ValidateTicket()}{ValidateTicket()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_staff_aac5a025adac1f35b75112446b071e03e} 
+bool Class\+Library.\+Users.\+Staff.\+Validate\+Ticket (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_ticket}{Ticket}}}]{ticket}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns if the ticket is valid for a specific trip. 
+
+\begin{DoxyReturn}{Returns}
+Whether the ticket is valid for a specific trip 
+\end{DoxyReturn}
+
+
+\label{class_class_library_1_1_users_1_1_staff_doc-variable-members}
+\Hypertarget{class_class_library_1_1_users_1_1_staff_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_class_library_1_1_users_1_1_staff_a81c443a8059f61e850b8c714baf4760c}\index{ClassLibrary.Users.Staff@{ClassLibrary.Users.Staff}!role@{role}}
+\index{role@{role}!ClassLibrary.Users.Staff@{ClassLibrary.Users.Staff}}
+\doxysubsubsection{\texorpdfstring{role}{role}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_staff_a81c443a8059f61e850b8c714baf4760c} 
+\doxymbox{\hyperlink{_role_8cs_acdd79a1a4f81dd6ee5cddcb21149b951}{Role}} Class\+Library.\+Users.\+Staff.\+role\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The staff\textquotesingle{}s role. 
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Class\+Library/\+\+Users/\+\doxymbox{\hyperlink{_staff_8cs}{Staff.\+cs}}\end{DoxyCompactItemize}

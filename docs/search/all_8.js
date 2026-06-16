@@ -1,0 +1,9 @@
+var searchData=
+[
+  ['id_0',['id',['../class_class_library_1_1_stations_1_1_platform.html#aa7787694c747130d9224c062a868b9dd',1,'ClassLibrary.Stations.Platform.id'],['../class_class_library_1_1_stations_1_1_station.html#a4d826ae8c3ec9ff57feb109faa84cb23',1,'ClassLibrary.Stations.Station.id'],['../class_class_library_1_1_trains_1_1_car.html#a71af8fb7b5000636e765c8ec840dc128',1,'ClassLibrary.Trains.Car.id'],['../class_class_library_1_1_trains_1_1_route_stop.html#a2441750acc368ca5e5ce0459ad226c79',1,'ClassLibrary.Trains.RouteStop.id'],['../class_class_library_1_1_seat.html#ad168673fbc2b8ad6993f86fd1acd7b9a',1,'ClassLibrary.Seat.id'],['../class_class_library_1_1_trains_1_1_ticket.html#af65c6408124234e2c4084ba6801bf7e7',1,'ClassLibrary.Trains.Ticket.id'],['../class_class_library_1_1_trains_1_1_train.html#aeb14add34ad39f1aa17ce81f9280cd34',1,'ClassLibrary.Trains.Train.id'],['../class_class_library_1_1_users_1_1_user.html#a90487f7feac95135b22029c1b8703e15',1,'ClassLibrary.Users.User.id']]],
+  ['innichen_1',['Innichen',['../_station_name_8cs.html#a522d0db2b5e456c9cab273bbabbeafb6a2781d78cf5bdbb757c7c275e91694387',1,'StationName.cs']]],
+  ['invalidcapacity_2',['InvalidCapacity',['../_train_management_error_8cs.html#a0ff4f8cdbad9f7e62a295b268d0a4290aff0ec5aa6b393e44f2922993c8e2c34d',1,'TrainManagementError.cs']]],
+  ['invalidnumberofseats_3',['InvalidNumberOfSeats',['../_train_management_error_8cs.html#a0ff4f8cdbad9f7e62a295b268d0a4290afef87716469a9a17f494b44675d53a18',1,'TrainManagementError.cs']]],
+  ['isavaible_4',['IsAvaible',['../class_class_library_1_1_trains_1_1_ticket.html#a3c76562c13f2c54f21ebb13cc9a4f8fc',1,'ClassLibrary::Trains::Ticket']]],
+  ['isconnected_5',['IsConnected',['../class_class_library_1_1_trains_1_1_car.html#ab5afa8227162fb0ddd4744be4b45f070',1,'ClassLibrary::Trains::Car']]]
+];

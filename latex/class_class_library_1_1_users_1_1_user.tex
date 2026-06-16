@@ -1,0 +1,315 @@
+\doxysection{Class\+Library.\+Users.\+User Class Reference}
+\hypertarget{class_class_library_1_1_users_1_1_user}{}\label{class_class_library_1_1_users_1_1_user}\index{ClassLibrary.Users.User@{ClassLibrary.Users.User}}
+
+
+An abstract class, stores user information:\+ id, name, email, password, and photo. Allows users to change their name, email password and photo.  
+
+
+Inheritance diagram for Class\+Library.\+Users.\+User:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_class_library_1_1_users_1_1_user}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_ab5af76f140c603a4ce65c056bc8d8d2b}{User}} (string name, string email, string password, string photo)
+\begin{DoxyCompactList}\small\item\em Initialize a new instance of the \doxylink{class_class_library_1_1_users_1_1_user}{User} base class. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_a578a612957824131a11364dd5b3a92e1}{Get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Returns the user\textquotesingle{}s ID. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_af48d3c2f6ca10d454ddec412aecd0971}{Get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns the user\textquotesingle{}s name. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_a2a495de438a5cca1a039948afa6dca5c}{Get\+Email}} ()
+\begin{DoxyCompactList}\small\item\em Returns the user\textquotesingle{}s email. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_a0a0609a4957f86bc83e9af09854b3ac1}{Get\+Password}} ()
+\begin{DoxyCompactList}\small\item\em Returns the password\textquotesingle{}s ID. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_abd28fc700cb41f2c1addecdd464475e9}{Get\+Photo}} ()
+\begin{DoxyCompactList}\small\item\em Returns the user\textquotesingle{}s photo. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_a023974d573debd4ef0c54b265932dd17}{Change\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Sets the user\textquotesingle{}s name to the input parameter. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_a75f7f905757095fe1c0ebaeb255a85ac}{Change\+Email}} (string email)
+\begin{DoxyCompactList}\small\item\em Sets the user\textquotesingle{}s email to the input parameter. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_afeaace2bf8ee0d0f683f90796cb385e6}{Change\+Password}} (string password)
+\begin{DoxyCompactList}\small\item\em Sets the user password for the input parameter if it meets the requirements. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_a318b5fd22b926be992fd6075a5c64961}{Change\+Photo}} (string photo)
+\begin{DoxyCompactList}\small\item\em Sets the user\textquotesingle{}s photo to the input parameter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_a3ddf6ddbee5917aae381b4029aaf6b79}{Password}}\hspace{0.3cm}{\ttfamily  \+[get, private set]\+}
+\begin{DoxyCompactList}\small\item\em Gets and sets the user\textquotesingle{}s password, checks it for compliance with the requirements. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_a90487f7feac95135b22029c1b8703e15}{id}}
+\begin{DoxyCompactList}\small\item\em The user\textquotesingle{}s id. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_a343176c6e2887de44ad9847d3267e75c}{name}}
+\begin{DoxyCompactList}\small\item\em The user\textquotesingle{}s name. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_a710913710197ec84478280ff45fa62ba}{email}}
+\begin{DoxyCompactList}\small\item\em The user\textquotesingle{}s email. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_acede2f288ead15414cea24bc5fda6c44}{password}}
+\begin{DoxyCompactList}\small\item\em The user\textquotesingle{}s password. \end{DoxyCompactList}\item 
+string? \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_ad849288822a5332851045b60dcfea65a}{google\+Provider\+Id}}
+\begin{DoxyCompactList}\small\item\em The user\textquotesingle{}s google\+Provider\+Id. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_a07d47ecf8f3e50b930934a01fd0dc9fb}{photo}}
+\begin{DoxyCompactList}\small\item\em The user\textquotesingle{}s photo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_a3157abe567944ae60e4e638964f3d188}{counter}} = 0
+\begin{DoxyCompactList}\small\item\em The id of the last user in the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An abstract class, stores user information:\+ id, name, email, password, and photo. Allows users to change their name, email password and photo. 
+
+\label{class_class_library_1_1_users_1_1_user_doc-constructors}
+\Hypertarget{class_class_library_1_1_users_1_1_user_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_class_library_1_1_users_1_1_user_ab5af76f140c603a4ce65c056bc8d8d2b}\index{ClassLibrary.Users.User@{ClassLibrary.Users.User}!User@{User}}
+\index{User@{User}!ClassLibrary.Users.User@{ClassLibrary.Users.User}}
+\doxysubsubsection{\texorpdfstring{User()}{User()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_user_ab5af76f140c603a4ce65c056bc8d8d2b} 
+Class\+Library.\+Users.\+User.\+User (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{string}]{email}{, }\item[{string}]{password}{, }\item[{string}]{photo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialize a new instance of the \doxylink{class_class_library_1_1_users_1_1_user}{User} base class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The user\textquotesingle{}s name \\
+\hline
+{\em email} & The user\textquotesingle{}s email \\
+\hline
+{\em password} & The user\textquotesingle{}s password \\
+\hline
+{\em photo} & The user\textquotesingle{}s photo \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_class_library_1_1_users_1_1_user_doc-func-members}
+\Hypertarget{class_class_library_1_1_users_1_1_user_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_class_library_1_1_users_1_1_user_a75f7f905757095fe1c0ebaeb255a85ac}\index{ClassLibrary.Users.User@{ClassLibrary.Users.User}!ChangeEmail@{ChangeEmail}}
+\index{ChangeEmail@{ChangeEmail}!ClassLibrary.Users.User@{ClassLibrary.Users.User}}
+\doxysubsubsection{\texorpdfstring{ChangeEmail()}{ChangeEmail()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_user_a75f7f905757095fe1c0ebaeb255a85ac} 
+void Class\+Library.\+Users.\+User.\+Change\+Email (\begin{DoxyParamCaption}\item[{string}]{email}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the user\textquotesingle{}s email to the input parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & The user\textquotesingle{}s email \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_users_1_1_user_a023974d573debd4ef0c54b265932dd17}\index{ClassLibrary.Users.User@{ClassLibrary.Users.User}!ChangeName@{ChangeName}}
+\index{ChangeName@{ChangeName}!ClassLibrary.Users.User@{ClassLibrary.Users.User}}
+\doxysubsubsection{\texorpdfstring{ChangeName()}{ChangeName()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_user_a023974d573debd4ef0c54b265932dd17} 
+void Class\+Library.\+Users.\+User.\+Change\+Name (\begin{DoxyParamCaption}\item[{string}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the user\textquotesingle{}s name to the input parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The user\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_users_1_1_user_afeaace2bf8ee0d0f683f90796cb385e6}\index{ClassLibrary.Users.User@{ClassLibrary.Users.User}!ChangePassword@{ChangePassword}}
+\index{ChangePassword@{ChangePassword}!ClassLibrary.Users.User@{ClassLibrary.Users.User}}
+\doxysubsubsection{\texorpdfstring{ChangePassword()}{ChangePassword()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_user_afeaace2bf8ee0d0f683f90796cb385e6} 
+void Class\+Library.\+Users.\+User.\+Change\+Password (\begin{DoxyParamCaption}\item[{string}]{password}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the user password for the input parameter if it meets the requirements. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em password} & The user\textquotesingle{}s password \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_users_1_1_user_a318b5fd22b926be992fd6075a5c64961}\index{ClassLibrary.Users.User@{ClassLibrary.Users.User}!ChangePhoto@{ChangePhoto}}
+\index{ChangePhoto@{ChangePhoto}!ClassLibrary.Users.User@{ClassLibrary.Users.User}}
+\doxysubsubsection{\texorpdfstring{ChangePhoto()}{ChangePhoto()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_user_a318b5fd22b926be992fd6075a5c64961} 
+void Class\+Library.\+Users.\+User.\+Change\+Photo (\begin{DoxyParamCaption}\item[{string}]{photo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the user\textquotesingle{}s photo to the input parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em photo} & The user\textquotesingle{}s photo \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_users_1_1_user_a2a495de438a5cca1a039948afa6dca5c}\index{ClassLibrary.Users.User@{ClassLibrary.Users.User}!GetEmail@{GetEmail}}
+\index{GetEmail@{GetEmail}!ClassLibrary.Users.User@{ClassLibrary.Users.User}}
+\doxysubsubsection{\texorpdfstring{GetEmail()}{GetEmail()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_user_a2a495de438a5cca1a039948afa6dca5c} 
+string Class\+Library.\+Users.\+User.\+Get\+Email (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the user\textquotesingle{}s email. 
+
+\begin{DoxyReturn}{Returns}
+The user\textquotesingle{}s email 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_users_1_1_user_a578a612957824131a11364dd5b3a92e1}\index{ClassLibrary.Users.User@{ClassLibrary.Users.User}!GetId@{GetId}}
+\index{GetId@{GetId}!ClassLibrary.Users.User@{ClassLibrary.Users.User}}
+\doxysubsubsection{\texorpdfstring{GetId()}{GetId()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_user_a578a612957824131a11364dd5b3a92e1} 
+int Class\+Library.\+Users.\+User.\+Get\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the user\textquotesingle{}s ID. 
+
+\begin{DoxyReturn}{Returns}
+The user\textquotesingle{}s ID 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_users_1_1_user_af48d3c2f6ca10d454ddec412aecd0971}\index{ClassLibrary.Users.User@{ClassLibrary.Users.User}!GetName@{GetName}}
+\index{GetName@{GetName}!ClassLibrary.Users.User@{ClassLibrary.Users.User}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_user_af48d3c2f6ca10d454ddec412aecd0971} 
+string Class\+Library.\+Users.\+User.\+Get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the user\textquotesingle{}s name. 
+
+\begin{DoxyReturn}{Returns}
+The user\textquotesingle{}s name 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_users_1_1_user_a0a0609a4957f86bc83e9af09854b3ac1}\index{ClassLibrary.Users.User@{ClassLibrary.Users.User}!GetPassword@{GetPassword}}
+\index{GetPassword@{GetPassword}!ClassLibrary.Users.User@{ClassLibrary.Users.User}}
+\doxysubsubsection{\texorpdfstring{GetPassword()}{GetPassword()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_user_a0a0609a4957f86bc83e9af09854b3ac1} 
+string Class\+Library.\+Users.\+User.\+Get\+Password (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the password\textquotesingle{}s ID. 
+
+\begin{DoxyReturn}{Returns}
+The user\textquotesingle{}s password 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_users_1_1_user_abd28fc700cb41f2c1addecdd464475e9}\index{ClassLibrary.Users.User@{ClassLibrary.Users.User}!GetPhoto@{GetPhoto}}
+\index{GetPhoto@{GetPhoto}!ClassLibrary.Users.User@{ClassLibrary.Users.User}}
+\doxysubsubsection{\texorpdfstring{GetPhoto()}{GetPhoto()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_user_abd28fc700cb41f2c1addecdd464475e9} 
+string Class\+Library.\+Users.\+User.\+Get\+Photo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the user\textquotesingle{}s photo. 
+
+\begin{DoxyReturn}{Returns}
+The user\textquotesingle{}s photo 
+\end{DoxyReturn}
+
+
+\label{class_class_library_1_1_users_1_1_user_doc-variable-members}
+\Hypertarget{class_class_library_1_1_users_1_1_user_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_class_library_1_1_users_1_1_user_a3157abe567944ae60e4e638964f3d188}\index{ClassLibrary.Users.User@{ClassLibrary.Users.User}!counter@{counter}}
+\index{counter@{counter}!ClassLibrary.Users.User@{ClassLibrary.Users.User}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_user_a3157abe567944ae60e4e638964f3d188} 
+int Class\+Library.\+Users.\+User.\+counter = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The id of the last user in the database. 
+
+\Hypertarget{class_class_library_1_1_users_1_1_user_a710913710197ec84478280ff45fa62ba}\index{ClassLibrary.Users.User@{ClassLibrary.Users.User}!email@{email}}
+\index{email@{email}!ClassLibrary.Users.User@{ClassLibrary.Users.User}}
+\doxysubsubsection{\texorpdfstring{email}{email}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_user_a710913710197ec84478280ff45fa62ba} 
+string Class\+Library.\+Users.\+User.\+email\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The user\textquotesingle{}s email. 
+
+\Hypertarget{class_class_library_1_1_users_1_1_user_ad849288822a5332851045b60dcfea65a}\index{ClassLibrary.Users.User@{ClassLibrary.Users.User}!googleProviderId@{googleProviderId}}
+\index{googleProviderId@{googleProviderId}!ClassLibrary.Users.User@{ClassLibrary.Users.User}}
+\doxysubsubsection{\texorpdfstring{googleProviderId}{googleProviderId}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_user_ad849288822a5332851045b60dcfea65a} 
+string? Class\+Library.\+Users.\+User.\+google\+Provider\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The user\textquotesingle{}s google\+Provider\+Id. 
+
+\Hypertarget{class_class_library_1_1_users_1_1_user_a90487f7feac95135b22029c1b8703e15}\index{ClassLibrary.Users.User@{ClassLibrary.Users.User}!id@{id}}
+\index{id@{id}!ClassLibrary.Users.User@{ClassLibrary.Users.User}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_user_a90487f7feac95135b22029c1b8703e15} 
+int Class\+Library.\+Users.\+User.\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The user\textquotesingle{}s id. 
+
+\Hypertarget{class_class_library_1_1_users_1_1_user_a343176c6e2887de44ad9847d3267e75c}\index{ClassLibrary.Users.User@{ClassLibrary.Users.User}!name@{name}}
+\index{name@{name}!ClassLibrary.Users.User@{ClassLibrary.Users.User}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_user_a343176c6e2887de44ad9847d3267e75c} 
+string Class\+Library.\+Users.\+User.\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The user\textquotesingle{}s name. 
+
+\Hypertarget{class_class_library_1_1_users_1_1_user_acede2f288ead15414cea24bc5fda6c44}\index{ClassLibrary.Users.User@{ClassLibrary.Users.User}!password@{password}}
+\index{password@{password}!ClassLibrary.Users.User@{ClassLibrary.Users.User}}
+\doxysubsubsection{\texorpdfstring{password}{password}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_user_acede2f288ead15414cea24bc5fda6c44} 
+string Class\+Library.\+Users.\+User.\+password\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The user\textquotesingle{}s password. 
+
+\Hypertarget{class_class_library_1_1_users_1_1_user_a07d47ecf8f3e50b930934a01fd0dc9fb}\index{ClassLibrary.Users.User@{ClassLibrary.Users.User}!photo@{photo}}
+\index{photo@{photo}!ClassLibrary.Users.User@{ClassLibrary.Users.User}}
+\doxysubsubsection{\texorpdfstring{photo}{photo}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_user_a07d47ecf8f3e50b930934a01fd0dc9fb} 
+string Class\+Library.\+Users.\+User.\+photo\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The user\textquotesingle{}s photo. 
+
+
+
+\label{class_class_library_1_1_users_1_1_user_doc-property-members}
+\Hypertarget{class_class_library_1_1_users_1_1_user_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_class_library_1_1_users_1_1_user_a3ddf6ddbee5917aae381b4029aaf6b79}\index{ClassLibrary.Users.User@{ClassLibrary.Users.User}!Password@{Password}}
+\index{Password@{Password}!ClassLibrary.Users.User@{ClassLibrary.Users.User}}
+\doxysubsubsection{\texorpdfstring{Password}{Password}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_user_a3ddf6ddbee5917aae381b4029aaf6b79} 
+string Class\+Library.\+Users.\+User.\+Password\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Gets and sets the user\textquotesingle{}s password, checks it for compliance with the requirements. 
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Class\+Library/\+\+Users/\+\doxymbox{\hyperlink{_user_8cs}{User.\+cs}}\end{DoxyCompactItemize}
