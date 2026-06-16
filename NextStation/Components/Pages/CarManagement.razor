@@ -1,0 +1,82 @@
+﻿@page "/carmanagement"
+@rendermode InteractiveServer
+
+@using ClassLibrary.Data
+
+@inject NavigationManager Navigation
+
+@inject DataBase DataBase
+@inject CurrentSession CurrentSession
+@inject Saver Saver
+
+
+<PageTitle>TrainManagement</PageTitle>
+
+<div style="display:flex; flex-direction:column; gap:10px; width:100%; align-items: center">
+
+    <div class="row w-100" style="max-width:700px">
+        <label class="col-12" style="text-align:center"><b>Car Class</b></label>
+        <label class="col-3">
+            <input type="radio" name="TrainType" checked="@(_carClass == CarClass.FirstClass)" @onchange='() => _carClass = CarClass.FirstClass' />
+            First
+        </label> 
+        <label class="col-3">
+            <input type="radio" name="TrainType" checked="@(_carClass == CarClass.SecondClass)" @onchange='() => _carClass = CarClass.SecondClass' />
+            Second
+        </label> 
+    </div> 
+
+    <div class="row w-100" style="max-width:700px"> 
+        <label class="col-5">Number of seats</label> 
+        <input class="col-7" @bind="_numberOfSeats" /> 
+    </div> 
+
+    <label style="color:crimson" class="col-9">@_errorMessage</label>
+
+    <div class="row w-100" style="max-width:700px">
+        <button type="button" @onclick="Add" class="col-12">Add</button>
+    </div>
+</div>
+
+@code {
+    string _numberOfSeats = "";
+    StationName? _location = null; 
+    CarClass _carClass = CarClass.FirstClass;
+
+    string _errorMessage = "";
+
+    private void Add()
+    {
+        _errorMessage = "";
+        try
+        {
+            if(int.TryParse(_numberOfSeats, out int result))
+            {
+                DataBase.AddCar(result, _carClass);
+            }
+            else
+            {
+                throw new TrainManagementError(TrainManagementErrorReason.InvalidNumberOfSeats, "The number of seats must be an integer");
+            }
+
+            Navigation.NavigateTo("/carsearch");
+        }
+        catch(Exception ex)
+        {
+            _errorMessage = ex.Message;
+        }
+    }
+
+    private string SplitPascalCase(string word)
+    {
+        string text = "";
+
+        foreach (char c in word)
+        {
+            if (char.ToUpper(c) == c && text.Length != 0) text += " ";
+            text += c;
+        }
+
+        return text;
+    } 
+}
