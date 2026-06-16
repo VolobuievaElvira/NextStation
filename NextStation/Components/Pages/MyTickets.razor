@@ -1,0 +1,69 @@
+﻿@page "/mytickets"
+@rendermode InteractiveServer
+
+@using ClassLibrary.Data
+@using ClassLibrary.Trains
+@using ClassLibrary.Users
+
+@inject NavigationManager Navigation
+
+@inject DataBase DataBase
+@inject CurrentSession CurrentSession
+@inject Saver Saver
+
+<div>
+	<div class="row w-100" style="display:flex; flex-direction:column; gap:10px; width:100%; align-items: center">
+
+		<table class="table table-striped table-bordered table-hover">
+			<thead>
+				<tr>
+					<th>Ticket ID</th>
+					<th>Passenger</th>
+					<th>Train ID</th>
+					<th>Train code</th>
+					<th>Car class</th>
+					<th>Car ID</th>
+					<th>Seat number</th>
+				</tr>
+			</thead>
+			<tbody>
+
+				@foreach (Ticket ticket in ((Passenger)(CurrentSession.GetUser())).GetTickets())
+				{
+					<tr>
+						<td>@ticket.GetId()</td>
+						<th>@(DataBase.UserSearch(ticket.GetPassengerId()).First().GetName())</th>
+						<th>Train ID</th>
+						<th>Train code</th>
+						<th>Car class</th>
+						<th>
+							Car ID
+						</th>
+						<th>@ticket.GetSeatNumber()</th>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+</div>
+
+@code {
+	private void OpenTrain(Train train)
+	{
+
+	}
+
+	private string OptionSwitch(Option option)
+	{
+		switch (option)
+		{
+			case Option.PetTransport:
+				return "bi bi-leaf";
+			case Option.RestaurantCar:
+				return "bi bi-cup-hot";
+			case Option.BicycleTransport:
+				return "bi bi-bicycle";	
+		}
+		return "";
+	}
+}

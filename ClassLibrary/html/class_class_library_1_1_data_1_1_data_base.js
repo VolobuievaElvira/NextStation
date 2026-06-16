@@ -12,7 +12,7 @@ var class_class_library_1_1_data_1_1_data_base =
     [ "RemoveUser", "class_class_library_1_1_data_1_1_data_base.html#a18a7a20a42a351b40b0c5fb92eccb4a6", null ],
     [ "SaveData", "class_class_library_1_1_data_1_1_data_base.html#a757fe76b62275a03a5b875aa1d5c5c93", null ],
     [ "StationSearch", "class_class_library_1_1_data_1_1_data_base.html#a3918aff399ea016ae223efe77b51a0e6", null ],
-    [ "TrainSeacrh", "class_class_library_1_1_data_1_1_data_base.html#aaa89115c586bae5c02d9a6e3e0d6050d", null ],
+    [ "TrainSeacrh", "class_class_library_1_1_data_1_1_data_base.html#a26c8be143f88f4dceb8d7bd39f04f653", null ],
     [ "UserSearch", "class_class_library_1_1_data_1_1_data_base.html#a23d254a1c1e77f7ce15cec625919a377", null ],
     [ "cars", "class_class_library_1_1_data_1_1_data_base.html#a127f859f85d17624e2970f0800b5e2b5", null ],
     [ "cars_path", "class_class_library_1_1_data_1_1_data_base.html#aeb8302d8eb6321867fcd7f7f6f9b822b", null ],
