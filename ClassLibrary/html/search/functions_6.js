@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['savedata_0',['SaveData',['../class_class_library_1_1_data_1_1_data_base.html#a757fe76b62275a03a5b875aa1d5c5c93',1,'ClassLibrary::Data::DataBase']]],
-  ['setuser_1',['SetUser',['../class_class_library_1_1_data_1_1_current_session.html#add72c32b6b03288dbc5c18b9f7e10034',1,'ClassLibrary::Data::CurrentSession']]],
-  ['stationsearch_2',['StationSearch',['../class_class_library_1_1_data_1_1_data_base.html#a3918aff399ea016ae223efe77b51a0e6',1,'ClassLibrary::Data::DataBase']]]
+  ['passenger_0',['Passenger',['../class_class_library_1_1_users_1_1_passenger.html#a56d07815169bc3c6200220f00d611a4e',1,'ClassLibrary::Users::Passenger']]],
+  ['promotetoconductor_1',['PromoteToConductor',['../class_class_library_1_1_users_1_1_staff.html#afedce7da30551e22a15a75a50d4bf8b1',1,'ClassLibrary::Users::Staff']]],
+  ['promotetonetworkmanager_2',['PromoteToNetworkManager',['../class_class_library_1_1_users_1_1_staff.html#a99b8f04d932ff2765fb2ec7138364218',1,'ClassLibrary::Users::Staff']]],
+  ['promotetostationmanager_3',['PromoteToStationManager',['../class_class_library_1_1_users_1_1_staff.html#abad72660e1d763b42c4a0c45114555d5',1,'ClassLibrary::Users::Staff']]],
+  ['promotetotrainoperator_4',['PromoteToTrainOperator',['../class_class_library_1_1_users_1_1_staff.html#a8fe7fe9b8eb6c9825ca8189de3acdb23',1,'ClassLibrary::Users::Staff']]]
 ];

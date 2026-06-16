@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['trains_0',['trains',['../class_class_library_1_1_data_1_1_data_base.html#a58cdd0b94748b3236b6d1f1a1ede43ab',1,'ClassLibrary::Data::DataBase']]],
-  ['trains_5fpath_1',['trains_path',['../class_class_library_1_1_data_1_1_data_base.html#acffd8a49852b1f0d69eb6bb3365177fb',1,'ClassLibrary::Data::DataBase']]],
-  ['trainseacrh_2',['TrainSeacrh',['../class_class_library_1_1_data_1_1_data_base.html#aaa89115c586bae5c02d9a6e3e0d6050d',1,'ClassLibrary::Data::DataBase']]]
+  ['login_0',['Login',['../class_class_library_1_1_data_1_1_current_session.html#a15212d13cc74789647b8636471600b0a',1,'ClassLibrary::Data::CurrentSession']]],
+  ['loginwithgoogle_1',['LoginWithGoogle',['../class_class_library_1_1_data_1_1_current_session.html#a869176ac20a60b815434841002179ea6',1,'ClassLibrary::Data::CurrentSession']]],
+  ['logout_2',['Logout',['../class_class_library_1_1_data_1_1_current_session.html#adf09d5b0ee027f086fb72f97c9007651',1,'ClassLibrary::Data::CurrentSession']]]
 ];
