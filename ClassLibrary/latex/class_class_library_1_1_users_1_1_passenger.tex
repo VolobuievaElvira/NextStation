@@ -14,9 +14,9 @@ Inheritance diagram for Class\+Library.\+Users.\+Passenger:\+\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-List$<$ Ticket $>$ \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_passenger_abc60572235948eaa60b6c4bc1a888174}{Get\+Tickets}} ()
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_ticket}{Ticket}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_passenger_abc60572235948eaa60b6c4bc1a888174}{Get\+Tickets}} ()
 \begin{DoxyCompactList}\small\item\em Returns tickets booked by the passenger. \end{DoxyCompactList}\item 
-void \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_passenger_ad0cc3c7c3ff196d2764898b6e4aec5c7}{Book\+Ticket}} (Ticket ticket)
+void \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_passenger_ad0cc3c7c3ff196d2764898b6e4aec5c7}{Book\+Ticket}} (\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_ticket}{Ticket}} ticket)
 \begin{DoxyCompactList}\small\item\em Charges the passenger for the ticket, adds it to the passenger\textquotesingle{}s booked tickets, and sets the ticket owner (passenger) for the passenger. \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_passenger_a56d07815169bc3c6200220f00d611a4e}{Passenger}} (string name, string email, string password, string photo)
 \begin{DoxyCompactList}\small\item\em Initialize a new instance of the \doxylink{class_class_library_1_1_users_1_1_passenger}{Passenger} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -46,7 +46,7 @@ void \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user_a318b5fd22b926b
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-List$<$ Ticket $>$ \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_passenger_aaee8aa4d8cdf1e571344a1f994198865}{tickets}} = new List$<$Ticket$>$()
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_ticket}{Ticket}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_passenger_aaee8aa4d8cdf1e571344a1f994198865}{tickets}} = new List$<$\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_ticket}{Ticket}}$>$()
 \begin{DoxyCompactList}\small\item\em Tickets booked by the passenger. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Properties inherited from \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{Class\+Library.\+Users.\+User}}}
@@ -92,7 +92,7 @@ Initialize a new instance of the \doxylink{class_class_library_1_1_users_1_1_pas
 \index{BookTicket@{BookTicket}!ClassLibrary.Users.Passenger@{ClassLibrary.Users.Passenger}}
 \doxysubsubsection{\texorpdfstring{BookTicket()}{BookTicket()}}
 {\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_passenger_ad0cc3c7c3ff196d2764898b6e4aec5c7} 
-void Class\+Library.\+Users.\+Passenger.\+Book\+Ticket (\begin{DoxyParamCaption}\item[{Ticket}]{ticket}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+void Class\+Library.\+Users.\+Passenger.\+Book\+Ticket (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_ticket}{Ticket}}}]{ticket}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -107,7 +107,7 @@ Charges the passenger for the ticket, adds it to the passenger\textquotesingle{}
 \index{GetTickets@{GetTickets}!ClassLibrary.Users.Passenger@{ClassLibrary.Users.Passenger}}
 \doxysubsubsection{\texorpdfstring{GetTickets()}{GetTickets()}}
 {\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_passenger_abc60572235948eaa60b6c4bc1a888174} 
-List$<$ Ticket $>$ Class\+Library.\+Users.\+Passenger.\+Get\+Tickets (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_ticket}{Ticket}} $>$ Class\+Library.\+Users.\+Passenger.\+Get\+Tickets (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -125,7 +125,7 @@ Tickets booked by the passenger
 \index{tickets@{tickets}!ClassLibrary.Users.Passenger@{ClassLibrary.Users.Passenger}}
 \doxysubsubsection{\texorpdfstring{tickets}{tickets}}
 {\footnotesize\ttfamily \label{class_class_library_1_1_users_1_1_passenger_aaee8aa4d8cdf1e571344a1f994198865} 
-List$<$Ticket$>$ Class\+Library.\+Users.\+Passenger.\+tickets = new List$<$Ticket$>$()\hspace{0.3cm}{\ttfamily [private]}}
+List$<$\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_ticket}{Ticket}}$>$ Class\+Library.\+Users.\+Passenger.\+tickets = new List$<$\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_ticket}{Ticket}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

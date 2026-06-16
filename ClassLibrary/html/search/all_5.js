@@ -1,12 +1,6 @@
 var searchData=
 [
-  ['getemail_0',['GetEmail',['../class_class_library_1_1_users_1_1_user.html#a2a495de438a5cca1a039948afa6dca5c',1,'ClassLibrary::Users::User']]],
-  ['getid_1',['GetId',['../class_class_library_1_1_users_1_1_user.html#a578a612957824131a11364dd5b3a92e1',1,'ClassLibrary::Users::User']]],
-  ['getname_2',['GetName',['../class_class_library_1_1_users_1_1_user.html#af48d3c2f6ca10d454ddec412aecd0971',1,'ClassLibrary::Users::User']]],
-  ['getpassword_3',['GetPassword',['../class_class_library_1_1_users_1_1_user.html#a0a0609a4957f86bc83e9af09854b3ac1',1,'ClassLibrary::Users::User']]],
-  ['getphoto_4',['GetPhoto',['../class_class_library_1_1_users_1_1_user.html#abd28fc700cb41f2c1addecdd464475e9',1,'ClassLibrary::Users::User']]],
-  ['getrole_5',['GetRole',['../class_class_library_1_1_users_1_1_staff.html#a94422e8ee8be6c50feb240453f00d602',1,'ClassLibrary::Users::Staff']]],
-  ['gettickets_6',['GetTickets',['../class_class_library_1_1_users_1_1_passenger.html#abc60572235948eaa60b6c4bc1a888174',1,'ClassLibrary::Users::Passenger']]],
-  ['getuser_7',['GetUser',['../class_class_library_1_1_data_1_1_current_session.html#a696302dd87f118c1df8d20d801c1ce32',1,'ClassLibrary::Data::CurrentSession']]],
-  ['googleproviderid_8',['googleProviderId',['../class_class_library_1_1_users_1_1_user.html#ad849288822a5332851045b60dcfea65a',1,'ClassLibrary::Users::User']]]
+  ['email_0',['email',['../class_class_library_1_1_users_1_1_user.html#a710913710197ec84478280ff45fa62ba',1,'ClassLibrary::Users::User']]],
+  ['emailalreadyregistered_1',['EmailAlreadyRegistered',['../_register_error_8cs.html#a20717e6a8dc38555f4b5bc05db865d45a328380e2fa76730096ee5fbc7bb8ce3d',1,'RegisterError.cs']]],
+  ['endtime_2',['endTime',['../class_class_library_1_1_stations_1_1_time_interval.html#a602895079260463ab859642c1979c1ca',1,'ClassLibrary::Stations::TimeInterval']]]
 ];

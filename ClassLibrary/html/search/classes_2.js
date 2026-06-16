@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['passenger_0',['Passenger',['../class_class_library_1_1_users_1_1_passenger.html',1,'ClassLibrary::Users']]]
+  ['database_0',['DataBase',['../class_class_library_1_1_data_1_1_data_base.html',1,'ClassLibrary::Data']]]
 ];

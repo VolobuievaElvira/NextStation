@@ -1,0 +1,209 @@
+\doxysection{Class\+Library.\+Trains.\+Route\+Stop Class Reference}
+\hypertarget{class_class_library_1_1_trains_1_1_route_stop}{}\label{class_class_library_1_1_trains_1_1_route_stop}\index{ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}}
+
+
+Stores information about a stop on a train route, including arrival and departure times, station, and platform.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_route_stop_a558f4b5f5b6e58bc7d24915c104245b5}{Route\+Stop}} (Date\+Time arrival\+Time, Date\+Time departure\+Time, \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station}{Station}} station, int platform)
+\begin{DoxyCompactList}\small\item\em Initialize a new instance of the \doxylink{class_class_library_1_1_trains_1_1_route_stop}{Route\+Stop} class. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_route_stop_a45fd57d49baea3901bfece671ac16889}{Get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Gets the id of the route stop. \end{DoxyCompactList}\item 
+Date\+Time \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_route_stop_a4bc06ec12202c1a955b478b5e696f902}{Get\+Arrival\+Date}} ()
+\begin{DoxyCompactList}\small\item\em Gets the arrival time of the route stop. \end{DoxyCompactList}\item 
+Date\+Time \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_route_stop_ae78ef166251a2ef76c4cca18b56a8770}{Get\+Departure\+Date}} ()
+\begin{DoxyCompactList}\small\item\em Gets the departure time of the route stop. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station}{Station}} \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_route_stop_ac45626a4b49750582391a724dc28d11d}{Get\+Station}} ()
+\begin{DoxyCompactList}\small\item\em Gets the station of the route stop. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_route_stop_ad9be2a6d6da247a51873245f97eebea3}{Get\+Platform}} ()
+\begin{DoxyCompactList}\small\item\em Gets the platform of the route stop. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_route_stop_a2441750acc368ca5e5ce0459ad226c79}{id}}
+\begin{DoxyCompactList}\small\item\em The id of the route stop. \end{DoxyCompactList}\item 
+Date\+Time \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_route_stop_a80331c30a34393e3272ccdc831581a97}{arrival\+Time}}
+\begin{DoxyCompactList}\small\item\em The time the train arrives at the stop. \end{DoxyCompactList}\item 
+Date\+Time \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_route_stop_a5cdaefea1c735a7841ec1e38beff4c0d}{departure\+Time}}
+\begin{DoxyCompactList}\small\item\em The time the train departs from the stop. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station}{Station}} \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_route_stop_a759303d690c6b85323f6341ea9b5eed2}{station}}
+\begin{DoxyCompactList}\small\item\em The station where the train stops. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_route_stop_a8ade6b56743d26016cdd21f98506a6ef}{platform}}
+\begin{DoxyCompactList}\small\item\em The platform where the train stops. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_route_stop_a753d85512d39e645049d5a1c04dc2f64}{counter}} = 0
+\begin{DoxyCompactList}\small\item\em The id of the last route stop in the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores information about a stop on a train route, including arrival and departure times, station, and platform. 
+
+\label{class_class_library_1_1_trains_1_1_route_stop_doc-constructors}
+\Hypertarget{class_class_library_1_1_trains_1_1_route_stop_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_class_library_1_1_trains_1_1_route_stop_a558f4b5f5b6e58bc7d24915c104245b5}\index{ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}!RouteStop@{RouteStop}}
+\index{RouteStop@{RouteStop}!ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}}
+\doxysubsubsection{\texorpdfstring{RouteStop()}{RouteStop()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_route_stop_a558f4b5f5b6e58bc7d24915c104245b5} 
+Class\+Library.\+Trains.\+Route\+Stop.\+Route\+Stop (\begin{DoxyParamCaption}\item[{Date\+Time}]{arrival\+Time}{, }\item[{Date\+Time}]{departure\+Time}{, }\item[{\doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station}{Station}}}]{station}{, }\item[{int}]{platform}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialize a new instance of the \doxylink{class_class_library_1_1_trains_1_1_route_stop}{Route\+Stop} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arrival\+Time} & The time the train arrives at the stop \\
+\hline
+{\em departure\+Time} & The time the train departs from the stop \\
+\hline
+{\em station} & The station where the train stops \\
+\hline
+{\em platform} & The platform where the train stops \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_class_library_1_1_trains_1_1_route_stop_doc-func-members}
+\Hypertarget{class_class_library_1_1_trains_1_1_route_stop_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_class_library_1_1_trains_1_1_route_stop_a4bc06ec12202c1a955b478b5e696f902}\index{ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}!GetArrivalDate@{GetArrivalDate}}
+\index{GetArrivalDate@{GetArrivalDate}!ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}}
+\doxysubsubsection{\texorpdfstring{GetArrivalDate()}{GetArrivalDate()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_route_stop_a4bc06ec12202c1a955b478b5e696f902} 
+Date\+Time Class\+Library.\+Trains.\+Route\+Stop.\+Get\+Arrival\+Date (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the arrival time of the route stop. 
+
+\begin{DoxyReturn}{Returns}
+The arrival time of the route stop 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_trains_1_1_route_stop_ae78ef166251a2ef76c4cca18b56a8770}\index{ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}!GetDepartureDate@{GetDepartureDate}}
+\index{GetDepartureDate@{GetDepartureDate}!ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}}
+\doxysubsubsection{\texorpdfstring{GetDepartureDate()}{GetDepartureDate()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_route_stop_ae78ef166251a2ef76c4cca18b56a8770} 
+Date\+Time Class\+Library.\+Trains.\+Route\+Stop.\+Get\+Departure\+Date (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the departure time of the route stop. 
+
+\begin{DoxyReturn}{Returns}
+The departure time of the route stop 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_trains_1_1_route_stop_a45fd57d49baea3901bfece671ac16889}\index{ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}!GetId@{GetId}}
+\index{GetId@{GetId}!ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}}
+\doxysubsubsection{\texorpdfstring{GetId()}{GetId()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_route_stop_a45fd57d49baea3901bfece671ac16889} 
+int Class\+Library.\+Trains.\+Route\+Stop.\+Get\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the id of the route stop. 
+
+\begin{DoxyReturn}{Returns}
+The id of the route stop 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_trains_1_1_route_stop_ad9be2a6d6da247a51873245f97eebea3}\index{ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}!GetPlatform@{GetPlatform}}
+\index{GetPlatform@{GetPlatform}!ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}}
+\doxysubsubsection{\texorpdfstring{GetPlatform()}{GetPlatform()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_route_stop_ad9be2a6d6da247a51873245f97eebea3} 
+int Class\+Library.\+Trains.\+Route\+Stop.\+Get\+Platform (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the platform of the route stop. 
+
+\begin{DoxyReturn}{Returns}
+The platform of the route stop 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_trains_1_1_route_stop_ac45626a4b49750582391a724dc28d11d}\index{ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}!GetStation@{GetStation}}
+\index{GetStation@{GetStation}!ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}}
+\doxysubsubsection{\texorpdfstring{GetStation()}{GetStation()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_route_stop_ac45626a4b49750582391a724dc28d11d} 
+\doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station}{Station}} Class\+Library.\+Trains.\+Route\+Stop.\+Get\+Station (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the station of the route stop. 
+
+\begin{DoxyReturn}{Returns}
+The station of the route stop 
+\end{DoxyReturn}
+
+
+\label{class_class_library_1_1_trains_1_1_route_stop_doc-variable-members}
+\Hypertarget{class_class_library_1_1_trains_1_1_route_stop_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_class_library_1_1_trains_1_1_route_stop_a80331c30a34393e3272ccdc831581a97}\index{ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}!arrivalTime@{arrivalTime}}
+\index{arrivalTime@{arrivalTime}!ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}}
+\doxysubsubsection{\texorpdfstring{arrivalTime}{arrivalTime}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_route_stop_a80331c30a34393e3272ccdc831581a97} 
+Date\+Time Class\+Library.\+Trains.\+Route\+Stop.\+arrival\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The time the train arrives at the stop. 
+
+\Hypertarget{class_class_library_1_1_trains_1_1_route_stop_a753d85512d39e645049d5a1c04dc2f64}\index{ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}!counter@{counter}}
+\index{counter@{counter}!ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_route_stop_a753d85512d39e645049d5a1c04dc2f64} 
+int Class\+Library.\+Trains.\+Route\+Stop.\+counter = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The id of the last route stop in the database. 
+
+\Hypertarget{class_class_library_1_1_trains_1_1_route_stop_a5cdaefea1c735a7841ec1e38beff4c0d}\index{ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}!departureTime@{departureTime}}
+\index{departureTime@{departureTime}!ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}}
+\doxysubsubsection{\texorpdfstring{departureTime}{departureTime}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_route_stop_a5cdaefea1c735a7841ec1e38beff4c0d} 
+Date\+Time Class\+Library.\+Trains.\+Route\+Stop.\+departure\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The time the train departs from the stop. 
+
+\Hypertarget{class_class_library_1_1_trains_1_1_route_stop_a2441750acc368ca5e5ce0459ad226c79}\index{ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}!id@{id}}
+\index{id@{id}!ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_route_stop_a2441750acc368ca5e5ce0459ad226c79} 
+int Class\+Library.\+Trains.\+Route\+Stop.\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The id of the route stop. 
+
+\Hypertarget{class_class_library_1_1_trains_1_1_route_stop_a8ade6b56743d26016cdd21f98506a6ef}\index{ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}!platform@{platform}}
+\index{platform@{platform}!ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}}
+\doxysubsubsection{\texorpdfstring{platform}{platform}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_route_stop_a8ade6b56743d26016cdd21f98506a6ef} 
+int Class\+Library.\+Trains.\+Route\+Stop.\+platform\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The platform where the train stops. 
+
+\Hypertarget{class_class_library_1_1_trains_1_1_route_stop_a759303d690c6b85323f6341ea9b5eed2}\index{ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}!station@{station}}
+\index{station@{station}!ClassLibrary.Trains.RouteStop@{ClassLibrary.Trains.RouteStop}}
+\doxysubsubsection{\texorpdfstring{station}{station}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_route_stop_a759303d690c6b85323f6341ea9b5eed2} 
+\doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station}{Station}} Class\+Library.\+Trains.\+Route\+Stop.\+station\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The station where the train stops. 
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Trains/\+\doxymbox{\hyperlink{_route_stop_8cs}{Route\+Stop.\+cs}}\end{DoxyCompactItemize}

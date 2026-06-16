@@ -1,0 +1,186 @@
+\doxysection{Class\+Library.\+Seat Class Reference}
+\hypertarget{class_class_library_1_1_seat}{}\label{class_class_library_1_1_seat}\index{ClassLibrary.Seat@{ClassLibrary.Seat}}
+
+
+Stores information about a seat on a train, including its number, the carriage it is in, and the ticket associated with it.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_class_library_1_1_seat_ac60563bb3d99a2ff5716983cb0fecbd1}{Seat}} (int id, int number, int car\+Id, \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_ticket}{Ticket}} ticket)
+\begin{DoxyCompactList}\small\item\em Initialize a new instance of the \doxylink{class_class_library_1_1_seat}{Seat} class. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_class_library_1_1_seat_a8cdfa4a0f56d2d308de9126353ce5c53}{Seat}} (int number, \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car}{Car}} car)
+\begin{DoxyCompactList}\small\item\em Initialize a new instance of the \doxylink{class_class_library_1_1_seat}{Seat} class. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_class_library_1_1_seat_ae252ed80717a0a0e08d3d3c8670135e3}{Get\+Number}} ()
+\begin{DoxyCompactList}\small\item\em Gets the number of the seat. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_class_library_1_1_seat_a328ce29441db04c507865c4bcdeb9cf1}{Get\+Car\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Gets the id of the carriage the seat is in. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_ticket}{Ticket}} \doxymbox{\hyperlink{class_class_library_1_1_seat_ab8e1b0d5b52752200679111758a4850b}{Get\+Ticket}} ()
+\begin{DoxyCompactList}\small\item\em Gets the ticket associated with the seat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{class_class_library_1_1_seat_ad168673fbc2b8ad6993f86fd1acd7b9a}{id}}
+\begin{DoxyCompactList}\small\item\em The Id of the seat. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_class_library_1_1_seat_ad8169be59d269ccac1f8e9129bfc0f85}{number}}
+\begin{DoxyCompactList}\small\item\em The number of the seat in the carriage. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_class_library_1_1_seat_a62a34cfe5edf0c799fe124226a368758}{car\+Id}}
+\begin{DoxyCompactList}\small\item\em The id of the carriage the seat is in. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_ticket}{Ticket}} \doxymbox{\hyperlink{class_class_library_1_1_seat_ab4930de26e52c09032a4b334520c3977}{ticket}}
+\begin{DoxyCompactList}\small\item\em The ticket associated with the seat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \doxymbox{\hyperlink{class_class_library_1_1_seat_ac1e67775f1c0e64c647dc2926603780e}{counter}} = 0
+\begin{DoxyCompactList}\small\item\em The id of the last seat in the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores information about a seat on a train, including its number, the carriage it is in, and the ticket associated with it. 
+
+\label{class_class_library_1_1_seat_doc-constructors}
+\Hypertarget{class_class_library_1_1_seat_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_class_library_1_1_seat_ac60563bb3d99a2ff5716983cb0fecbd1}\index{ClassLibrary.Seat@{ClassLibrary.Seat}!Seat@{Seat}}
+\index{Seat@{Seat}!ClassLibrary.Seat@{ClassLibrary.Seat}}
+\doxysubsubsection{\texorpdfstring{Seat()}{Seat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_seat_ac60563bb3d99a2ff5716983cb0fecbd1} 
+Class\+Library.\+Seat.\+Seat (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{int}]{number}{, }\item[{int}]{car\+Id}{, }\item[{\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_ticket}{Ticket}}}]{ticket}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialize a new instance of the \doxylink{class_class_library_1_1_seat}{Seat} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id of the seat \\
+\hline
+{\em number} & The number of the seat in the carriage \\
+\hline
+{\em car\+Id} & The id of the carriage the seat is in \\
+\hline
+{\em ticket} & The ticket associated with the seat \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_seat_a8cdfa4a0f56d2d308de9126353ce5c53}\index{ClassLibrary.Seat@{ClassLibrary.Seat}!Seat@{Seat}}
+\index{Seat@{Seat}!ClassLibrary.Seat@{ClassLibrary.Seat}}
+\doxysubsubsection{\texorpdfstring{Seat()}{Seat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_seat_a8cdfa4a0f56d2d308de9126353ce5c53} 
+Class\+Library.\+Seat.\+Seat (\begin{DoxyParamCaption}\item[{int}]{number}{, }\item[{\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car}{Car}}}]{car}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialize a new instance of the \doxylink{class_class_library_1_1_seat}{Seat} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & The number of the seat in the carriage \\
+\hline
+{\em car} & The carriage the seat is in \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_class_library_1_1_seat_doc-func-members}
+\Hypertarget{class_class_library_1_1_seat_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_class_library_1_1_seat_a328ce29441db04c507865c4bcdeb9cf1}\index{ClassLibrary.Seat@{ClassLibrary.Seat}!GetCarId@{GetCarId}}
+\index{GetCarId@{GetCarId}!ClassLibrary.Seat@{ClassLibrary.Seat}}
+\doxysubsubsection{\texorpdfstring{GetCarId()}{GetCarId()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_seat_a328ce29441db04c507865c4bcdeb9cf1} 
+int Class\+Library.\+Seat.\+Get\+Car\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the id of the carriage the seat is in. 
+
+\begin{DoxyReturn}{Returns}
+The id of the carriage the seat is in 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_seat_ae252ed80717a0a0e08d3d3c8670135e3}\index{ClassLibrary.Seat@{ClassLibrary.Seat}!GetNumber@{GetNumber}}
+\index{GetNumber@{GetNumber}!ClassLibrary.Seat@{ClassLibrary.Seat}}
+\doxysubsubsection{\texorpdfstring{GetNumber()}{GetNumber()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_seat_ae252ed80717a0a0e08d3d3c8670135e3} 
+int Class\+Library.\+Seat.\+Get\+Number (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the number of the seat. 
+
+\begin{DoxyReturn}{Returns}
+The number of the seat 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_seat_ab8e1b0d5b52752200679111758a4850b}\index{ClassLibrary.Seat@{ClassLibrary.Seat}!GetTicket@{GetTicket}}
+\index{GetTicket@{GetTicket}!ClassLibrary.Seat@{ClassLibrary.Seat}}
+\doxysubsubsection{\texorpdfstring{GetTicket()}{GetTicket()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_seat_ab8e1b0d5b52752200679111758a4850b} 
+\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_ticket}{Ticket}} Class\+Library.\+Seat.\+Get\+Ticket (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the ticket associated with the seat. 
+
+\begin{DoxyReturn}{Returns}
+The ticket associated with the seat 
+\end{DoxyReturn}
+
+
+\label{class_class_library_1_1_seat_doc-variable-members}
+\Hypertarget{class_class_library_1_1_seat_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_class_library_1_1_seat_a62a34cfe5edf0c799fe124226a368758}\index{ClassLibrary.Seat@{ClassLibrary.Seat}!carId@{carId}}
+\index{carId@{carId}!ClassLibrary.Seat@{ClassLibrary.Seat}}
+\doxysubsubsection{\texorpdfstring{carId}{carId}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_seat_a62a34cfe5edf0c799fe124226a368758} 
+int Class\+Library.\+Seat.\+car\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The id of the carriage the seat is in. 
+
+\Hypertarget{class_class_library_1_1_seat_ac1e67775f1c0e64c647dc2926603780e}\index{ClassLibrary.Seat@{ClassLibrary.Seat}!counter@{counter}}
+\index{counter@{counter}!ClassLibrary.Seat@{ClassLibrary.Seat}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_seat_ac1e67775f1c0e64c647dc2926603780e} 
+int Class\+Library.\+Seat.\+counter = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The id of the last seat in the database. 
+
+\Hypertarget{class_class_library_1_1_seat_ad168673fbc2b8ad6993f86fd1acd7b9a}\index{ClassLibrary.Seat@{ClassLibrary.Seat}!id@{id}}
+\index{id@{id}!ClassLibrary.Seat@{ClassLibrary.Seat}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_seat_ad168673fbc2b8ad6993f86fd1acd7b9a} 
+int Class\+Library.\+Seat.\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The Id of the seat. 
+
+\Hypertarget{class_class_library_1_1_seat_ad8169be59d269ccac1f8e9129bfc0f85}\index{ClassLibrary.Seat@{ClassLibrary.Seat}!number@{number}}
+\index{number@{number}!ClassLibrary.Seat@{ClassLibrary.Seat}}
+\doxysubsubsection{\texorpdfstring{number}{number}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_seat_ad8169be59d269ccac1f8e9129bfc0f85} 
+int Class\+Library.\+Seat.\+number\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The number of the seat in the carriage. 
+
+\Hypertarget{class_class_library_1_1_seat_ab4930de26e52c09032a4b334520c3977}\index{ClassLibrary.Seat@{ClassLibrary.Seat}!ticket@{ticket}}
+\index{ticket@{ticket}!ClassLibrary.Seat@{ClassLibrary.Seat}}
+\doxysubsubsection{\texorpdfstring{ticket}{ticket}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_seat_ab4930de26e52c09032a4b334520c3977} 
+\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_ticket}{Ticket}} Class\+Library.\+Seat.\+ticket\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The ticket associated with the seat. 
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Trains/\+\doxymbox{\hyperlink{_seat_8cs}{Seat.\+cs}}\end{DoxyCompactItemize}

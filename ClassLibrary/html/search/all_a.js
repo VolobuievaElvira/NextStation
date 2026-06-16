@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['removecarbyid_0',['RemoveCarById',['../class_class_library_1_1_data_1_1_data_base.html#a4c01ef9de193e337e81fea489dedf029',1,'ClassLibrary::Data::DataBase']]],
-  ['removetrain_1',['RemoveTrain',['../class_class_library_1_1_data_1_1_data_base.html#aca5fe7995a18a8ceacd00bad55cd3a00',1,'ClassLibrary::Data::DataBase']]],
-  ['removeuser_2',['RemoveUser',['../class_class_library_1_1_data_1_1_data_base.html#a18a7a20a42a351b40b0c5fb92eccb4a6',1,'ClassLibrary::Data::DataBase']]],
-  ['retrievepassword_3',['RetrievePassword',['../class_class_library_1_1_data_1_1_current_session.html#ae1bc3f99aef3de06cc1434cda4539992',1,'ClassLibrary::Data::CurrentSession']]],
-  ['role_4',['role',['../class_class_library_1_1_users_1_1_staff.html#a81c443a8059f61e850b8c714baf4760c',1,'ClassLibrary::Users::Staff']]]
+  ['mainsystem_0',['MainSystem',['../class_class_library_1_1_main_system.html',1,'ClassLibrary.MainSystem'],['../class_class_library_1_1_main_system.html#a590a424ebec4bf840cb10f58d16d45ba',1,'ClassLibrary.MainSystem.MainSystem()']]],
+  ['mainsystem_2ecs_1',['MainSystem.cs',['../_main_system_8cs.html',1,'']]],
+  ['mostcomfortable_2',['MostComfortable',['../_route_type_8cs.html#a0a33da2d057b227d889862be3b106273ae7093b3f95358e500f91497734c470cc',1,'RouteType.cs']]]
 ];

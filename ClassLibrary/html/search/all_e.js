@@ -1,4 +1,28 @@
 var searchData=
 [
-  ['validateticket_0',['ValidateTicket',['../class_class_library_1_1_users_1_1_staff.html#aac5a025adac1f35b75112446b071e03e',1,'ClassLibrary::Users::Staff']]]
+  ['reason_0',['Reason',['../class_booking_error.html#a2e42cf0c06163e0d0dc5ba90d25a2ee2',1,'BookingError.Reason'],['../class_register_error.html#afefa0f54b47e8e3334364ef06278ca65',1,'RegisterError.Reason'],['../class_station_management_error.html#ad97a4fcdd0228c42226b85c3f03c65a0',1,'StationManagementError.Reason'],['../class_train_management_error.html#a1780f3a2f83a76203ccdd29d8dd85df0',1,'TrainManagementError.Reason'],['../class_user_management_error.html#a26f6f62f33267567604a2808a9976226',1,'UserManagementError.Reason']]],
+  ['registererror_1',['RegisterError',['../class_register_error.html',1,'RegisterError'],['../class_register_error.html#a4cf5bd2e46cbdc31c94c16f43a505ed8',1,'RegisterError.RegisterError()']]],
+  ['registererror_2ecs_2',['RegisterError.cs',['../_register_error_8cs.html',1,'']]],
+  ['registererrorreason_3',['RegisterErrorReason',['../_register_error_8cs.html#a20717e6a8dc38555f4b5bc05db865d45',1,'RegisterError.cs']]],
+  ['removecar_4',['RemoveCar',['../class_class_library_1_1_trains_1_1_passenger_train.html#aa856814df95d9f7f68a4657a2840b1f1',1,'ClassLibrary::Trains::PassengerTrain']]],
+  ['removecarbyid_5',['RemoveCarById',['../class_class_library_1_1_data_1_1_data_base.html#a4c01ef9de193e337e81fea489dedf029',1,'ClassLibrary::Data::DataBase']]],
+  ['removeoccupiedinterval_6',['RemoveOccupiedInterval',['../class_class_library_1_1_stations_1_1_platform.html#aed044b183e3f2462406b0283243e4be3',1,'ClassLibrary::Stations::Platform']]],
+  ['removeoption_7',['RemoveOption',['../class_class_library_1_1_trains_1_1_passenger_train.html#a68d56945bac38fd94888307ab4624253',1,'ClassLibrary::Trains::PassengerTrain']]],
+  ['removeplatformbyid_8',['RemovePlatformById',['../class_class_library_1_1_stations_1_1_station.html#ada59e436205ed9cf45396bc40c72e9a4',1,'ClassLibrary::Stations::Station']]],
+  ['removeroutestopbyid_9',['RemoveRouteStopById',['../class_class_library_1_1_trains_1_1_train.html#a3aeeb6921b90f4a950c39f6c82893cd1',1,'ClassLibrary::Trains::Train']]],
+  ['removetrain_10',['RemoveTrain',['../class_class_library_1_1_data_1_1_data_base.html#aca5fe7995a18a8ceacd00bad55cd3a00',1,'ClassLibrary::Data::DataBase']]],
+  ['removetrainfromtimetable_11',['RemoveTrainFromTimetable',['../class_class_library_1_1_stations_1_1_station.html#a8e2e101851012cac803abed61d3d415e',1,'ClassLibrary::Stations::Station']]],
+  ['removeuser_12',['RemoveUser',['../class_class_library_1_1_data_1_1_data_base.html#a18a7a20a42a351b40b0c5fb92eccb4a6',1,'ClassLibrary::Data::DataBase']]],
+  ['restaurantcar_13',['RestaurantCar',['../_option_8cs.html#a0e65ad13124ea2cb5e255b640464e35fa2eef48662fadf7563b5acbd4ea0b818f',1,'Option.cs']]],
+  ['retrievepassword_14',['RetrievePassword',['../class_class_library_1_1_data_1_1_current_session.html#ae1bc3f99aef3de06cc1434cda4539992',1,'ClassLibrary::Data::CurrentSession']]],
+  ['role_15',['Role',['../_role_8cs.html#acdd79a1a4f81dd6ee5cddcb21149b951',1,'Role.cs']]],
+  ['role_16',['role',['../class_class_library_1_1_users_1_1_staff.html#a81c443a8059f61e850b8c714baf4760c',1,'ClassLibrary::Users::Staff']]],
+  ['role_2ecs_17',['Role.cs',['../_role_8cs.html',1,'']]],
+  ['route_18',['route',['../class_class_library_1_1_trains_1_1_train.html#a9230d730cc645229d91061380d6d361e',1,'ClassLibrary::Trains::Train']]],
+  ['routestop_19',['RouteStop',['../class_class_library_1_1_trains_1_1_route_stop.html',1,'ClassLibrary.Trains.RouteStop'],['../class_class_library_1_1_trains_1_1_route_stop.html#a558f4b5f5b6e58bc7d24915c104245b5',1,'ClassLibrary.Trains.RouteStop.RouteStop()']]],
+  ['routestop_2ecs_20',['RouteStop.cs',['../_route_stop_8cs.html',1,'']]],
+  ['routestopdoesnotexists_21',['RouteStopDoesNotExists',['../_train_management_error_8cs.html#a0ff4f8cdbad9f7e62a295b268d0a4290aef7b0649f7b9492df5dad8e3f9236aee',1,'TrainManagementError.cs']]],
+  ['routetype_22',['RouteType',['../_route_type_8cs.html#a0a33da2d057b227d889862be3b106273',1,'RouteType.cs']]],
+  ['routetype_2ecs_23',['RouteType.cs',['../_route_type_8cs.html',1,'']]],
+  ['rovereto_24',['Rovereto',['../_station_name_8cs.html#a522d0db2b5e456c9cab273bbabbeafb6ab725cc6ca49236ce040301dcd7b7d36c',1,'StationName.cs']]]
 ];

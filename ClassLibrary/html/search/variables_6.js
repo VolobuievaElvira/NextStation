@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['role_0',['role',['../class_class_library_1_1_users_1_1_staff.html#a81c443a8059f61e850b8c714baf4760c',1,'ClassLibrary::Users::Staff']]]
+  ['location_0',['location',['../class_class_library_1_1_trains_1_1_train.html#ab2c13c86eb65b80fd95627a0889ed282',1,'ClassLibrary::Trains::Train']]]
 ];

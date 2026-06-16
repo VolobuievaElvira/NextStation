@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['currentsession_0',['CurrentSession',['../class_class_library_1_1_data_1_1_current_session.html',1,'ClassLibrary::Data']]]
+  ['bookingerror_0',['BookingError',['../class_booking_error.html',1,'']]]
 ];

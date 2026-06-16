@@ -1,0 +1,128 @@
+\doxysection{Class\+Library.\+Trains.\+Freight\+Train Class Reference}
+\hypertarget{class_class_library_1_1_trains_1_1_freight_train}{}\label{class_class_library_1_1_trains_1_1_freight_train}\index{ClassLibrary.Trains.FreightTrain@{ClassLibrary.Trains.FreightTrain}}
+
+
+Stores information about a freight train, including its train code, location, and cargo capacity.  
+
+
+Inheritance diagram for Class\+Library.\+Trains.\+Freight\+Train:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_class_library_1_1_trains_1_1_freight_train}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_freight_train_a154c8b4aff90a7d8de2fed99c7b7c1b6}{Freight\+Train}} (string train\+Code, \doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}} location, float capacity)
+\begin{DoxyCompactList}\small\item\em Initialize a new instance of the \doxylink{class_class_library_1_1_trains_1_1_freight_train}{Freight\+Train} class. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_freight_train_a210120e4d58b47eb657afcd0095caaf2}{Get\+Capacity}} ()
+\begin{DoxyCompactList}\small\item\em Gets the carriage capacity of the freight train. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_freight_train_a070a87298d5dcd2fe691f65ff2bc22aa}{Change\+Capacity}} (float capacity)
+\begin{DoxyCompactList}\small\item\em Gets the number of the platform. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train}{Class\+Library.\+Trains.\+Train}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_a42a30868c4b9457d574c3362b9ea6973}{Train}} (string name, \doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}} location)
+\begin{DoxyCompactList}\small\item\em Initialize a new instance of the \doxylink{class_class_library_1_1_trains_1_1_train}{Train} class. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_a1ac9d075c16c7f3b83cd6cb753936a9c}{Get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Gets the id of the train. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_a90c7055ed1544881aec999a92fb3992c}{Get\+Train\+Code}} ()
+\begin{DoxyCompactList}\small\item\em Gets the train code of the train. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_a58a80fd4f86efe7a66d531dc65220bd2}{Change\+Train\+Code}} (string train\+Code)
+\begin{DoxyCompactList}\small\item\em changes the train code of the train \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}} \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_a514efb37c5bdd8be04d199881d51da4f}{Get\+Location}} ()
+\begin{DoxyCompactList}\small\item\em Gets the location of the train. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_a3375ab17a3b59429c4b74fd437a7618e}{Update\+Location}} (\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}} location)
+\begin{DoxyCompactList}\small\item\em Updates the location of the train. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_af00518c6df7bfcaa2368e2857e96d1b1}{Add\+Route\+Stop}} (Date\+Time arrival\+Time, Date\+Time departure\+Time, \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station}{Station}} station, int platform)
+\begin{DoxyCompactList}\small\item\em Adds a new route stop to the train\textquotesingle{}s route. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_a3aeeb6921b90f4a950c39f6c82893cd1}{Remove\+Route\+Stop\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Removes a route stop from the train\textquotesingle{}s route by its id. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_route_stop}{Route\+Stop}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_aa7cfde84b128eaab08c9efd6ea65b4e6}{Get\+All\+Route\+Stop}} ()
+\begin{DoxyCompactList}\small\item\em Gets all the route stops of the train. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_freight_train_ae2e4ce50868222e8150ac937e57f9030}{capacity}}
+\begin{DoxyCompactList}\small\item\em The cargo capacity of the freight train. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores information about a freight train, including its train code, location, and cargo capacity. 
+
+\label{class_class_library_1_1_trains_1_1_freight_train_doc-constructors}
+\Hypertarget{class_class_library_1_1_trains_1_1_freight_train_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_class_library_1_1_trains_1_1_freight_train_a154c8b4aff90a7d8de2fed99c7b7c1b6}\index{ClassLibrary.Trains.FreightTrain@{ClassLibrary.Trains.FreightTrain}!FreightTrain@{FreightTrain}}
+\index{FreightTrain@{FreightTrain}!ClassLibrary.Trains.FreightTrain@{ClassLibrary.Trains.FreightTrain}}
+\doxysubsubsection{\texorpdfstring{FreightTrain()}{FreightTrain()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_freight_train_a154c8b4aff90a7d8de2fed99c7b7c1b6} 
+Class\+Library.\+Trains.\+Freight\+Train.\+Freight\+Train (\begin{DoxyParamCaption}\item[{string}]{train\+Code}{, }\item[{\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}}}]{location}{, }\item[{float}]{capacity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialize a new instance of the \doxylink{class_class_library_1_1_trains_1_1_freight_train}{Freight\+Train} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Code} & The code of the freight train \\
+\hline
+{\em location} & The location of the freight train \\
+\hline
+{\em capacity} & The cargo capacity of the freight train \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_class_library_1_1_trains_1_1_freight_train_doc-func-members}
+\Hypertarget{class_class_library_1_1_trains_1_1_freight_train_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_class_library_1_1_trains_1_1_freight_train_a070a87298d5dcd2fe691f65ff2bc22aa}\index{ClassLibrary.Trains.FreightTrain@{ClassLibrary.Trains.FreightTrain}!ChangeCapacity@{ChangeCapacity}}
+\index{ChangeCapacity@{ChangeCapacity}!ClassLibrary.Trains.FreightTrain@{ClassLibrary.Trains.FreightTrain}}
+\doxysubsubsection{\texorpdfstring{ChangeCapacity()}{ChangeCapacity()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_freight_train_a070a87298d5dcd2fe691f65ff2bc22aa} 
+void Class\+Library.\+Trains.\+Freight\+Train.\+Change\+Capacity (\begin{DoxyParamCaption}\item[{float}]{capacity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the number of the platform. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em capacity} & The new carriage capacity of the freight train \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_trains_1_1_freight_train_a210120e4d58b47eb657afcd0095caaf2}\index{ClassLibrary.Trains.FreightTrain@{ClassLibrary.Trains.FreightTrain}!GetCapacity@{GetCapacity}}
+\index{GetCapacity@{GetCapacity}!ClassLibrary.Trains.FreightTrain@{ClassLibrary.Trains.FreightTrain}}
+\doxysubsubsection{\texorpdfstring{GetCapacity()}{GetCapacity()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_freight_train_a210120e4d58b47eb657afcd0095caaf2} 
+float Class\+Library.\+Trains.\+Freight\+Train.\+Get\+Capacity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the carriage capacity of the freight train. 
+
+\begin{DoxyReturn}{Returns}
+The carriage capacity of the freight train 
+\end{DoxyReturn}
+
+
+\label{class_class_library_1_1_trains_1_1_freight_train_doc-variable-members}
+\Hypertarget{class_class_library_1_1_trains_1_1_freight_train_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_class_library_1_1_trains_1_1_freight_train_ae2e4ce50868222e8150ac937e57f9030}\index{ClassLibrary.Trains.FreightTrain@{ClassLibrary.Trains.FreightTrain}!capacity@{capacity}}
+\index{capacity@{capacity}!ClassLibrary.Trains.FreightTrain@{ClassLibrary.Trains.FreightTrain}}
+\doxysubsubsection{\texorpdfstring{capacity}{capacity}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_freight_train_ae2e4ce50868222e8150ac937e57f9030} 
+float Class\+Library.\+Trains.\+Freight\+Train.\+capacity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The cargo capacity of the freight train. 
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Trains/\+\doxymbox{\hyperlink{_freight_train_8cs}{Freight\+Train.\+cs}}\end{DoxyCompactItemize}

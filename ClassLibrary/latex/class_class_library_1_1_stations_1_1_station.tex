@@ -1,0 +1,273 @@
+\doxysection{Class\+Library.\+Stations.\+Station Class Reference}
+\hypertarget{class_class_library_1_1_stations_1_1_station}{}\label{class_class_library_1_1_stations_1_1_station}\index{ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}}
+
+
+A class that represents a station, including its name, platforms, and timetable.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station_a22a21623f0a85f1514481c3a09442751}{Station}} (\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}} name)
+\begin{DoxyCompactList}\small\item\em Initialize a new instance of the \doxylink{class_class_library_1_1_stations_1_1_station}{Station} class. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station_a66cc5cfd46cdd3888648ba6d673d1dd0}{Get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Returns the station\textquotesingle{}s ID. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}} \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station_a6e924bf00d81af078cf71bd988beedd7}{Get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns the station\textquotesingle{}s name. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station_a1749057989f9bf9d803423c7db05d7f4}{Add\+Platform}} (int platform\+Number)
+\begin{DoxyCompactList}\small\item\em Adds a platform to the station. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station_ada59e436205ed9cf45396bc40c72e9a4}{Remove\+Platform\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Removes a platform from the station by ID. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_platform}{Platform}} \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station_abe82af03bfe5d87161bf4401128f12ce}{Get\+Platform\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Returns the platform with the specified ID. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_platform}{Platform}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station_ae722ec9026a3fb729f736c4086d5dd64}{Get\+All\+Platforms}} ()
+\begin{DoxyCompactList}\small\item\em Returns all platforms at the station. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station_a7433d046005f634e6d32338b22b75cde}{Add\+Train\+To\+Timetable}} (\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train}{Train}} train, Date\+Time arrival\+Time)
+\begin{DoxyCompactList}\small\item\em Adds a train to the station timetable. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station_a8e2e101851012cac803abed61d3d415e}{Remove\+Train\+From\+Timetable}} (\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train}{Train}} train, Date\+Time arrival\+Time)
+\begin{DoxyCompactList}\small\item\em not yet implemented \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station_a82649dca7e5777ae7a9ee84ff7605102}{Update\+Timetable}} (\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train}{Train}} train, Date\+Time arrival\+Time, float delay)
+\begin{DoxyCompactList}\small\item\em not yet implemented \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_timetable}{Timetable}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station_a156de38be70b0a0a0cbacbe6af7ac6e1}{Get\+Timetable}} ()
+\begin{DoxyCompactList}\small\item\em Returns the timetable for the station. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station_a4d826ae8c3ec9ff57feb109faa84cb23}{id}}
+\begin{DoxyCompactList}\small\item\em The id of the station. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}} \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station_a4fc176c0695d93b598c7dff713e51d95}{name}}
+\begin{DoxyCompactList}\small\item\em The name of the station. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_platform}{Platform}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station_ad036f6f02c3f4b96b44e54d04b156e57}{platforms}} = new()
+\begin{DoxyCompactList}\small\item\em The platforms of the station. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_timetable}{Timetable}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station_a3b29762a4bdb5a9b624ba2b852b07aa2}{timetable}} = new()
+\begin{DoxyCompactList}\small\item\em The timetable of the station. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station_a4ec76c6d7fe42b8591bf7fa75a87753a}{counter}} = 0
+\begin{DoxyCompactList}\small\item\em The id of the last station in the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that represents a station, including its name, platforms, and timetable. 
+
+\label{class_class_library_1_1_stations_1_1_station_doc-constructors}
+\Hypertarget{class_class_library_1_1_stations_1_1_station_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_class_library_1_1_stations_1_1_station_a22a21623f0a85f1514481c3a09442751}\index{ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}!Station@{Station}}
+\index{Station@{Station}!ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}}
+\doxysubsubsection{\texorpdfstring{Station()}{Station()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_station_a22a21623f0a85f1514481c3a09442751} 
+Class\+Library.\+Stations.\+Station.\+Station (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}}}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialize a new instance of the \doxylink{class_class_library_1_1_stations_1_1_station}{Station} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the station \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_class_library_1_1_stations_1_1_station_doc-func-members}
+\Hypertarget{class_class_library_1_1_stations_1_1_station_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_class_library_1_1_stations_1_1_station_a1749057989f9bf9d803423c7db05d7f4}\index{ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}!AddPlatform@{AddPlatform}}
+\index{AddPlatform@{AddPlatform}!ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}}
+\doxysubsubsection{\texorpdfstring{AddPlatform()}{AddPlatform()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_station_a1749057989f9bf9d803423c7db05d7f4} 
+void Class\+Library.\+Stations.\+Station.\+Add\+Platform (\begin{DoxyParamCaption}\item[{int}]{platform\+Number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a platform to the station. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em platform\+Number} & The number of the platform to add \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_stations_1_1_station_a7433d046005f634e6d32338b22b75cde}\index{ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}!AddTrainToTimetable@{AddTrainToTimetable}}
+\index{AddTrainToTimetable@{AddTrainToTimetable}!ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}}
+\doxysubsubsection{\texorpdfstring{AddTrainToTimetable()}{AddTrainToTimetable()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_station_a7433d046005f634e6d32338b22b75cde} 
+void Class\+Library.\+Stations.\+Station.\+Add\+Train\+To\+Timetable (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train}{Train}}}]{train}{, }\item[{Date\+Time}]{arrival\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a train to the station timetable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em train} & The train to add \\
+\hline
+{\em arrival\+Time} & The train\textquotesingle{}s arrival time \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_stations_1_1_station_ae722ec9026a3fb729f736c4086d5dd64}\index{ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}!GetAllPlatforms@{GetAllPlatforms}}
+\index{GetAllPlatforms@{GetAllPlatforms}!ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}}
+\doxysubsubsection{\texorpdfstring{GetAllPlatforms()}{GetAllPlatforms()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_station_ae722ec9026a3fb729f736c4086d5dd64} 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_platform}{Platform}} $>$ Class\+Library.\+Stations.\+Station.\+Get\+All\+Platforms (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns all platforms at the station. 
+
+\begin{DoxyReturn}{Returns}
+The list of platforms at the station 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_stations_1_1_station_a66cc5cfd46cdd3888648ba6d673d1dd0}\index{ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}!GetId@{GetId}}
+\index{GetId@{GetId}!ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}}
+\doxysubsubsection{\texorpdfstring{GetId()}{GetId()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_station_a66cc5cfd46cdd3888648ba6d673d1dd0} 
+int Class\+Library.\+Stations.\+Station.\+Get\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the station\textquotesingle{}s ID. 
+
+\begin{DoxyReturn}{Returns}
+The station\textquotesingle{}s ID 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_stations_1_1_station_a6e924bf00d81af078cf71bd988beedd7}\index{ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}!GetName@{GetName}}
+\index{GetName@{GetName}!ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_station_a6e924bf00d81af078cf71bd988beedd7} 
+\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}} Class\+Library.\+Stations.\+Station.\+Get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the station\textquotesingle{}s name. 
+
+\begin{DoxyReturn}{Returns}
+The station\textquotesingle{}s name 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_stations_1_1_station_abe82af03bfe5d87161bf4401128f12ce}\index{ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}!GetPlatformById@{GetPlatformById}}
+\index{GetPlatformById@{GetPlatformById}!ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}}
+\doxysubsubsection{\texorpdfstring{GetPlatformById()}{GetPlatformById()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_station_abe82af03bfe5d87161bf4401128f12ce} 
+\doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_platform}{Platform}} Class\+Library.\+Stations.\+Station.\+Get\+Platform\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the platform with the specified ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the platform to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The platform with the specified ID 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_stations_1_1_station_a156de38be70b0a0a0cbacbe6af7ac6e1}\index{ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}!GetTimetable@{GetTimetable}}
+\index{GetTimetable@{GetTimetable}!ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}}
+\doxysubsubsection{\texorpdfstring{GetTimetable()}{GetTimetable()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_station_a156de38be70b0a0a0cbacbe6af7ac6e1} 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_timetable}{Timetable}} $>$ Class\+Library.\+Stations.\+Station.\+Get\+Timetable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the timetable for the station. 
+
+\begin{DoxyReturn}{Returns}
+The station\textquotesingle{}s timetable 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_stations_1_1_station_ada59e436205ed9cf45396bc40c72e9a4}\index{ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}!RemovePlatformById@{RemovePlatformById}}
+\index{RemovePlatformById@{RemovePlatformById}!ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}}
+\doxysubsubsection{\texorpdfstring{RemovePlatformById()}{RemovePlatformById()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_station_ada59e436205ed9cf45396bc40c72e9a4} 
+void Class\+Library.\+Stations.\+Station.\+Remove\+Platform\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes a platform from the station by ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the platform to remove \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_stations_1_1_station_a8e2e101851012cac803abed61d3d415e}\index{ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}!RemoveTrainFromTimetable@{RemoveTrainFromTimetable}}
+\index{RemoveTrainFromTimetable@{RemoveTrainFromTimetable}!ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}}
+\doxysubsubsection{\texorpdfstring{RemoveTrainFromTimetable()}{RemoveTrainFromTimetable()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_station_a8e2e101851012cac803abed61d3d415e} 
+void Class\+Library.\+Stations.\+Station.\+Remove\+Train\+From\+Timetable (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train}{Train}}}]{train}{, }\item[{Date\+Time}]{arrival\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+not yet implemented 
+
+\Hypertarget{class_class_library_1_1_stations_1_1_station_a82649dca7e5777ae7a9ee84ff7605102}\index{ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}!UpdateTimetable@{UpdateTimetable}}
+\index{UpdateTimetable@{UpdateTimetable}!ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}}
+\doxysubsubsection{\texorpdfstring{UpdateTimetable()}{UpdateTimetable()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_station_a82649dca7e5777ae7a9ee84ff7605102} 
+void Class\+Library.\+Stations.\+Station.\+Update\+Timetable (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train}{Train}}}]{train}{, }\item[{Date\+Time}]{arrival\+Time}{, }\item[{float}]{delay}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+not yet implemented 
+
+
+
+\label{class_class_library_1_1_stations_1_1_station_doc-variable-members}
+\Hypertarget{class_class_library_1_1_stations_1_1_station_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_class_library_1_1_stations_1_1_station_a4ec76c6d7fe42b8591bf7fa75a87753a}\index{ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}!counter@{counter}}
+\index{counter@{counter}!ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_station_a4ec76c6d7fe42b8591bf7fa75a87753a} 
+int Class\+Library.\+Stations.\+Station.\+counter = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The id of the last station in the database. 
+
+\Hypertarget{class_class_library_1_1_stations_1_1_station_a4d826ae8c3ec9ff57feb109faa84cb23}\index{ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}!id@{id}}
+\index{id@{id}!ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_station_a4d826ae8c3ec9ff57feb109faa84cb23} 
+int Class\+Library.\+Stations.\+Station.\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The id of the station. 
+
+\Hypertarget{class_class_library_1_1_stations_1_1_station_a4fc176c0695d93b598c7dff713e51d95}\index{ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}!name@{name}}
+\index{name@{name}!ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_station_a4fc176c0695d93b598c7dff713e51d95} 
+\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}} Class\+Library.\+Stations.\+Station.\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The name of the station. 
+
+\Hypertarget{class_class_library_1_1_stations_1_1_station_ad036f6f02c3f4b96b44e54d04b156e57}\index{ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}!platforms@{platforms}}
+\index{platforms@{platforms}!ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}}
+\doxysubsubsection{\texorpdfstring{platforms}{platforms}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_station_ad036f6f02c3f4b96b44e54d04b156e57} 
+List$<$\doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_platform}{Platform}}$>$ Class\+Library.\+Stations.\+Station.\+platforms = new()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The platforms of the station. 
+
+\Hypertarget{class_class_library_1_1_stations_1_1_station_a3b29762a4bdb5a9b624ba2b852b07aa2}\index{ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}!timetable@{timetable}}
+\index{timetable@{timetable}!ClassLibrary.Stations.Station@{ClassLibrary.Stations.Station}}
+\doxysubsubsection{\texorpdfstring{timetable}{timetable}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_stations_1_1_station_a3b29762a4bdb5a9b624ba2b852b07aa2} 
+List$<$\doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_timetable}{Timetable}}$>$ Class\+Library.\+Stations.\+Station.\+timetable = new()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The timetable of the station. 
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Stations/\+\doxymbox{\hyperlink{_station_8cs}{Station.\+cs}}\end{DoxyCompactItemize}

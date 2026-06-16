@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['ticket_0',['Ticket',['../class_class_library_1_1_trains_1_1_ticket.html',1,'ClassLibrary.Trains.Ticket'],['../class_class_library_1_1_trains_1_1_ticket.html#ab4873f8b095427078d7e3683708ef666',1,'ClassLibrary.Trains.Ticket.Ticket(int id, int? passengerId, int seatNumber)'],['../class_class_library_1_1_trains_1_1_ticket.html#a0f2200279d65d60d2e979a02554aca32',1,'ClassLibrary.Trains.Ticket.Ticket(Seat seat)']]],
+  ['ticket_1',['ticket',['../class_class_library_1_1_seat.html#ab4930de26e52c09032a4b334520c3977',1,'ClassLibrary::Seat']]],
+  ['ticket_2ecs_2',['Ticket.cs',['../_ticket_8cs.html',1,'']]],
+  ['ticketisalreadybooked_3',['TicketIsAlreadyBooked',['../_booking_error_8cs.html#a5bad8a6cfc947664b78f1817995555f1a0ea8de2f86953820595917d4bed347c7',1,'BookingError.cs']]],
+  ['tickets_4',['tickets',['../class_class_library_1_1_users_1_1_passenger.html#aaee8aa4d8cdf1e571344a1f994198865',1,'ClassLibrary::Users::Passenger']]],
+  ['timeinterval_5',['TimeInterval',['../class_class_library_1_1_stations_1_1_time_interval.html',1,'ClassLibrary.Stations.TimeInterval'],['../class_class_library_1_1_stations_1_1_time_interval.html#a00fcf67eacb6538fe1ab4d842904a799',1,'ClassLibrary.Stations.TimeInterval.TimeInterval()']]],
+  ['timeinterval_2ecs_6',['TimeInterval.cs',['../_time_interval_8cs.html',1,'']]],
+  ['timeintervaldoesnotexist_7',['TimeIntervalDoesNotExist',['../_station_management_error_8cs.html#a730877af271d084bc73994fbc2a44927aacc4389fb5045bffc1cb6d94bb893992',1,'StationManagementError.cs']]],
+  ['timetable_8',['Timetable',['../class_class_library_1_1_stations_1_1_timetable.html',1,'ClassLibrary.Stations.Timetable'],['../class_class_library_1_1_stations_1_1_timetable.html#a8052a231b7c4f916f83c428abc74e1c9',1,'ClassLibrary.Stations.Timetable.Timetable()']]],
+  ['timetable_9',['timetable',['../class_class_library_1_1_stations_1_1_station.html#a3b29762a4bdb5a9b624ba2b852b07aa2',1,'ClassLibrary::Stations::Station']]],
+  ['timetable_2ecs_10',['Timetable.cs',['../_timetable_8cs.html',1,'']]],
+  ['train_11',['Train',['../class_class_library_1_1_trains_1_1_train.html',1,'ClassLibrary.Trains.Train'],['../class_class_library_1_1_trains_1_1_train.html#a42a30868c4b9457d574c3362b9ea6973',1,'ClassLibrary.Trains.Train.Train()']]],
+  ['train_2ecs_12',['Train.cs',['../_train_8cs.html',1,'']]],
+  ['traincode_13',['trainCode',['../class_class_library_1_1_stations_1_1_timetable.html#aed0d2e5d3c66d347880580bab2be9f2c',1,'ClassLibrary.Stations.Timetable.trainCode'],['../class_class_library_1_1_trains_1_1_train.html#aca0fed13a732caffefbf0f165431457f',1,'ClassLibrary.Trains.Train.trainCode']]],
+  ['traindoesnotexists_14',['TrainDoesNotExists',['../_train_management_error_8cs.html#a0ff4f8cdbad9f7e62a295b268d0a4290a0bd90aa85500ca31fd3bd36c848e2fee',1,'TrainManagementError.cs']]],
+  ['trainid_15',['trainId',['../class_class_library_1_1_trains_1_1_car.html#ab29ba34c7b6bd50d99975d7285b95b68',1,'ClassLibrary::Trains::Car']]],
+  ['trainmanagementerror_16',['TrainManagementError',['../class_train_management_error.html',1,'TrainManagementError'],['../class_train_management_error.html#aa6bf0fa93145ee0adaf2a582f4d04c9e',1,'TrainManagementError.TrainManagementError()']]],
+  ['trainmanagementerror_2ecs_17',['TrainManagementError.cs',['../_train_management_error_8cs.html',1,'']]],
+  ['trainmanagementerrorreason_18',['TrainManagementErrorReason',['../_train_management_error_8cs.html#a0ff4f8cdbad9f7e62a295b268d0a4290',1,'TrainManagementError.cs']]],
+  ['trainoperator_19',['TrainOperator',['../_role_8cs.html#acdd79a1a4f81dd6ee5cddcb21149b951ace7e46c6ff01441038f1ee913d108dc1',1,'Role.cs']]],
+  ['trains_20',['trains',['../class_class_library_1_1_data_1_1_data_base.html#a58cdd0b94748b3236b6d1f1a1ede43ab',1,'ClassLibrary::Data::DataBase']]],
+  ['trains_5fpath_21',['trains_path',['../class_class_library_1_1_data_1_1_data_base.html#acffd8a49852b1f0d69eb6bb3365177fb',1,'ClassLibrary::Data::DataBase']]],
+  ['trainseacrh_22',['TrainSeacrh',['../class_class_library_1_1_data_1_1_data_base.html#a26c8be143f88f4dceb8d7bd39f04f653',1,'ClassLibrary::Data::DataBase']]],
+  ['trento_23',['Trento',['../_station_name_8cs.html#a522d0db2b5e456c9cab273bbabbeafb6ac6909452eddb5ba40b7ac7241a9b350d',1,'StationName.cs']]]
+];

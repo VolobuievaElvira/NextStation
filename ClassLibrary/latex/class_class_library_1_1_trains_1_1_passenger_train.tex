@@ -1,0 +1,294 @@
+\doxysection{Class\+Library.\+Trains.\+Passenger\+Train Class Reference}
+\hypertarget{class_class_library_1_1_trains_1_1_passenger_train}{}\label{class_class_library_1_1_trains_1_1_passenger_train}\index{ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}}
+
+
+A class that represents a passenger train, including its photo, options, cars, and description.  
+
+
+Inheritance diagram for Class\+Library.\+Trains.\+Passenger\+Train:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_class_library_1_1_trains_1_1_passenger_train}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_passenger_train_a084569cf5d0c7f30e61c31e3aaaa0f3c}{Passenger\+Train}} (string train\+Code, \doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}} location, List$<$ \doxymbox{\hyperlink{_option_8cs_a0e65ad13124ea2cb5e255b640464e35f}{Option}} $>$ options)
+\begin{DoxyCompactList}\small\item\em Initialize a new instance of the \doxylink{class_class_library_1_1_trains_1_1_passenger_train}{Passenger\+Train} class. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_passenger_train_a081b1d3f469e5d9edd47adc2586cc3bf}{Change\+Photo}} (string photo)
+\begin{DoxyCompactList}\small\item\em Changes the photo of the passenger train. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_passenger_train_a16958092eca2fdad3b46495fee2277ac}{Add\+Car}} (\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car}{Car}} car)
+\begin{DoxyCompactList}\small\item\em Adds a carriage to the passenger train. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_passenger_train_a05aba1bff332950095ff16b91d4440cf}{Add\+Option}} (\doxymbox{\hyperlink{_option_8cs_a0e65ad13124ea2cb5e255b640464e35f}{Option}} option)
+\begin{DoxyCompactList}\small\item\em Adds an option to the pasenger train. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_passenger_train_aa856814df95d9f7f68a4657a2840b1f1}{Remove\+Car}} (\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car}{Car}} car)
+\begin{DoxyCompactList}\small\item\em Removes a carriage from the passenger train. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_passenger_train_a68d56945bac38fd94888307ab4624253}{Remove\+Option}} (\doxymbox{\hyperlink{_option_8cs_a0e65ad13124ea2cb5e255b640464e35f}{Option}} option)
+\begin{DoxyCompactList}\small\item\em Removes an option from the passenger train. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_passenger_train_a0c3aa7efdc68721c1fc6b2637f3f6d52}{Change\+Description}} (string description)
+\begin{DoxyCompactList}\small\item\em Changes the description of the passenger train. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_passenger_train_a6602b990f86ca0e8ea5cb9bdc2cd384b}{Get\+Description}} ()
+\begin{DoxyCompactList}\small\item\em Gets the description of the passenger train. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_passenger_train_a14ed01420a4546cd0cbd6cab55339507}{Get\+Photo}} ()
+\begin{DoxyCompactList}\small\item\em Gets the photo of the passenger train. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car}{Car}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_passenger_train_a3b68bf5ac504f4a083ffd7b439959ebb}{Get\+All\+Cars}} ()
+\begin{DoxyCompactList}\small\item\em Gets all the carriages of the passenger train. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{_option_8cs_a0e65ad13124ea2cb5e255b640464e35f}{Option}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_passenger_train_a7c9c0a05deb7a5f562467c6b47ebf20c}{Get\+All\+Options}} ()
+\begin{DoxyCompactList}\small\item\em Gets all the options of the passenger train. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train}{Class\+Library.\+Trains.\+Train}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_a42a30868c4b9457d574c3362b9ea6973}{Train}} (string name, \doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}} location)
+\begin{DoxyCompactList}\small\item\em Initialize a new instance of the \doxylink{class_class_library_1_1_trains_1_1_train}{Train} class. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_a1ac9d075c16c7f3b83cd6cb753936a9c}{Get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Gets the id of the train. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_a90c7055ed1544881aec999a92fb3992c}{Get\+Train\+Code}} ()
+\begin{DoxyCompactList}\small\item\em Gets the train code of the train. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_a58a80fd4f86efe7a66d531dc65220bd2}{Change\+Train\+Code}} (string train\+Code)
+\begin{DoxyCompactList}\small\item\em changes the train code of the train \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}} \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_a514efb37c5bdd8be04d199881d51da4f}{Get\+Location}} ()
+\begin{DoxyCompactList}\small\item\em Gets the location of the train. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_a3375ab17a3b59429c4b74fd437a7618e}{Update\+Location}} (\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}} location)
+\begin{DoxyCompactList}\small\item\em Updates the location of the train. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_af00518c6df7bfcaa2368e2857e96d1b1}{Add\+Route\+Stop}} (Date\+Time arrival\+Time, Date\+Time departure\+Time, \doxymbox{\hyperlink{class_class_library_1_1_stations_1_1_station}{Station}} station, int platform)
+\begin{DoxyCompactList}\small\item\em Adds a new route stop to the train\textquotesingle{}s route. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_a3aeeb6921b90f4a950c39f6c82893cd1}{Remove\+Route\+Stop\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Removes a route stop from the train\textquotesingle{}s route by its id. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_route_stop}{Route\+Stop}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_train_aa7cfde84b128eaab08c9efd6ea65b4e6}{Get\+All\+Route\+Stop}} ()
+\begin{DoxyCompactList}\small\item\em Gets all the route stops of the train. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_passenger_train_a772353a7f2bdd383ab366f892a6e5254}{photo}}
+\begin{DoxyCompactList}\small\item\em The photo of the passenger train. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{_option_8cs_a0e65ad13124ea2cb5e255b640464e35f}{Option}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_passenger_train_a0f8c102887cebd2a0da972ffeb51d93c}{options}} = new()
+\begin{DoxyCompactList}\small\item\em The options of the passenger train. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car}{Car}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_passenger_train_a56a266a478ac2982b6d0741249a4f0fa}{cars}} = new()
+\begin{DoxyCompactList}\small\item\em The carriages of the passenger train. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_passenger_train_a95eeb5c1cbb1b350eb8a96507c6aee36}{description}} = "{}"{}
+\begin{DoxyCompactList}\small\item\em The description of the passenger train. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that represents a passenger train, including its photo, options, cars, and description. 
+
+\label{class_class_library_1_1_trains_1_1_passenger_train_doc-constructors}
+\Hypertarget{class_class_library_1_1_trains_1_1_passenger_train_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_class_library_1_1_trains_1_1_passenger_train_a084569cf5d0c7f30e61c31e3aaaa0f3c}\index{ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}!PassengerTrain@{PassengerTrain}}
+\index{PassengerTrain@{PassengerTrain}!ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}}
+\doxysubsubsection{\texorpdfstring{PassengerTrain()}{PassengerTrain()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_passenger_train_a084569cf5d0c7f30e61c31e3aaaa0f3c} 
+Class\+Library.\+Trains.\+Passenger\+Train.\+Passenger\+Train (\begin{DoxyParamCaption}\item[{string}]{train\+Code}{, }\item[{\doxymbox{\hyperlink{_station_name_8cs_a522d0db2b5e456c9cab273bbabbeafb6}{Station\+Name}}}]{location}{, }\item[{List$<$ \doxymbox{\hyperlink{_option_8cs_a0e65ad13124ea2cb5e255b640464e35f}{Option}} $>$}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialize a new instance of the \doxylink{class_class_library_1_1_trains_1_1_passenger_train}{Passenger\+Train} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Code} & The code of the passenger train \\
+\hline
+{\em location} & The location of the passenger train \\
+\hline
+{\em options} & The options of the passenger train \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_class_library_1_1_trains_1_1_passenger_train_doc-func-members}
+\Hypertarget{class_class_library_1_1_trains_1_1_passenger_train_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_class_library_1_1_trains_1_1_passenger_train_a16958092eca2fdad3b46495fee2277ac}\index{ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}!AddCar@{AddCar}}
+\index{AddCar@{AddCar}!ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}}
+\doxysubsubsection{\texorpdfstring{AddCar()}{AddCar()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_passenger_train_a16958092eca2fdad3b46495fee2277ac} 
+void Class\+Library.\+Trains.\+Passenger\+Train.\+Add\+Car (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car}{Car}}}]{car}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a carriage to the passenger train. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em car} & The carriage to be added to the passenger train \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_trains_1_1_passenger_train_a05aba1bff332950095ff16b91d4440cf}\index{ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}!AddOption@{AddOption}}
+\index{AddOption@{AddOption}!ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}}
+\doxysubsubsection{\texorpdfstring{AddOption()}{AddOption()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_passenger_train_a05aba1bff332950095ff16b91d4440cf} 
+void Class\+Library.\+Trains.\+Passenger\+Train.\+Add\+Option (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{_option_8cs_a0e65ad13124ea2cb5e255b640464e35f}{Option}}}]{option}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds an option to the pasenger train. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em option} & The opton to be added to the passenger train \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_trains_1_1_passenger_train_a0c3aa7efdc68721c1fc6b2637f3f6d52}\index{ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}!ChangeDescription@{ChangeDescription}}
+\index{ChangeDescription@{ChangeDescription}!ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}}
+\doxysubsubsection{\texorpdfstring{ChangeDescription()}{ChangeDescription()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_passenger_train_a0c3aa7efdc68721c1fc6b2637f3f6d52} 
+void Class\+Library.\+Trains.\+Passenger\+Train.\+Change\+Description (\begin{DoxyParamCaption}\item[{string}]{description}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Changes the description of the passenger train. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em description} & The new description of the passenger train \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_trains_1_1_passenger_train_a081b1d3f469e5d9edd47adc2586cc3bf}\index{ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}!ChangePhoto@{ChangePhoto}}
+\index{ChangePhoto@{ChangePhoto}!ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}}
+\doxysubsubsection{\texorpdfstring{ChangePhoto()}{ChangePhoto()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_passenger_train_a081b1d3f469e5d9edd47adc2586cc3bf} 
+void Class\+Library.\+Trains.\+Passenger\+Train.\+Change\+Photo (\begin{DoxyParamCaption}\item[{string}]{photo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Changes the photo of the passenger train. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em photo} & The new photo of the passenger train \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_trains_1_1_passenger_train_a3b68bf5ac504f4a083ffd7b439959ebb}\index{ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}!GetAllCars@{GetAllCars}}
+\index{GetAllCars@{GetAllCars}!ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}}
+\doxysubsubsection{\texorpdfstring{GetAllCars()}{GetAllCars()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_passenger_train_a3b68bf5ac504f4a083ffd7b439959ebb} 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car}{Car}} $>$ Class\+Library.\+Trains.\+Passenger\+Train.\+Get\+All\+Cars (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets all the carriages of the passenger train. 
+
+\begin{DoxyReturn}{Returns}
+A list of all the carriages of the passenger train 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_trains_1_1_passenger_train_a7c9c0a05deb7a5f562467c6b47ebf20c}\index{ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}!GetAllOptions@{GetAllOptions}}
+\index{GetAllOptions@{GetAllOptions}!ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}}
+\doxysubsubsection{\texorpdfstring{GetAllOptions()}{GetAllOptions()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_passenger_train_a7c9c0a05deb7a5f562467c6b47ebf20c} 
+List$<$ \doxymbox{\hyperlink{_option_8cs_a0e65ad13124ea2cb5e255b640464e35f}{Option}} $>$ Class\+Library.\+Trains.\+Passenger\+Train.\+Get\+All\+Options (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets all the options of the passenger train. 
+
+\begin{DoxyReturn}{Returns}
+A list of all the options of the passenger train 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_trains_1_1_passenger_train_a6602b990f86ca0e8ea5cb9bdc2cd384b}\index{ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}!GetDescription@{GetDescription}}
+\index{GetDescription@{GetDescription}!ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}}
+\doxysubsubsection{\texorpdfstring{GetDescription()}{GetDescription()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_passenger_train_a6602b990f86ca0e8ea5cb9bdc2cd384b} 
+string Class\+Library.\+Trains.\+Passenger\+Train.\+Get\+Description (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the description of the passenger train. 
+
+\begin{DoxyReturn}{Returns}
+The description of the passenger train 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_trains_1_1_passenger_train_a14ed01420a4546cd0cbd6cab55339507}\index{ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}!GetPhoto@{GetPhoto}}
+\index{GetPhoto@{GetPhoto}!ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}}
+\doxysubsubsection{\texorpdfstring{GetPhoto()}{GetPhoto()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_passenger_train_a14ed01420a4546cd0cbd6cab55339507} 
+string Class\+Library.\+Trains.\+Passenger\+Train.\+Get\+Photo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the photo of the passenger train. 
+
+\begin{DoxyReturn}{Returns}
+The photo of the passenger train 
+\end{DoxyReturn}
+\Hypertarget{class_class_library_1_1_trains_1_1_passenger_train_aa856814df95d9f7f68a4657a2840b1f1}\index{ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}!RemoveCar@{RemoveCar}}
+\index{RemoveCar@{RemoveCar}!ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}}
+\doxysubsubsection{\texorpdfstring{RemoveCar()}{RemoveCar()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_passenger_train_aa856814df95d9f7f68a4657a2840b1f1} 
+void Class\+Library.\+Trains.\+Passenger\+Train.\+Remove\+Car (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car}{Car}}}]{car}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes a carriage from the passenger train. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em car} & The carriage to be removed from the passenger train \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_class_library_1_1_trains_1_1_passenger_train_a68d56945bac38fd94888307ab4624253}\index{ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}!RemoveOption@{RemoveOption}}
+\index{RemoveOption@{RemoveOption}!ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}}
+\doxysubsubsection{\texorpdfstring{RemoveOption()}{RemoveOption()}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_passenger_train_a68d56945bac38fd94888307ab4624253} 
+void Class\+Library.\+Trains.\+Passenger\+Train.\+Remove\+Option (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{_option_8cs_a0e65ad13124ea2cb5e255b640464e35f}{Option}}}]{option}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes an option from the passenger train. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em option} & The option to be removed from the passenger train \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_class_library_1_1_trains_1_1_passenger_train_doc-variable-members}
+\Hypertarget{class_class_library_1_1_trains_1_1_passenger_train_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_class_library_1_1_trains_1_1_passenger_train_a56a266a478ac2982b6d0741249a4f0fa}\index{ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}!cars@{cars}}
+\index{cars@{cars}!ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}}
+\doxysubsubsection{\texorpdfstring{cars}{cars}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_passenger_train_a56a266a478ac2982b6d0741249a4f0fa} 
+List$<$\doxymbox{\hyperlink{class_class_library_1_1_trains_1_1_car}{Car}}$>$ Class\+Library.\+Trains.\+Passenger\+Train.\+cars = new()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The carriages of the passenger train. 
+
+\Hypertarget{class_class_library_1_1_trains_1_1_passenger_train_a95eeb5c1cbb1b350eb8a96507c6aee36}\index{ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}!description@{description}}
+\index{description@{description}!ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}}
+\doxysubsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_passenger_train_a95eeb5c1cbb1b350eb8a96507c6aee36} 
+string Class\+Library.\+Trains.\+Passenger\+Train.\+description = "{}"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The description of the passenger train. 
+
+\Hypertarget{class_class_library_1_1_trains_1_1_passenger_train_a0f8c102887cebd2a0da972ffeb51d93c}\index{ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}!options@{options}}
+\index{options@{options}!ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}}
+\doxysubsubsection{\texorpdfstring{options}{options}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_passenger_train_a0f8c102887cebd2a0da972ffeb51d93c} 
+List$<$\doxymbox{\hyperlink{_option_8cs_a0e65ad13124ea2cb5e255b640464e35f}{Option}}$>$ Class\+Library.\+Trains.\+Passenger\+Train.\+options = new()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The options of the passenger train. 
+
+\Hypertarget{class_class_library_1_1_trains_1_1_passenger_train_a772353a7f2bdd383ab366f892a6e5254}\index{ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}!photo@{photo}}
+\index{photo@{photo}!ClassLibrary.Trains.PassengerTrain@{ClassLibrary.Trains.PassengerTrain}}
+\doxysubsubsection{\texorpdfstring{photo}{photo}}
+{\footnotesize\ttfamily \label{class_class_library_1_1_trains_1_1_passenger_train_a772353a7f2bdd383ab366f892a6e5254} 
+string Class\+Library.\+Trains.\+Passenger\+Train.\+photo\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The photo of the passenger train. 
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Trains/\+\doxymbox{\hyperlink{_passenger_train_8cs}{Passenger\+Train.\+cs}}\end{DoxyCompactItemize}

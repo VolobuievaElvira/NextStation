@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['user_2ecs_0',['User.cs',['../_user_8cs.html',1,'']]]
+  ['freighttrain_2ecs_0',['FreightTrain.cs',['../_freight_train_8cs.html',1,'']]]
 ];

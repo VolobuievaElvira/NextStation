@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['name_0',['name',['../class_class_library_1_1_users_1_1_user.html#a343176c6e2887de44ad9847d3267e75c',1,'ClassLibrary::Users::User']]]
+  ['googleproviderid_0',['googleProviderId',['../class_class_library_1_1_users_1_1_user.html#ad849288822a5332851045b60dcfea65a',1,'ClassLibrary::Users::User']]]
 ];

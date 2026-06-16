@@ -1,9 +1,25 @@
 var searchData=
 [
-  ['user_0',['User',['../class_class_library_1_1_users_1_1_user.html',1,'ClassLibrary.Users.User'],['../class_class_library_1_1_users_1_1_user.html#ab5af76f140c603a4ce65c056bc8d8d2b',1,'ClassLibrary.Users.User.User()']]],
-  ['user_1',['user',['../class_class_library_1_1_data_1_1_current_session.html#a053e3c8201b35ea32db4ae33956dd2d9',1,'ClassLibrary::Data::CurrentSession']]],
-  ['user_2ecs_2',['User.cs',['../_user_8cs.html',1,'']]],
-  ['users_3',['users',['../class_class_library_1_1_data_1_1_data_base.html#a6a85a5d22b15b193d39f60c46c9605f8',1,'ClassLibrary::Data::DataBase']]],
-  ['users_5fpath_4',['users_path',['../class_class_library_1_1_data_1_1_data_base.html#aa77656ced4dae38fa18b8f4bd157ccc5',1,'ClassLibrary::Data::DataBase']]],
-  ['usersearch_5',['UserSearch',['../class_class_library_1_1_data_1_1_data_base.html#a23d254a1c1e77f7ce15cec625919a377',1,'ClassLibrary::Data::DataBase']]]
+  ['passenger_0',['Passenger',['../class_class_library_1_1_users_1_1_passenger.html',1,'ClassLibrary.Users.Passenger'],['../class_class_library_1_1_users_1_1_passenger.html#a56d07815169bc3c6200220f00d611a4e',1,'ClassLibrary.Users.Passenger.Passenger()']]],
+  ['passenger_2ecs_1',['Passenger.cs',['../_passenger_8cs.html',1,'']]],
+  ['passengerid_2',['passengerId',['../class_class_library_1_1_trains_1_1_ticket.html#ae5ac74cb8e0c9261f5830ac3350d097e',1,'ClassLibrary::Trains::Ticket']]],
+  ['passengertrain_3',['PassengerTrain',['../class_class_library_1_1_trains_1_1_passenger_train.html',1,'ClassLibrary.Trains.PassengerTrain'],['../class_class_library_1_1_trains_1_1_passenger_train.html#a084569cf5d0c7f30e61c31e3aaaa0f3c',1,'ClassLibrary.Trains.PassengerTrain.PassengerTrain()']]],
+  ['passengertrain_2ecs_4',['PassengerTrain.cs',['../_passenger_train_8cs.html',1,'']]],
+  ['password_5',['Password',['../class_class_library_1_1_users_1_1_user.html#a3ddf6ddbee5917aae381b4029aaf6b79',1,'ClassLibrary::Users::User']]],
+  ['password_6',['password',['../class_class_library_1_1_users_1_1_user.html#acede2f288ead15414cea24bc5fda6c44',1,'ClassLibrary::Users::User']]],
+  ['passwordinsecure_7',['PasswordInsecure',['../_register_error_8cs.html#a20717e6a8dc38555f4b5bc05db865d45a802c52fbd5cb83cf8bebbd87c7426788',1,'RegisterError.cs']]],
+  ['passwordlengthoutofrange_8',['PasswordLengthOutOfRange',['../_register_error_8cs.html#a20717e6a8dc38555f4b5bc05db865d45a0e9c27876b656b6c1cb68b4b57ff1ff9',1,'RegisterError.cs']]],
+  ['passwordsdontmatch_9',['PasswordsDontMatch',['../_register_error_8cs.html#a20717e6a8dc38555f4b5bc05db865d45ad34bf6184d5fe5745e2b516c911a6057',1,'RegisterError.cs']]],
+  ['pettransport_10',['PetTransport',['../_option_8cs.html#a0e65ad13124ea2cb5e255b640464e35fa250a5b804868d739c3c2d99175e607ba',1,'Option.cs']]],
+  ['photo_11',['photo',['../class_class_library_1_1_trains_1_1_passenger_train.html#a772353a7f2bdd383ab366f892a6e5254',1,'ClassLibrary.Trains.PassengerTrain.photo'],['../class_class_library_1_1_users_1_1_user.html#a07d47ecf8f3e50b930934a01fd0dc9fb',1,'ClassLibrary.Users.User.photo']]],
+  ['platform_12',['Platform',['../class_class_library_1_1_stations_1_1_platform.html',1,'ClassLibrary.Stations.Platform'],['../class_class_library_1_1_stations_1_1_platform.html#ac1d7d5ffcd02b00f5482fa32fd7beed8',1,'ClassLibrary.Stations.Platform.Platform()']]],
+  ['platform_13',['platform',['../class_class_library_1_1_trains_1_1_route_stop.html#a8ade6b56743d26016cdd21f98506a6ef',1,'ClassLibrary::Trains::RouteStop']]],
+  ['platform_2ecs_14',['Platform.cs',['../_platform_8cs.html',1,'']]],
+  ['platformalreadyexists_15',['PlatformAlreadyExists',['../_station_management_error_8cs.html#a730877af271d084bc73994fbc2a44927a0400beedc5acde776f7ede3812f2b7a8',1,'StationManagementError.cs']]],
+  ['platformdoesnotexist_16',['PlatformDoesNotExist',['../_station_management_error_8cs.html#a730877af271d084bc73994fbc2a44927abbc8aaffdacdc4ee6e1c83acdb2b8952',1,'StationManagementError.cs']]],
+  ['platforms_17',['platforms',['../class_class_library_1_1_stations_1_1_station.html#ad036f6f02c3f4b96b44e54d04b156e57',1,'ClassLibrary::Stations::Station']]],
+  ['promotetoconductor_18',['PromoteToConductor',['../class_class_library_1_1_users_1_1_staff.html#afedce7da30551e22a15a75a50d4bf8b1',1,'ClassLibrary::Users::Staff']]],
+  ['promotetonetworkmanager_19',['PromoteToNetworkManager',['../class_class_library_1_1_users_1_1_staff.html#a99b8f04d932ff2765fb2ec7138364218',1,'ClassLibrary::Users::Staff']]],
+  ['promotetostationmanager_20',['PromoteToStationManager',['../class_class_library_1_1_users_1_1_staff.html#abad72660e1d763b42c4a0c45114555d5',1,'ClassLibrary::Users::Staff']]],
+  ['promotetotrainoperator_21',['PromoteToTrainOperator',['../class_class_library_1_1_users_1_1_staff.html#a8fe7fe9b8eb6c9825ca8189de3acdb23',1,'ClassLibrary::Users::Staff']]]
 ];
