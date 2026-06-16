@@ -121,6 +121,15 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_class_li
 
 <p>An abstract class, stores user information: id, name, email, password, and photo. Allows users to change their name, email password and photo.  
  <a href="#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for ClassLibrary.Users.User:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_class_library_1_1_users_1_1_user.png" usemap="#ClassLibrary_2EUsers_2EUser_map" alt=""/>
+  <map id="ClassLibrary_2EUsers_2EUser_map" name="ClassLibrary_2EUsers_2EUser_map">
+<area href="class_class_library_1_1_users_1_1_passenger.html" title="Stores passenger tickets, allows passenger to book a ticket and view all booked tickets." alt="ClassLibrary.Users.Passenger" shape="rect" coords="0,56,184,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -148,7 +157,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a3ddf6ddbee5917aae381b4029aaf6b79" id="r_a3ddf6ddbee5917aae381b4029aaf6b79"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a3ddf6ddbee5917aae381b4029aaf6b79">Password</a><code> [get, private set]</code></td></tr>
-<tr class="memdesc:a3ddf6ddbee5917aae381b4029aaf6b79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets and sets the user's password, checks it in accordance to the requirements.  <br /></td></tr>
+<tr class="memdesc:a3ddf6ddbee5917aae381b4029aaf6b79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets and sets the user's password, checks it for compliance with the requirements.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -213,10 +222,10 @@ Static Private Attributes</h2></td></tr>
 <p>Initialize a new instance of the <a class="el" href="class_class_library_1_1_users_1_1_user.html" title="An abstract class, stores user information: id, name, email, password, and photo. Allows users to cha...">User</a> base class. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">The</td><td>user's name </td></tr>
-    <tr><td class="paramname">The</td><td>user's email </td></tr>
-    <tr><td class="paramname">The</td><td>user's password </td></tr>
-    <tr><td class="paramname">The</td><td>user's photo </td></tr>
+    <tr><td class="paramname">name</td><td>The user's name </td></tr>
+    <tr><td class="paramname">email</td><td>The user's email </td></tr>
+    <tr><td class="paramname">password</td><td>The user's password </td></tr>
+    <tr><td class="paramname">photo</td><td>The user's photo </td></tr>
   </table>
   </dd>
 </dl>
@@ -250,7 +259,7 @@ Static Private Attributes</h2></td></tr>
 <p>Sets the user's email to the input parameter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">The</td><td>user's email </td></tr>
+    <tr><td class="paramname">email</td><td>The user's email </td></tr>
   </table>
   </dd>
 </dl>
@@ -283,7 +292,7 @@ Static Private Attributes</h2></td></tr>
 <p>Sets the user's name to the input parameter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">The</td><td>user's name </td></tr>
+    <tr><td class="paramname">name</td><td>The user's name </td></tr>
   </table>
   </dd>
 </dl>
@@ -316,7 +325,7 @@ Static Private Attributes</h2></td></tr>
 <p>Sets the user password for the input parameter if it meets the requirements. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">The</td><td>user's password </td></tr>
+    <tr><td class="paramname">password</td><td>The user's password </td></tr>
   </table>
   </dd>
 </dl>
@@ -349,7 +358,7 @@ Static Private Attributes</h2></td></tr>
 <p>Sets the user's photo to the input parameter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">The</td><td>user's photo </td></tr>
+    <tr><td class="paramname">photo</td><td>The user's photo </td></tr>
   </table>
   </dd>
 </dl>
@@ -686,7 +695,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets and sets the user's password, checks it in accordance to the requirements. </p>
+<p>Gets and sets the user's password, checks it for compliance with the requirements. </p>
 
 </div>
 </div>

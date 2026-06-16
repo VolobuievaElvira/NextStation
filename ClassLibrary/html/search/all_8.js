@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['password_0',['Password',['../class_class_library_1_1_users_1_1_user.html#a3ddf6ddbee5917aae381b4029aaf6b79',1,'ClassLibrary::Users::User']]],
-  ['password_1',['password',['../class_class_library_1_1_users_1_1_user.html#acede2f288ead15414cea24bc5fda6c44',1,'ClassLibrary::Users::User']]],
-  ['photo_2',['photo',['../class_class_library_1_1_users_1_1_user.html#a07d47ecf8f3e50b930934a01fd0dc9fb',1,'ClassLibrary::Users::User']]]
+  ['name_0',['name',['../class_class_library_1_1_users_1_1_user.html#a343176c6e2887de44ad9847d3267e75c',1,'ClassLibrary::Users::User']]]
 ];

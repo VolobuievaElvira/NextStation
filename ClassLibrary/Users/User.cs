@@ -39,10 +39,10 @@ namespace ClassLibrary.Users
         /**
         ** @brief Initialize a new instance of the User base class
         **
-        ** @param The user's name
-        ** @param The user's email
-        ** @param The user's password
-        ** @param The user's photo
+        ** @param name The user's name
+        ** @param email The user's email
+        ** @param password The user's password
+        ** @param photo The user's photo
         */
 
         [JsonConstructor]
@@ -113,28 +113,28 @@ namespace ClassLibrary.Users
         /**
         ** @brief Sets the user's name to the input parameter
         **
-        ** @param The user's name
+        ** @param name The user's name
         */
         public void ChangeName(string name) { this.name = name; }
 
         /**
         ** @brief Sets the user's email to the input parameter
         **
-        ** @param The user's email
+        ** @param email The user's email
         */
         public void ChangeEmail(string email) { this.email = email; }
 
         /**
         ** @brief Sets the user password for the input parameter if it meets the requirements
         **
-        ** @param The user's password
+        ** @param password The user's password
         */
         public void ChangePassword(string password) { this.Password = password; }
 
         /**
         ** @brief Sets the user's photo to the input parameter
         **
-        ** @param The user's photo
+        ** @param photo The user's photo
         */
         public void ChangePhoto(string photo) { this.photo = photo; }
     }
