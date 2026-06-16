@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['tickets_0',['tickets',['../class_class_library_1_1_users_1_1_passenger.html#aaee8aa4d8cdf1e571344a1f994198865',1,'ClassLibrary::Users::Passenger']]],
-  ['trains_1',['trains',['../class_class_library_1_1_data_1_1_data_base.html#a58cdd0b94748b3236b6d1f1a1ede43ab',1,'ClassLibrary::Data::DataBase']]],
-  ['trains_5fpath_2',['trains_path',['../class_class_library_1_1_data_1_1_data_base.html#acffd8a49852b1f0d69eb6bb3365177fb',1,'ClassLibrary::Data::DataBase']]]
+  ['stations_0',['stations',['../class_class_library_1_1_data_1_1_data_base.html#abaa9b1c245c279c54e51a2bef722e5e9',1,'ClassLibrary::Data::DataBase']]],
+  ['stations_5fpath_1',['stations_path',['../class_class_library_1_1_data_1_1_data_base.html#a83d3479a8bfc57aeddb47a8ff8751239',1,'ClassLibrary::Data::DataBase']]]
 ];
