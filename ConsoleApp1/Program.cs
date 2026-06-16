@@ -15,7 +15,11 @@ namespace ConsoleApp1
             //dataBase.AddPassengerTrain("tre3", StationName.Bolzano, new List<Option>());
             //dataBase.AddPassenger("anna","anna@abc","Anna1234!");
 
-            dataBase.AddStaff(Role.NetworkManager, "Admin", "admin@gamil.com", "Admin@123");
+            //dataBase.AddStaff(Role.NetworkManager, "Admin", "admin@gamil.com", "Admin@123");
+
+            //dataBase.Add
+            dataBase.AddCar(20, CarClass.FirstClass);
+            dataBase.AddCar(40, CarClass.SecondClass);
 
             dataBase.SaveData();
             //Console.WriteLine(dataBase.trains.Count.ToString());

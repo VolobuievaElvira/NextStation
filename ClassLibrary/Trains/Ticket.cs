@@ -16,19 +16,19 @@ namespace ClassLibrary.Trains
         [JsonInclude] private static int counter = 0;
 
         [JsonInclude] private int id;
-        [JsonInclude] private Passenger? passenger;
-        [JsonInclude] private Seat seat;
+        [JsonInclude] private int? passengerId = null;
+        [JsonInclude] private int seatNumber;
 
         public Ticket(Seat seat)
         {
             this.id = ++counter;
-            this.seat = seat;
+            this.seatNumber = seat.GetNumber();
         }
         public int GetId() { return id; }
-        public Passenger? GetPassenger() { return passenger; }
+        public int? GetPassengerId() { return this.passengerId; }
 
-        public void SetPassenger(Passenger passenger) { this.passenger = passenger; } //Add!!!
-        public Seat GetSeat() { return seat; }
-        public bool IsAvaible() { return passenger is null; }
+        public void SetPassenger(Passenger passenger) { this.passengerId = passenger.GetId(); } //Add!!!
+        public int GetSeatNumber() { return this.seatNumber; }
+        public bool IsAvaible() { return passengerId is null; }
     }
 }

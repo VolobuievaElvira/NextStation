@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "id": 1,
+    "name": "SelectStation",
+    "platforms": [],
+    "timetable": []
+  },
+  {
+    "id": 2,
+    "name": "Bolzano",
+    "platforms": [],
+    "timetable": []
+  },
+  {
+    "id": 3,
+    "name": "Brenner",
+    "platforms": [],
+    "timetable": []
+  },
+  {
+    "id": 4,
+    "name": "Franzensfeste",
+    "platforms": [],
+    "timetable": []
+  },
+  {
+    "id": 5,
+    "name": "Innichen",
+    "platforms": [],
+    "timetable": []
+  },
+  {
+    "id": 6,
+    "name": "Rovereto",
+    "platforms": [],
+    "timetable": []
+  },
+  {
+    "id": 7,
+    "name": "Trento",
+    "platforms": [],
+    "timetable": []
+  }
+]

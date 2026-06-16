@@ -15,7 +15,7 @@ namespace ClassLibrary
 
         [JsonInclude] private int id;
         [JsonInclude] private int number;
-        [JsonInclude] private Car car;
+        [JsonInclude] private int carId;
         [JsonInclude] private Ticket ticket;
 
         [JsonConstructor]
@@ -23,12 +23,12 @@ namespace ClassLibrary
         {
             this.id = ++counter;
             this.number = number;
-            this.car = car;
+            this.carId = car.GetId();
             this.ticket = new Ticket(this);
         }
 
         public int GetNumber() { return this.number; }
-        public Car GetCar() { return this.car; }
+        public int GetCarId() { return this.carId; }
         public Ticket GetTicket() { return this.ticket; }
     }
 }

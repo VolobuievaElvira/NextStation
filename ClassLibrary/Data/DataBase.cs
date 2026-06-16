@@ -329,27 +329,35 @@ namespace ClassLibrary.Data
                 if (File.Exists(this.users_path))
                 {
                     string json_users = File.ReadAllText(this.users_path);
-                    this.users = JsonSerializer.Deserialize<List<User>>(json_users);
+                    this.users = JsonSerializer.Deserialize<List<User>>(json_users) ?? new List<User>();
                 }
                 if (File.Exists(this.cars_path))
                 {
                     string json_cars = File.ReadAllText(this.cars_path);
-                    this.cars = JsonSerializer.Deserialize<List<Car>>(json_cars);
+                    this.cars = JsonSerializer.Deserialize<List<Car>>(json_cars) ?? new List<Car>();
                 }
                 if (File.Exists(this.trains_path))
                 {
                     string json_trains = File.ReadAllText(this.trains_path);
-                    this.trains = JsonSerializer.Deserialize<List<Train>>(json_trains);
+                    this.trains = JsonSerializer.Deserialize<List<Train>>(json_trains) ?? new List<Train>();
                 }
-                if (File.Exists(this.cars_path))
+                if (File.Exists(this.stations_path))
                 {
                     string json_stations = File.ReadAllText(this.stations_path);
-                    this.stations = JsonSerializer.Deserialize<List<Station>>(json_stations);
+                    this.stations = JsonSerializer.Deserialize<List<Station>>(json_stations) ?? new List<Station>();
                 }
             }
             catch (Exception e)
             {
                 Console.WriteLine("smth went wrong "+e.Message);
+            }
+
+            if (this.stations.Count == 0)
+            {
+                foreach (StationName stationName in Enum.GetValues(typeof(StationName)))
+                {
+                    this.stations.Add(new Station(stationName));
+                }
             }
         }
 

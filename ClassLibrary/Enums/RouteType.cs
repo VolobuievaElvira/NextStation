@@ -1,4 +1,7 @@
-﻿public enum RouteType
+﻿using System.Text.Json.Serialization;
+
+[JsonConverter(typeof(JsonStringEnumConverter))]
+public enum RouteType
 {
     Fastest,
     Shortest,

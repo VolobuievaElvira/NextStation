@@ -1,1 +1,616 @@
-[]
+[
+  {
+    "id": 1,
+    "train": null,
+    "seats": [
+      {
+        "id": 1,
+        "number": 1,
+        "carId": 1,
+        "ticket": {
+          "id": 1,
+          "passengerId": null,
+          "seatNumber": 1
+        }
+      },
+      {
+        "id": 2,
+        "number": 2,
+        "carId": 1,
+        "ticket": {
+          "id": 2,
+          "passengerId": null,
+          "seatNumber": 2
+        }
+      },
+      {
+        "id": 3,
+        "number": 3,
+        "carId": 1,
+        "ticket": {
+          "id": 3,
+          "passengerId": null,
+          "seatNumber": 3
+        }
+      },
+      {
+        "id": 4,
+        "number": 4,
+        "carId": 1,
+        "ticket": {
+          "id": 4,
+          "passengerId": null,
+          "seatNumber": 4
+        }
+      },
+      {
+        "id": 5,
+        "number": 5,
+        "carId": 1,
+        "ticket": {
+          "id": 5,
+          "passengerId": null,
+          "seatNumber": 5
+        }
+      },
+      {
+        "id": 6,
+        "number": 6,
+        "carId": 1,
+        "ticket": {
+          "id": 6,
+          "passengerId": null,
+          "seatNumber": 6
+        }
+      },
+      {
+        "id": 7,
+        "number": 7,
+        "carId": 1,
+        "ticket": {
+          "id": 7,
+          "passengerId": null,
+          "seatNumber": 7
+        }
+      },
+      {
+        "id": 8,
+        "number": 8,
+        "carId": 1,
+        "ticket": {
+          "id": 8,
+          "passengerId": null,
+          "seatNumber": 8
+        }
+      },
+      {
+        "id": 9,
+        "number": 9,
+        "carId": 1,
+        "ticket": {
+          "id": 9,
+          "passengerId": null,
+          "seatNumber": 9
+        }
+      },
+      {
+        "id": 10,
+        "number": 10,
+        "carId": 1,
+        "ticket": {
+          "id": 10,
+          "passengerId": null,
+          "seatNumber": 10
+        }
+      },
+      {
+        "id": 11,
+        "number": 11,
+        "carId": 1,
+        "ticket": {
+          "id": 11,
+          "passengerId": null,
+          "seatNumber": 11
+        }
+      },
+      {
+        "id": 12,
+        "number": 12,
+        "carId": 1,
+        "ticket": {
+          "id": 12,
+          "passengerId": null,
+          "seatNumber": 12
+        }
+      },
+      {
+        "id": 13,
+        "number": 13,
+        "carId": 1,
+        "ticket": {
+          "id": 13,
+          "passengerId": null,
+          "seatNumber": 13
+        }
+      },
+      {
+        "id": 14,
+        "number": 14,
+        "carId": 1,
+        "ticket": {
+          "id": 14,
+          "passengerId": null,
+          "seatNumber": 14
+        }
+      },
+      {
+        "id": 15,
+        "number": 15,
+        "carId": 1,
+        "ticket": {
+          "id": 15,
+          "passengerId": null,
+          "seatNumber": 15
+        }
+      },
+      {
+        "id": 16,
+        "number": 16,
+        "carId": 1,
+        "ticket": {
+          "id": 16,
+          "passengerId": null,
+          "seatNumber": 16
+        }
+      },
+      {
+        "id": 17,
+        "number": 17,
+        "carId": 1,
+        "ticket": {
+          "id": 17,
+          "passengerId": null,
+          "seatNumber": 17
+        }
+      },
+      {
+        "id": 18,
+        "number": 18,
+        "carId": 1,
+        "ticket": {
+          "id": 18,
+          "passengerId": null,
+          "seatNumber": 18
+        }
+      },
+      {
+        "id": 19,
+        "number": 19,
+        "carId": 1,
+        "ticket": {
+          "id": 19,
+          "passengerId": null,
+          "seatNumber": 19
+        }
+      },
+      {
+        "id": 20,
+        "number": 20,
+        "carId": 1,
+        "ticket": {
+          "id": 20,
+          "passengerId": null,
+          "seatNumber": 20
+        }
+      }
+    ],
+    "carClass": "FirstClass"
+  },
+  {
+    "id": 2,
+    "train": null,
+    "seats": [
+      {
+        "id": 21,
+        "number": 1,
+        "carId": 2,
+        "ticket": {
+          "id": 21,
+          "passengerId": null,
+          "seatNumber": 1
+        }
+      },
+      {
+        "id": 22,
+        "number": 2,
+        "carId": 2,
+        "ticket": {
+          "id": 22,
+          "passengerId": null,
+          "seatNumber": 2
+        }
+      },
+      {
+        "id": 23,
+        "number": 3,
+        "carId": 2,
+        "ticket": {
+          "id": 23,
+          "passengerId": null,
+          "seatNumber": 3
+        }
+      },
+      {
+        "id": 24,
+        "number": 4,
+        "carId": 2,
+        "ticket": {
+          "id": 24,
+          "passengerId": null,
+          "seatNumber": 4
+        }
+      },
+      {
+        "id": 25,
+        "number": 5,
+        "carId": 2,
+        "ticket": {
+          "id": 25,
+          "passengerId": null,
+          "seatNumber": 5
+        }
+      },
+      {
+        "id": 26,
+        "number": 6,
+        "carId": 2,
+        "ticket": {
+          "id": 26,
+          "passengerId": null,
+          "seatNumber": 6
+        }
+      },
+      {
+        "id": 27,
+        "number": 7,
+        "carId": 2,
+        "ticket": {
+          "id": 27,
+          "passengerId": null,
+          "seatNumber": 7
+        }
+      },
+      {
+        "id": 28,
+        "number": 8,
+        "carId": 2,
+        "ticket": {
+          "id": 28,
+          "passengerId": null,
+          "seatNumber": 8
+        }
+      },
+      {
+        "id": 29,
+        "number": 9,
+        "carId": 2,
+        "ticket": {
+          "id": 29,
+          "passengerId": null,
+          "seatNumber": 9
+        }
+      },
+      {
+        "id": 30,
+        "number": 10,
+        "carId": 2,
+        "ticket": {
+          "id": 30,
+          "passengerId": null,
+          "seatNumber": 10
+        }
+      },
+      {
+        "id": 31,
+        "number": 11,
+        "carId": 2,
+        "ticket": {
+          "id": 31,
+          "passengerId": null,
+          "seatNumber": 11
+        }
+      },
+      {
+        "id": 32,
+        "number": 12,
+        "carId": 2,
+        "ticket": {
+          "id": 32,
+          "passengerId": null,
+          "seatNumber": 12
+        }
+      },
+      {
+        "id": 33,
+        "number": 13,
+        "carId": 2,
+        "ticket": {
+          "id": 33,
+          "passengerId": null,
+          "seatNumber": 13
+        }
+      },
+      {
+        "id": 34,
+        "number": 14,
+        "carId": 2,
+        "ticket": {
+          "id": 34,
+          "passengerId": null,
+          "seatNumber": 14
+        }
+      },
+      {
+        "id": 35,
+        "number": 15,
+        "carId": 2,
+        "ticket": {
+          "id": 35,
+          "passengerId": null,
+          "seatNumber": 15
+        }
+      },
+      {
+        "id": 36,
+        "number": 16,
+        "carId": 2,
+        "ticket": {
+          "id": 36,
+          "passengerId": null,
+          "seatNumber": 16
+        }
+      },
+      {
+        "id": 37,
+        "number": 17,
+        "carId": 2,
+        "ticket": {
+          "id": 37,
+          "passengerId": null,
+          "seatNumber": 17
+        }
+      },
+      {
+        "id": 38,
+        "number": 18,
+        "carId": 2,
+        "ticket": {
+          "id": 38,
+          "passengerId": null,
+          "seatNumber": 18
+        }
+      },
+      {
+        "id": 39,
+        "number": 19,
+        "carId": 2,
+        "ticket": {
+          "id": 39,
+          "passengerId": null,
+          "seatNumber": 19
+        }
+      },
+      {
+        "id": 40,
+        "number": 20,
+        "carId": 2,
+        "ticket": {
+          "id": 40,
+          "passengerId": null,
+          "seatNumber": 20
+        }
+      },
+      {
+        "id": 41,
+        "number": 21,
+        "carId": 2,
+        "ticket": {
+          "id": 41,
+          "passengerId": null,
+          "seatNumber": 21
+        }
+      },
+      {
+        "id": 42,
+        "number": 22,
+        "carId": 2,
+        "ticket": {
+          "id": 42,
+          "passengerId": null,
+          "seatNumber": 22
+        }
+      },
+      {
+        "id": 43,
+        "number": 23,
+        "carId": 2,
+        "ticket": {
+          "id": 43,
+          "passengerId": null,
+          "seatNumber": 23
+        }
+      },
+      {
+        "id": 44,
+        "number": 24,
+        "carId": 2,
+        "ticket": {
+          "id": 44,
+          "passengerId": null,
+          "seatNumber": 24
+        }
+      },
+      {
+        "id": 45,
+        "number": 25,
+        "carId": 2,
+        "ticket": {
+          "id": 45,
+          "passengerId": null,
+          "seatNumber": 25
+        }
+      },
+      {
+        "id": 46,
+        "number": 26,
+        "carId": 2,
+        "ticket": {
+          "id": 46,
+          "passengerId": null,
+          "seatNumber": 26
+        }
+      },
+      {
+        "id": 47,
+        "number": 27,
+        "carId": 2,
+        "ticket": {
+          "id": 47,
+          "passengerId": null,
+          "seatNumber": 27
+        }
+      },
+      {
+        "id": 48,
+        "number": 28,
+        "carId": 2,
+        "ticket": {
+          "id": 48,
+          "passengerId": null,
+          "seatNumber": 28
+        }
+      },
+      {
+        "id": 49,
+        "number": 29,
+        "carId": 2,
+        "ticket": {
+          "id": 49,
+          "passengerId": null,
+          "seatNumber": 29
+        }
+      },
+      {
+        "id": 50,
+        "number": 30,
+        "carId": 2,
+        "ticket": {
+          "id": 50,
+          "passengerId": null,
+          "seatNumber": 30
+        }
+      },
+      {
+        "id": 51,
+        "number": 31,
+        "carId": 2,
+        "ticket": {
+          "id": 51,
+          "passengerId": null,
+          "seatNumber": 31
+        }
+      },
+      {
+        "id": 52,
+        "number": 32,
+        "carId": 2,
+        "ticket": {
+          "id": 52,
+          "passengerId": null,
+          "seatNumber": 32
+        }
+      },
+      {
+        "id": 53,
+        "number": 33,
+        "carId": 2,
+        "ticket": {
+          "id": 53,
+          "passengerId": null,
+          "seatNumber": 33
+        }
+      },
+      {
+        "id": 54,
+        "number": 34,
+        "carId": 2,
+        "ticket": {
+          "id": 54,
+          "passengerId": null,
+          "seatNumber": 34
+        }
+      },
+      {
+        "id": 55,
+        "number": 35,
+        "carId": 2,
+        "ticket": {
+          "id": 55,
+          "passengerId": null,
+          "seatNumber": 35
+        }
+      },
+      {
+        "id": 56,
+        "number": 36,
+        "carId": 2,
+        "ticket": {
+          "id": 56,
+          "passengerId": null,
+          "seatNumber": 36
+        }
+      },
+      {
+        "id": 57,
+        "number": 37,
+        "carId": 2,
+        "ticket": {
+          "id": 57,
+          "passengerId": null,
+          "seatNumber": 37
+        }
+      },
+      {
+        "id": 58,
+        "number": 38,
+        "carId": 2,
+        "ticket": {
+          "id": 58,
+          "passengerId": null,
+          "seatNumber": 38
+        }
+      },
+      {
+        "id": 59,
+        "number": 39,
+        "carId": 2,
+        "ticket": {
+          "id": 59,
+          "passengerId": null,
+          "seatNumber": 39
+        }
+      },
+      {
+        "id": 60,
+        "number": 40,
+        "carId": 2,
+        "ticket": {
+          "id": 60,
+          "passengerId": null,
+          "seatNumber": 40
+        }
+      }
+    ],
+    "carClass": "SecondClass"
+  }
+]
