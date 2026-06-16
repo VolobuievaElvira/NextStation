@@ -22,9 +22,9 @@ void \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a879c913086
 \begin{DoxyCompactList}\small\item\em Creates a new Passenger object and stores it in the database. \end{DoxyCompactList}\item 
 void \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a9604226684dac71795155ad668b760e8}{Add\+Staff}} (Role role, string name, string email, string password, string photo="{}"{})
 \begin{DoxyCompactList}\small\item\em Creates a new Staff object and stores it in the database. \end{DoxyCompactList}\item 
-void \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a18a7a20a42a351b40b0c5fb92eccb4a6}{Remove\+User}} (User user)
+void \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a18a7a20a42a351b40b0c5fb92eccb4a6}{Remove\+User}} (\doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}} user)
 \begin{DoxyCompactList}\small\item\em Removes the user from the database. \end{DoxyCompactList}\item 
-List$<$ User $>$ \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a23d254a1c1e77f7ce15cec625919a377}{User\+Search}} (int? id=null, string? name=null, string? email=null)
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a23d254a1c1e77f7ce15cec625919a377}{User\+Search}} (int? id=null, string? name=null, string? email=null)
 \begin{DoxyCompactList}\small\item\em Search for specific users in the database. \end{DoxyCompactList}\item 
 Station? \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a3918aff399ea016ae223efe77b51a0e6}{Station\+Search}} (Station\+Name station)
 \begin{DoxyCompactList}\small\item\em Search for specific station in the database. \end{DoxyCompactList}\item 
@@ -39,8 +39,8 @@ void \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a757fe76b62
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-List$<$ User $>$ \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a6a85a5d22b15b193d39f60c46c9605f8}{users}} = new List$<$User$>$()
-\begin{DoxyCompactList}\small\item\em Users present in the database. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}} $>$ \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a6a85a5d22b15b193d39f60c46c9605f8}{users}} = new List$<$\doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}}$>$()
+\begin{DoxyCompactList}\small\item\em \doxylink{namespace_class_library_1_1_users}{Users} present in the database. \end{DoxyCompactList}\item 
 List$<$ Car $>$ \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a127f859f85d17624e2970f0800b5e2b5}{cars}} = new List$<$Car$>$()
 \begin{DoxyCompactList}\small\item\em Cars present in the database. \end{DoxyCompactList}\item 
 List$<$ Train $>$ \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_data_base_a58cdd0b94748b3236b6d1f1a1ede43ab}{trains}} = new List$<$Train$>$()
@@ -242,7 +242,7 @@ Romove the train from the database.
 \index{RemoveUser@{RemoveUser}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
 \doxysubsubsection{\texorpdfstring{RemoveUser()}{RemoveUser()}}
 {\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_a18a7a20a42a351b40b0c5fb92eccb4a6} 
-void Class\+Library.\+Data.\+Data\+Base.\+Remove\+User (\begin{DoxyParamCaption}\item[{User}]{user}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+void Class\+Library.\+Data.\+Data\+Base.\+Remove\+User (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}}}]{user}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -315,7 +315,7 @@ A list of trains whose data matches the search parameters
 \index{UserSearch@{UserSearch}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
 \doxysubsubsection{\texorpdfstring{UserSearch()}{UserSearch()}}
 {\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_a23d254a1c1e77f7ce15cec625919a377} 
-List$<$ User $>$ Class\+Library.\+Data.\+Data\+Base.\+User\+Search (\begin{DoxyParamCaption}\item[{int?}]{id}{ = {\ttfamily null}, }\item[{string?}]{name}{ = {\ttfamily null}, }\item[{string?}]{email}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+List$<$ \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}} $>$ Class\+Library.\+Data.\+Data\+Base.\+User\+Search (\begin{DoxyParamCaption}\item[{int?}]{id}{ = {\ttfamily null}, }\item[{string?}]{name}{ = {\ttfamily null}, }\item[{string?}]{email}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -402,11 +402,11 @@ Path to the trains JSON database files.
 \index{users@{users}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}
 \doxysubsubsection{\texorpdfstring{users}{users}}
 {\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_data_base_a6a85a5d22b15b193d39f60c46c9605f8} 
-List$<$User$>$ Class\+Library.\+Data.\+Data\+Base.\+users = new List$<$User$>$()\hspace{0.3cm}{\ttfamily [private]}}
+List$<$\doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}}$>$ Class\+Library.\+Data.\+Data\+Base.\+users = new List$<$\doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Users present in the database. 
+\doxylink{namespace_class_library_1_1_users}{Users} present in the database. 
 
 \Hypertarget{class_class_library_1_1_data_1_1_data_base_aa77656ced4dae38fa18b8f4bd157ccc5}\index{ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}!users\_path@{users\_path}}
 \index{users\_path@{users\_path}!ClassLibrary.Data.DataBase@{ClassLibrary.Data.DataBase}}

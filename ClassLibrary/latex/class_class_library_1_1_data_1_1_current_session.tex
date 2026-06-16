@@ -8,23 +8,23 @@ Stores information about the user who is working with the system. Allows the use
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static ? User \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_current_session_a696302dd87f118c1df8d20d801c1ce32}{Get\+User}} ()
+static ? \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}} \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_current_session_a696302dd87f118c1df8d20d801c1ce32}{Get\+User}} ()
 \begin{DoxyCompactList}\small\item\em Returns the user who is working with the system. \end{DoxyCompactList}\item 
 static void \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_current_session_adf09d5b0ee027f086fb72f97c9007651}{Logout}} ()
 \begin{DoxyCompactList}\small\item\em Allows the user to log out from the current session. \end{DoxyCompactList}\item 
-static ? User \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_current_session_a15212d13cc74789647b8636471600b0a}{Login}} (List$<$ User $>$ users, string email, string password)
+static ? \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}} \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_current_session_a15212d13cc74789647b8636471600b0a}{Login}} (List$<$ \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}} $>$ users, string email, string password)
 \begin{DoxyCompactList}\small\item\em Returns the user whose email and password matches the input parameters. \end{DoxyCompactList}\item 
-static ? User \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_current_session_a869176ac20a60b815434841002179ea6}{Login\+With\+Google}} (List$<$ User $>$ users, string google\+Provider\+Id)
+static ? \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}} \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_current_session_a869176ac20a60b815434841002179ea6}{Login\+With\+Google}} (List$<$ \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}} $>$ users, string google\+Provider\+Id)
 \begin{DoxyCompactList}\small\item\em Returns the user whose google\+Provider\+Id matches the input parameter. \end{DoxyCompactList}\item 
-static void \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_current_session_ae1bc3f99aef3de06cc1434cda4539992}{Retrieve\+Password}} (List$<$ User $>$ users, string email)
+static void \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_current_session_ae1bc3f99aef3de06cc1434cda4539992}{Retrieve\+Password}} (List$<$ \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}} $>$ users, string email)
 \begin{DoxyCompactList}\small\item\em Retrieve the user\textquotesingle{}s password. \end{DoxyCompactList}\item 
-static void \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_current_session_add72c32b6b03288dbc5c18b9f7e10034}{Set\+User}} (User \+\_\+user)
+static void \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_current_session_add72c32b6b03288dbc5c18b9f7e10034}{Set\+User}} (\doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}} \+\_\+user)
 \begin{DoxyCompactList}\small\item\em Sets the user who is working with the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-static ? User \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_current_session_a053e3c8201b35ea32db4ae33956dd2d9}{user}}
-\begin{DoxyCompactList}\small\item\em User who is working with the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+static ? \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}} \doxymbox{\hyperlink{class_class_library_1_1_data_1_1_current_session_a053e3c8201b35ea32db4ae33956dd2d9}{user}}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_class_library_1_1_users_1_1_user}{User} who is working with the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -37,7 +37,7 @@ Stores information about the user who is working with the system. Allows the use
 \index{GetUser@{GetUser}!ClassLibrary.Data.CurrentSession@{ClassLibrary.Data.CurrentSession}}
 \doxysubsubsection{\texorpdfstring{GetUser()}{GetUser()}}
 {\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_current_session_a696302dd87f118c1df8d20d801c1ce32} 
-? User Class\+Library.\+Data.\+Current\+Session.\+Get\+User (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+? \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}} Class\+Library.\+Data.\+Current\+Session.\+Get\+User (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
 
 
@@ -50,7 +50,7 @@ The user who is working with the system
 \index{Login@{Login}!ClassLibrary.Data.CurrentSession@{ClassLibrary.Data.CurrentSession}}
 \doxysubsubsection{\texorpdfstring{Login()}{Login()}}
 {\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_current_session_a15212d13cc74789647b8636471600b0a} 
-? User Class\+Library.\+Data.\+Current\+Session.\+Login (\begin{DoxyParamCaption}\item[{List$<$ User $>$}]{users}{, }\item[{string}]{email}{, }\item[{string}]{password}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+? \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}} Class\+Library.\+Data.\+Current\+Session.\+Login (\begin{DoxyParamCaption}\item[{List$<$ \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}} $>$}]{users}{, }\item[{string}]{email}{, }\item[{string}]{password}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
 
 
@@ -72,7 +72,7 @@ The user whose email and password matches the input parameters
 \index{LoginWithGoogle@{LoginWithGoogle}!ClassLibrary.Data.CurrentSession@{ClassLibrary.Data.CurrentSession}}
 \doxysubsubsection{\texorpdfstring{LoginWithGoogle()}{LoginWithGoogle()}}
 {\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_current_session_a869176ac20a60b815434841002179ea6} 
-? User Class\+Library.\+Data.\+Current\+Session.\+Login\+With\+Google (\begin{DoxyParamCaption}\item[{List$<$ User $>$}]{users}{, }\item[{string}]{google\+Provider\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+? \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}} Class\+Library.\+Data.\+Current\+Session.\+Login\+With\+Google (\begin{DoxyParamCaption}\item[{List$<$ \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}} $>$}]{users}{, }\item[{string}]{google\+Provider\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
 
 
@@ -102,7 +102,7 @@ Allows the user to log out from the current session.
 \index{RetrievePassword@{RetrievePassword}!ClassLibrary.Data.CurrentSession@{ClassLibrary.Data.CurrentSession}}
 \doxysubsubsection{\texorpdfstring{RetrievePassword()}{RetrievePassword()}}
 {\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_current_session_ae1bc3f99aef3de06cc1434cda4539992} 
-void Class\+Library.\+Data.\+Current\+Session.\+Retrieve\+Password (\begin{DoxyParamCaption}\item[{List$<$ User $>$}]{users}{, }\item[{string}]{email}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+void Class\+Library.\+Data.\+Current\+Session.\+Retrieve\+Password (\begin{DoxyParamCaption}\item[{List$<$ \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}} $>$}]{users}{, }\item[{string}]{email}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
 
 
@@ -119,7 +119,7 @@ Retrieve the user\textquotesingle{}s password.
 \index{SetUser@{SetUser}!ClassLibrary.Data.CurrentSession@{ClassLibrary.Data.CurrentSession}}
 \doxysubsubsection{\texorpdfstring{SetUser()}{SetUser()}}
 {\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_current_session_add72c32b6b03288dbc5c18b9f7e10034} 
-void Class\+Library.\+Data.\+Current\+Session.\+Set\+User (\begin{DoxyParamCaption}\item[{User}]{\+\_\+user}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+void Class\+Library.\+Data.\+Current\+Session.\+Set\+User (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}}}]{\+\_\+user}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
 
 
@@ -139,11 +139,11 @@ Sets the user who is working with the system.
 \index{user@{user}!ClassLibrary.Data.CurrentSession@{ClassLibrary.Data.CurrentSession}}
 \doxysubsubsection{\texorpdfstring{user}{user}}
 {\footnotesize\ttfamily \label{class_class_library_1_1_data_1_1_current_session_a053e3c8201b35ea32db4ae33956dd2d9} 
-? User Class\+Library.\+Data.\+Current\+Session.\+user\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+? \doxymbox{\hyperlink{class_class_library_1_1_users_1_1_user}{User}} Class\+Library.\+Data.\+Current\+Session.\+user\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
 
 
-User who is working with the system. 
+\doxylink{class_class_library_1_1_users_1_1_user}{User} who is working with the system. 
 
 
 

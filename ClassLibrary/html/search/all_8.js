@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['user_0',['user',['../class_class_library_1_1_data_1_1_current_session.html#a053e3c8201b35ea32db4ae33956dd2d9',1,'ClassLibrary::Data::CurrentSession']]],
-  ['users_1',['users',['../class_class_library_1_1_data_1_1_data_base.html#a6a85a5d22b15b193d39f60c46c9605f8',1,'ClassLibrary::Data::DataBase']]],
-  ['users_5fpath_2',['users_path',['../class_class_library_1_1_data_1_1_data_base.html#aa77656ced4dae38fa18b8f4bd157ccc5',1,'ClassLibrary::Data::DataBase']]],
-  ['usersearch_3',['UserSearch',['../class_class_library_1_1_data_1_1_data_base.html#a23d254a1c1e77f7ce15cec625919a377',1,'ClassLibrary::Data::DataBase']]]
+  ['password_0',['Password',['../class_class_library_1_1_users_1_1_user.html#a3ddf6ddbee5917aae381b4029aaf6b79',1,'ClassLibrary::Users::User']]],
+  ['password_1',['password',['../class_class_library_1_1_users_1_1_user.html#acede2f288ead15414cea24bc5fda6c44',1,'ClassLibrary::Users::User']]],
+  ['photo_2',['photo',['../class_class_library_1_1_users_1_1_user.html#a07d47ecf8f3e50b930934a01fd0dc9fb',1,'ClassLibrary::Users::User']]]
 ];

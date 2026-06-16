@@ -1,6 +1,10 @@
 var searchData=
 [
-  ['login_0',['Login',['../class_class_library_1_1_data_1_1_current_session.html#a15212d13cc74789647b8636471600b0a',1,'ClassLibrary::Data::CurrentSession']]],
-  ['loginwithgoogle_1',['LoginWithGoogle',['../class_class_library_1_1_data_1_1_current_session.html#a869176ac20a60b815434841002179ea6',1,'ClassLibrary::Data::CurrentSession']]],
-  ['logout_2',['Logout',['../class_class_library_1_1_data_1_1_current_session.html#adf09d5b0ee027f086fb72f97c9007651',1,'ClassLibrary::Data::CurrentSession']]]
+  ['getemail_0',['GetEmail',['../class_class_library_1_1_users_1_1_user.html#a2a495de438a5cca1a039948afa6dca5c',1,'ClassLibrary::Users::User']]],
+  ['getid_1',['GetId',['../class_class_library_1_1_users_1_1_user.html#a578a612957824131a11364dd5b3a92e1',1,'ClassLibrary::Users::User']]],
+  ['getname_2',['GetName',['../class_class_library_1_1_users_1_1_user.html#af48d3c2f6ca10d454ddec412aecd0971',1,'ClassLibrary::Users::User']]],
+  ['getpassword_3',['GetPassword',['../class_class_library_1_1_users_1_1_user.html#a0a0609a4957f86bc83e9af09854b3ac1',1,'ClassLibrary::Users::User']]],
+  ['getphoto_4',['GetPhoto',['../class_class_library_1_1_users_1_1_user.html#abd28fc700cb41f2c1addecdd464475e9',1,'ClassLibrary::Users::User']]],
+  ['getuser_5',['GetUser',['../class_class_library_1_1_data_1_1_current_session.html#a696302dd87f118c1df8d20d801c1ce32',1,'ClassLibrary::Data::CurrentSession']]],
+  ['googleproviderid_6',['googleProviderId',['../class_class_library_1_1_users_1_1_user.html#ad849288822a5332851045b60dcfea65a',1,'ClassLibrary::Users::User']]]
 ];
