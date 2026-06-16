@@ -19,6 +19,15 @@ namespace ClassLibrary.Trains
         [JsonInclude] private int? passengerId = null;
         [JsonInclude] private int seatNumber;
 
+        [JsonConstructor]
+        public Ticket(int id, int? passengerId, int seatNumber)
+        {
+            this.id = id;
+            this.passengerId = passengerId;
+            this.seatNumber = seatNumber;
+
+            counter = int.Max(counter, id);
+        }
         public Ticket(Seat seat)
         {
             this.id = ++counter;

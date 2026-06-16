@@ -31,8 +31,9 @@ namespace ClassLibrary.Trains
         public void AddCar(Car car) 
         {
             if (!car.IsConnected())
-            {
+            {                
                 this.cars.Add(car);
+                car.SetTrain(this);
             }
             else
             {
@@ -47,7 +48,8 @@ namespace ClassLibrary.Trains
         {
             if (this.cars.Contains(car))
             {
-                this.cars.Remove(car);
+                car.SetTrain(null);
+                this.cars.Remove(car);                
             }
             else
             {

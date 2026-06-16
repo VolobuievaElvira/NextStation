@@ -81,10 +81,70 @@
 		<div class="row w-100" style="max-width:700px">
 			<button type="button" @onclick="Save" class="col-12">Save Changes</button>
 		</div>
+
+
+		@if (_train is PassengerTrain passengerTrain2)
+		{
+			<div class="row w-100" style="display:flex; flex-direction:column; gap:10px; width:100%; align-items: center">
+				<label><b>Connect a car</b></label>
+
+				<select @bind="_selectedCarId">
+					<option value="0">Select Car</option>
+					@foreach (var car in DataBase.CarSearch().Where(c=>!c.IsConnected()).ToList())
+					{
+						<option value="@car.GetId()">
+							ID: @car.GetId() | class: @car.GetClass() | number of seats: @car.GetAllSeats().Count
+						</option>
+					}
+				</select>
+
+				<button @onclick="() => 
+					{
+						Car car2 = DataBase.CarSearch(_selectedCarId).First();
+						if (car2 != null)
+						{
+							passengerTrain2.AddCar(car2); 
+							DataBase.SaveData();
+						}
+					}" disabled="@(_selectedCarId == 0)">
+					Add
+				</button>
+			</div>
+
+			<div class="row w-100" style="display:flex; flex-direction:column; gap:10px; width:100%; align-items: center">
+				<label><b>Connected cars</b></label>
+
+				<table class="table table-striped table-bordered table-hover">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Car class</th>
+							<th>Number of seats</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>					
+						@foreach (Car car in passengerTrain2.GetAllCars())
+						{
+							
+							<tr>
+								<td>@car.GetId()</td>
+								<td>@(SplitPascalCase(car.GetClass().ToString()))</td>
+								<td>@car.GetAllSeats().Count()</td>
+								<td>
+									<button type="button" @onclick='()=>{passengerTrain2.RemoveCar(car); DataBase.SaveData();}' class="col-12">Disconnect</button>
+								</td>
+							</tr>
+						}
+					</tbody>
+				</table>
+			</div>
+		}
 	</div>
 </div>
 
 @code {
+	int _selectedCarId = 0;
 	Train _train;
 	List<Option> _options = new();
 	string _capacity = "";

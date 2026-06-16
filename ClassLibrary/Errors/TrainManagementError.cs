@@ -7,7 +7,9 @@
     RouteStopDoesNotExists,
     CapacityLessOrEqualZero,
     CarIsAlreadyConnected,
-    CarDoesNotConnected
+    CarDoesNotConnected,
+    NumberOfSeatsLessOrEqualZero,
+    InvalidNumberOfSeats
 }
 
 public class TrainManagementError : Exception

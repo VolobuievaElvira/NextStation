@@ -1,0 +1,78 @@
+﻿@page "/carsearch"
+@rendermode InteractiveServer
+
+@using ClassLibrary.Data
+@using ClassLibrary.Trains
+
+@inject NavigationManager Navigation
+
+@inject DataBase DataBase
+@inject CurrentSession CurrentSession
+@inject Saver Saver
+
+<div>
+	<div class="row w-100" style="display:flex; flex-direction:column; gap:10px; width:100%; align-items: center">
+		<div class="row w-100" style="max-width:700px">
+			<label class="col-12" style="text-align:center"><b>Car Class</b></label>
+
+			<label class="col-3">
+				<input type="radio" name="TrainType" checked="@(_carClass == null)" @onchange='() => _carClass = null' />
+				All
+			</label>
+			<label class="col-3">
+				<input type="radio" name="TrainType" checked="@(_carClass == CarClass.FirstClass)" @onchange='() => _carClass = CarClass.FirstClass' />
+				First
+			</label>
+			<label class="col-3">
+				<input type="radio" name="TrainType" checked="@(_carClass == CarClass.SecondClass)" @onchange='() => _carClass = CarClass.SecondClass' />
+				Second
+			</label>
+		</div>
+
+
+		<table class="table table-striped table-bordered table-hover">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Car class</th>
+					<th>Number of seats</th>
+					<th>Connected to</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (Car car in DataBase.CarSearch(null, _carClass) ?? new List<Car>())
+				{
+					<tr>
+						<td>@car.GetId()</td>
+						<td>@(SplitPascalCase(car.GetClass().ToString()))</td>
+						<td>@car.GetAllSeats().Count</td>
+						<td>
+							@(car.IsConnected()
+							 	? $"ID: {car.GetTrainId()} | train code: {DataBase.TrainSeacrh().Where(t => t.GetId() == car.GetTrainId()).First().GetTrainCode()}" 
+							 	: "Not connected")
+						</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+</div>
+
+@code {
+	CarClass? _carClass = null;
+
+	string _errorMessage = "";
+
+	private string SplitPascalCase(string word)
+	{
+		string text = "";
+
+		foreach (char c in word)
+		{
+			if (char.ToUpper(c) == c && text.Length != 0) text += " ";
+			text += c;
+		}
+
+		return text;
+	}
+}

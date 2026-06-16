@@ -15,13 +15,24 @@ namespace ClassLibrary.Trains
         [JsonInclude] static private int counter = 0;
 
         [JsonInclude] private int id;
-        [JsonInclude] private PassengerTrain? train;
+        [JsonInclude] private int? trainId;
         [JsonInclude] private List<Seat> seats = new();
-        [JsonInclude] private CarClass carClass; //change name
+        [JsonInclude] private CarClass carClass;
 
         [JsonConstructor]
-        public Car(int seatsNumber, CarClass carClass) //change name
+        public Car(int id, CarClass carClass, int? trainId, List<Seat> seats)
         {
+            this.id = id;
+            this.carClass = carClass;
+            this.trainId = trainId;
+            this.seats = seats;
+
+            counter = int.Max(counter, id); 
+        }
+        public Car(int seatsNumber, CarClass carClass)
+        {
+            if (seatsNumber <= 0) throw new TrainManagementError(TrainManagementErrorReason.NumberOfSeatsLessOrEqualZero, "The number of seats must be greater than zero");
+
             id = ++counter;
             this.seats = Enumerable.Range(1, seatsNumber)
                        .Select(x => new Seat(x, this))
@@ -29,8 +40,10 @@ namespace ClassLibrary.Trains
             this.carClass = carClass;
         }
         public int GetId() { return this.id; }
-        public PassengerTrain? GetTrain() { return this.train; }
-        public bool IsConnected() { return this.train is null; }
+        public int? GetTrainId() { return this.trainId; }
+        public bool IsConnected() { return this.trainId is not null; }
+
+        public void SetTrain(PassengerTrain? train) { this.trainId = train is not null ? train.GetId() : null; }
         public List<Seat> GetAllSeats() { return this.seats; }
         public CarClass GetClass() { return this.carClass; }
     }
