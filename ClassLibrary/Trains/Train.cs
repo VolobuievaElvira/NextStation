@@ -31,7 +31,7 @@ namespace ClassLibrary.Trains
         /**
         ** @brief Initialize a new instance of the Train class
         **
-        ** @param name The name of the traain
+        ** @param name The name of the train
         ** @param location The location of the train
         */
 

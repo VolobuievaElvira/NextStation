@@ -38,7 +38,7 @@ namespace ConsoleApp1
             try
             {
 
-                List<Train> trains = dataBase.TrainSeacrh(null, null, null, null, null, null, new List<Option>());
+                List<Train> trains = dataBase.TrainSearch(null, null, null, null, null, null, new List<Option>());
 
 
                 Console.WriteLine("--start--");

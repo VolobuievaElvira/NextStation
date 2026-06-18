@@ -65,9 +65,9 @@ namespace ClassLibrary.Trains
             }
         }
         /**
-        ** @brief Adds an option to the pasenger train
+        ** @brief Adds an option to the passenger train
         **
-        ** @param option The opton to be added to the passenger train
+        ** @param option The option to be added to the passenger train
         */
         public void AddOption(Option option)
         {

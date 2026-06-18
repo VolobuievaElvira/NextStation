@@ -15,7 +15,7 @@ namespace ClassLibrary.Trains
     public class RouteStop
     {
         /// <summary>The id of the last route stop in the database</summary>
-        [JsonInclude] static private int counter = 0;
+        [JsonInclude] private static int counter = 0;
         /// <summary>The id of the route stop</summary>
         [JsonInclude] private int id;
         /// <summary>The time the train arrives at the stop</summary>

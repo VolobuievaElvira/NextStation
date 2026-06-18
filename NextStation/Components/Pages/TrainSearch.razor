@@ -101,7 +101,7 @@
         if (_arrivalStation == StationName.SelectStation) _arrivalStation = null;
 
 
-        Saver.SaveFilteredTrains(DataBase.TrainSeacrh(_trainCode, _departureStation, _arrivalStation, _departureDate, _arrivalDate, _routeType, _options));
+        Saver.SaveFilteredTrains(DataBase.TrainSearch(_trainCode, _departureStation, _arrivalStation, _departureDate, _arrivalDate, _routeType, _options));
         Navigation.NavigateTo("/trains");
     }
 

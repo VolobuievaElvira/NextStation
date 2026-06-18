@@ -17,7 +17,7 @@ namespace ClassLibrary.Stations
     public class Station
     {
         /// <summary>The id of the last station in the database</summary>
-        [JsonInclude] static private int counter = 0;
+        [JsonInclude] private static int counter = 0;
         /// <summary>The id of the station</summary>
 
         [JsonInclude] private int id;

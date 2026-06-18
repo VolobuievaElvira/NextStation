@@ -18,7 +18,7 @@ namespace ClassLibrary.Trains
     {
         /// <summary>The id of the last Ticket in the database</summary>
         [JsonInclude] private static int counter = 0;
-        /// <summary>The Id of the ticket</summary>
+        /// <summary>The ID of the ticket</summary>
         [JsonInclude] private int id;
         /// <summary>The id of the passenger associated with the ticket</summary>
         [JsonInclude] private int? passengerId = null;
@@ -83,6 +83,6 @@ namespace ClassLibrary.Trains
         **
         ** @return True if the ticket is available, otherwise false
         */
-        public bool IsAvaible() { return passengerId is null; }
+        public bool IsAvailable() { return passengerId is null; }
     }
 }

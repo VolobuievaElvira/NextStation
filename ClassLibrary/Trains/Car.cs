@@ -16,7 +16,7 @@ namespace ClassLibrary.Trains
     public class Car
     {
         /// <summary>The id of the last Car in the database</summary>
-        [JsonInclude] static private int counter = 0;
+        [JsonInclude] private static int counter = 0;
         /// <summary>The id of the Car</summary>
         [JsonInclude] private int id;
         /// <summary>The id of the train the Carriage is associated with</summary>
@@ -84,7 +84,7 @@ namespace ClassLibrary.Trains
         ** @param train The train to associate with the carriage
         */
 
-        public void SetTrain(PassengerTrain? train) { this.trainId = train is not null ? train.GetId() : null; }
+        public void SetTrain(PassengerTrain? train) { this.trainId = train?.GetId(); }
         /**
         ** @brief Gets all the seats in the carriage
         **
