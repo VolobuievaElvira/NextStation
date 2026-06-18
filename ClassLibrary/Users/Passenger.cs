@@ -34,7 +34,7 @@ namespace ClassLibrary.Users
         */
         public void BookTicket(Ticket ticket)
         {
-            if (ticket.IsAvaible())
+            if (ticket.IsAvailable())
             {
                 ticket.SetPassenger(this);
                 this.tickets.Add(ticket);

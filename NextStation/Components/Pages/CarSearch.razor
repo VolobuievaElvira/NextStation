@@ -48,7 +48,7 @@
 						<td>@car.GetAllSeats().Count</td>
 						<td>
 							@(car.IsConnected()
-							 	? $"ID: {car.GetTrainId()} | train code: {DataBase.TrainSeacrh().Where(t => t.GetId() == car.GetTrainId()).First().GetTrainCode()}" 
+							 	? $"ID: {car.GetTrainId()} | train code: {DataBase.TrainSearch().Where(t => t.GetId() == car.GetTrainId()).First().GetTrainCode()}" 
 							 	: "Not connected")
 						</td>
 					</tr>

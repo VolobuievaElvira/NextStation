@@ -74,7 +74,7 @@ namespace ClassLibrary.Data
         }
 
         /**
-        ** @brief Romove the train from the database
+        ** @brief Remove the train from the database
         **
         ** @param train The train that needs to be removed
         */
@@ -133,7 +133,7 @@ namespace ClassLibrary.Data
         */
         public void AddPassenger(string name, string email, string password, string photo="")
         {
-            if (!(users.FirstOrDefault(u => u.GetEmail() == email, null) is null)) throw new RegisterError(RegisterErrorReason.EmailAlreadyRegistered, "The email is alredy registered. Try to login");
+            if (!(users.FirstOrDefault(u => u.GetEmail() == email, null) is null)) throw new RegisterError(RegisterErrorReason.EmailAlreadyRegistered, "The email is already registered. Try to login");
             User user = new Passenger(name, email, password, photo);
             if (!(user is null))
             {
@@ -153,7 +153,7 @@ namespace ClassLibrary.Data
         */
         public void AddStaff(Role role, string name, string email, string password, string photo = "")
         {
-            if (!(users.FirstOrDefault(u => u.GetEmail() == email, null) is null)) throw new RegisterError(RegisterErrorReason.EmailAlreadyRegistered, "The email is alredy registered. Try to login");
+            if (!(users.FirstOrDefault(u => u.GetEmail() == email, null) is null)) throw new RegisterError(RegisterErrorReason.EmailAlreadyRegistered, "The email is already registered. Try to login");
             User user = new Staff(name, email, password, photo, role);
             if (!(user is null))
             {
@@ -256,7 +256,7 @@ namespace ClassLibrary.Data
         **
         ** @return A list of trains whose data matches the search parameters
         */
-        public List<Train> TrainSeacrh(string? trainCode = null, StationName? departureStation = null, StationName? arrivalStation = null, DateTime? departureDate = null, DateTime? arrivalDate = null, RouteType? routeType = null, List<Option>? options = null)
+        public List<Train> TrainSearch(string? trainCode = null, StationName? departureStation = null, StationName? arrivalStation = null, DateTime? departureDate = null, DateTime? arrivalDate = null, RouteType? routeType = null, List<Option>? options = null)
         {
             List<Train> trains = this.trains;
 

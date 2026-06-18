@@ -16,7 +16,7 @@ namespace ClassLibrary
     {
         /// <summary>The id of the last seat in the database</summary>
         [JsonInclude] private static int counter = 0;
-        /// <summary>The Id of the seat</summary>
+        /// <summary>The ID of the seat</summary>
         [JsonInclude] private int id;
         /// <summary>The number of the seat in the carriage</summary>
         [JsonInclude] private int number;
