@@ -26,7 +26,7 @@ namespace ClassLibrary.Data
         /**
         ** @brief Sets the user who is working with the system
         **
-        ** @param user The user who is working with the system
+        ** @param newUser The user who is working with the system
         */
         public void SetUser(User newUser)
         {
