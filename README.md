@@ -7,7 +7,7 @@ The NextStation is a web application that brings together the entire process of 
 |Passenger|Search trains; book tickets; view booked tickets; checks real-time position and delay of the train|
 |Network Manager|add/modify/remove trains, their cars, routes, and schedules; create operator accounts; modify the permission level of any staff’s users stored in the system|
 |Station Manager|update timetables and locations of the trains|
-|Train operator|checks real-time visibility of other trains’ positions and possible delays to coordinate safe operations|
+|Train operator|check real-time visibility of other trains’ positions and possible delays to coordinate safe operations|
 |Conductor|check and validate passenger tickets|
 
 ## Current functionality
