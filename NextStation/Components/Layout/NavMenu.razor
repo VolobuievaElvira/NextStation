@@ -2,6 +2,9 @@
 @using ClassLibrary.Users
 @inject CurrentSession CurrentSession
 
+@inject NavigationManager Navigation
+@implements IDisposable
+
 <div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">NextStation</a>
@@ -26,7 +29,6 @@
                 <span>Train Search</span>
             </NavLink>
         </div>
-
 
         @if (CurrentSession.GetUser() is Staff staff && staff.GetRole() == Role.NetworkManager)
         {
@@ -76,33 +78,22 @@
                 <span>Profile</span>
             </NavLink>
         </div>
-
-        
-
-        @* <div class="nav-item px-3"> *@
-        @*     <NavLink class="nav-link" href="counter"> *@
-        @*         <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter *@
-        @*     </NavLink> *@
-        @* </div> *@
-
-        @* <div class="nav-item px-3"> *@
-        @*     <NavLink class="nav-link" href="weather"> *@
-        @*         <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather *@
-        @*     </NavLink> *@
-        @* </div> *@
     </nav>
 </div>
 
 @code {
-    public static NavMenu? Instance { get; private set; }
-
     protected override void OnInitialized()
     {
-        Instance = this;
+        Navigation.LocationChanged += OnLocationChanged;
     }
 
-    public static void Refresh()
+    private void OnLocationChanged(object? sender, LocationChangedEventArgs e)
     {
-        Instance?.InvokeAsync(() => Instance.StateHasChanged());
+        InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        Navigation.LocationChanged -= OnLocationChanged;
     }
 }

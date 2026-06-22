@@ -13,19 +13,19 @@ namespace ClassLibrary.Data
     public class CurrentSession
     {
         /// <summary>User who is working with the system</summary>
-        private static User? user;
+        private User? user;
 
         /**
         ** @brief Returns the user who is working with the system
         **
         ** @return The user who is working with the system
         */
-        public static User? GetUser() { return user; }
+        public User? GetUser() { return user; }
 
         /**
         ** @brief Allows the user to log out from the current session
         */
-        public static void Logout() { user = null; }
+        public void Logout() { user = null; }
 
 
         /**
@@ -37,7 +37,7 @@ namespace ClassLibrary.Data
         **
         ** @return The user whose email and password matches the input parameters
         */
-        public static User? Login(List<User> users, string email, string password) 
+        public User? Login(List<User> users, string email, string password) 
         {
             return users.FirstOrDefault(u => u.GetEmail() == email && u.GetPassword() == password, null);
         }
@@ -50,7 +50,7 @@ namespace ClassLibrary.Data
         **
         ** @return The user whose googleProviderId matches the input parameter
         */
-        public static User? LoginWithGoogle(List<User> users, string googleProviderId)
+        public User? LoginWithGoogle(List<User> users, string googleProviderId)
         {
             throw new Exception("Login with Google");
         }
@@ -61,7 +61,7 @@ namespace ClassLibrary.Data
         ** @param users A list of users present in the database
         ** @param email The user's email
         */
-        public static void RetrievePassword(List<User> users, string email)
+        public void RetrievePassword(List<User> users, string email)
         {
             throw new Exception("Retrieve Password");
         }
@@ -71,7 +71,7 @@ namespace ClassLibrary.Data
         **
         ** @param user The user who is working with the system
         */
-        public static void SetUser(User _user)
+        public void SetUser(User _user)
         {
             user = _user;
         }

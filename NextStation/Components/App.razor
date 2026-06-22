@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Components.Web
+@using ClassLibrary
+@using ClassLibrary.Data
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,7 +18,7 @@
 </head>
 
 <body>
-    <Routes />
+    <Routes @rendermode="InteractiveServer" />
     <script src="_framework/blazor.web.js"></script>
 </body>
 
